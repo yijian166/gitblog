@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page  {{ page.page-class }}">
+<html lang="en" class="page  page--error">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
@@ -14,7 +14,7 @@
     <link rel="dns-prefetch" href="//p.twitter.com">
     <link rel="dns-prefetch" href="//cdn.api.twitter.com">
     
-    <title>{{ page.title }} &ndash; CSS Wizardry &ndash; CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts</title>
+    <title>404, not found &ndash; CSS Wizardry &ndash; CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts</title>
     
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic">
     <link rel="stylesheet" href="/css/csswizardry.min.css">
@@ -38,7 +38,7 @@
         })();
     </script>
      
-    <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+    <!-- Empty preload `div` to fetch images before CSS needs them. -->
     <div class="ಠ_ಠ">
         <img src="/img/css/sprites/main.svg" alt="">
     </div>
@@ -62,7 +62,11 @@
         <div class="gw">
             
             <div class="g  one-whole  desk-six-tenths">
-                {{ content }}
+                
+                <h1>404 &ndash; not found</h1>
+
+                <p><strong>Sorry</strong>, it looks like that page doesn’t exist, please head back to <a href="/">the home page</a>.</p>
+
             </div>
             
             <div class="g  one-whole  desk-three-tenths  desk-push--one-tenth">
@@ -100,7 +104,7 @@
 
     <footer class="page-foot"><div class="wrapper">
 
-        <p>&copy; {{ 'now' | date: "%Y" }} <a href="http://twitter.com/csswizardry">Harry Roberts</a>.
+        <p>&copy; 2013 <a href="http://twitter.com/csswizardry">Harry Roberts</a>.
            Built with <a href="http://inuitcss.com">inuit.css</a>
            and <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
            The source code of this blog is <a href="https://github.com/csswizardry/csswizardry.github.com">hosted on GitHub</a>.<br>
