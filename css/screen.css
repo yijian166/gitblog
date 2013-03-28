@@ -4,6 +4,11 @@
 /*
 /*****************************************************************************/
 
+/* cc Reset */
+.codebg {
+  width: 80%;
+  background-color: #fff;
+}
 /* Global Reset */
 
 * {
@@ -16,7 +21,7 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: #f6f7f1;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
