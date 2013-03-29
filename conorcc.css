@@ -1,85 +1,164 @@
+@font-face{
+	font-family:"conorcc";
+	src:url(/assets/conorcc.eot);
+	src:url(/assets/conorcc.eot?#iefix) format("embedded-opentype"),
+	url(/assets/conorcc.svg#conorcc) format("svg"),
+	url(/assets/conorcc.woff) format("woff"),
+	url(/assets/conorcc.ttf) format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
 .icon, .icon-stack {
-font-family: "conorcc";
-font-size: inherit;
-position: relative;
-display: inline-block;
-line-height: 0.9;
+	font-family: "conorcc";
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+	line-height: 0.9;
 }
 .icon-stack .icon {
-position: absolute;
-top: 0;
-left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .icon-lower-snow, .icon-lower-rain {
-color: #91d0e5;
+	color: #91d0e5;
 }
 .icon, .icon-stack {
-font-family: "conorcc";
-font-size: inherit;
-position: relative;
-display: inline-block;
-line-height: 0.9;
+	font-family: "conorcc";
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+	line-height: 0.9;
 }
 i {
-font-style: normal;
-line-height: inherit;
+	font-style: normal;
+	line-height: inherit;
 }
 .backgroundcliptext .icon-stack:not(.icon-stack-flat) .icon-cloud-w-lower {
-background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f7f7), color-stop(15%, #eeeeee), color-stop(100%, #aaaaaa));
-background: -webkit-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
-background: -moz-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
-background: -o-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
-background: linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
--webkit-background-clip: text;
--moz-background-clip: text;
-background-clip: text;
-color: transparent;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f7f7), color-stop(15%, #eeeeee), color-stop(100%, #aaaaaa));
+	background: -webkit-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
+	background: -moz-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
+	background: -o-linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
+	background: linear-gradient(#f7f7f7,#eeeeee 15%,#aaaaaa);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 .backgroundcliptext .icon-stack:not(.icon-stack-flat) .icon-cloud-w-upper {
-background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, rgba(255,255,255,0.95)), color-stop(50%, rgba(250,250,250,0.95)), color-stop(100%, #cccccc));
-background: -webkit-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
-background: -moz-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
-background: -o-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
-background: linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
--webkit-background-clip: text;
--moz-background-clip: text;
-background-clip: text;
-color: transparent;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, rgba(255,255,255,0.95)), color-stop(50%, rgba(250,250,250,0.95)), color-stop(100%, #cccccc));
+	background: -webkit-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
+	background: -moz-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
+	background: -o-linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
+	background: linear-gradient(rgba(255,255,255,0.95) 40%,rgba(250,250,250,0.95) 50%,#cccccc);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 .icon-stack .icon-stack-base {
-position: relative;
+	position: relative;
 }
 .icon-stack .icon {
-position: absolute;
-top: 0;
-left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .icon-cloud-w-upper, .icon-cloud-w-lower {
-color: #D6E6EC;
+	color: #D6E6EC;
 }
 .icon-lower-snow, .icon-lower-rain {
-color: #91d0e5;
+	color: #91d0e5;
 }
 .icon-lower-lightning, .icon-upper-sun, .icon-sun {
-color: #d9b100;
+	color: #d9b100;
 }
 .icon-lower-lightning, .icon-upper-sun, .icon-sun {
-color: #d9b100;
+	color: #d9b100;
 }
 .icon-upper-moon {
-color: #afbbbf;
+	color: #afbbbf;
 }
 
 p {
-line-height: 1.5;
-margin: 0 0 18px;
+	line-height: 1.5;
+	margin: 0 0 18px;
 }
 .icon-size-32 {
-font-size: 32px;
+	font-size: 32px;
 }
 .icon-size-64 {
-font-size: 64px;
+	font-size: 64px;
 }
 .icon-size-96 {
-font-size: 96px;
+	font-size: 96px;
+}
+.icon-sun:before{
+	content:"\e000"
+}
+.icon-moon{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe001;")
+}
+.icon-moon:before{
+	content:"\e001"
+}
+.icon-california{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe002;")
+}
+.icon-california:before{
+	content:"\e002"
+}
+.icon-upper-moon{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe003;")
+}
+.icon-upper-moon:before{
+	content:"\e003"
+}
+.icon-lower-snow{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe004;")
+}
+.icon-lower-snow:before{
+	content:"\e004"
+}
+.icon-lower-rain{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe005;")
+}
+.icon-lower-rain:before{
+	content:"\e005"
+}
+.icon-lower-lightning{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe006;")
+}
+.icon-lower-lightning:before{
+	content:"\e006"
+}
+.icon-cloud-w-upper{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe007;")
+}
+.icon-cloud-w-upper:before{
+	content:"\e007"
+}
+.icon-cloud-w-lower{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe008;")
+}
+.icon-cloud-w-lower:before{
+	content:"\e008"
+}
+.icon-wire-globe{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe009;")
+}
+.icon-wire-globe:before{
+	content:"\e009"
+}
+.icon-happy-face{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe00a;")
+}
+.icon-happy-face:before{
+	content:"\e00a"
+}
+.icon-heart{
+	*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe00b;")}.icon-heart:before{content:"\e00b"}.icon-life-preserve{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe00c;")}.icon-life-preserve:before{content:"\e00c"}.icon-check-encircled{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe00d;")}.icon-check-encircled:before{content:"\e00d"}.icon-upper-sun{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe011;")}.icon-upper-sun:before{content:"\e011"}.icon-texture-1{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe012;")}.icon-texture-1:before{content:"\e012"}.icon-texture-2{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe013;")}.icon-texture-2:before{content:"\e013"}.icon-sunny-w-clouds{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe014;")}.icon-sunny-w-clouds:before{content:"\e014"}.icon-add{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe015;")}.icon-add:before{content:"\e015"}.icon-tag{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe016;")}.icon-tag:before{content:"\e016"}.icon-arrow-drawn-right-1{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe017;")}.icon-arrow-drawn-right-1:before{content:"\e017"}.icon-arrow-drawn-right-2{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe018;")}.icon-arrow-drawn-right-2:before{content:"\e018"}.icon-arrow-drawn-right-3{*zoom:expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("span")).innerHTML = "&#xe019;")
+}
+.icon-arrow-drawn-right-3:before{
+	content:"\e019"
 }
