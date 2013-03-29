@@ -57,7 +57,7 @@ i {
 	color: transparent;
 }
 .icon-stack .icon-stack-base {
-	position: relative;
+	position: relative !important;
 }
 .icon-stack .icon {
 	position: absolute;
