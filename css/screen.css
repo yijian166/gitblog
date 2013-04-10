@@ -5,9 +5,15 @@
 /*****************************************************************************/
 
 /* cc Reset */
-.codebg {
+.code-box {
   width: 80%;
   background-color: #fff;
+}
+.code-box a {
+  color: #8ec63f;
+}
+.code-box a:hover {
+  color: #dfa054;
 }
 /* Global Reset */
 
