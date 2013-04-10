@@ -7,6 +7,7 @@
 /* cc Reset */
 .code-box {
   width: 80%;
+  margin: 10px 0;
   background-color: #fff;
 }
 .code-box a {
@@ -47,6 +48,7 @@ p {
 
 a {
   color: #00a;
+  text-decoration: none;
 }
 
 a:hover {
