@@ -44,7 +44,7 @@ title: 术语、语法和介绍
 
 	<a href="http://learn.hicc.me">HTML&CSS基础教程</a>
 
-<div class="code">
+<div class="code-box">
 	<h4>普通HTML术语例子</h4>
 	<p><a href="http://share.9ikblog.com">飞鸟分享</a></p>
 </div>
@@ -76,6 +76,8 @@ title: 术语、语法和介绍
 除HTML术语之外，在此还有一些基础性的[CSS术语](http://www.codestyle.org/css/Glossary.shtml)你需要了解。越使用HTML和CSS，你就会对这些属于越发的熟稔。
 
 #####选择器
+
+未完持续～～～
 
 
 
