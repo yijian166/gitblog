@@ -138,7 +138,7 @@ CSS使用选择器将样式应用到HTML元素。所有的CSS样式都可以叠�
 <div class="code-box">
 	<h4>HTML和CSS中的注释</h4>
 	<p>HTML和CSS允许你在代码内注释。这些注释可以被用来帮助组织，设置提醒，并更有效的管理代码。当有多个人协作开发同一份代码的时候注释便显得更为重要。任何注释内的文本将不会在实际的页面中出现。</p>
-<p><strong>HTML注释</strong>使用<code><!--</code>开始和<code>--></code>结束来包裹注释内容。<strong>CSS注释</strong>使用/*开始和*/结束来包裹注释内容。</p>
+<p><strong>HTML注释</strong>使用<code>&lt;!--</code>开始和<code>--&gt;</code>结束来包裹注释内容。<strong>CSS注释</strong>使用/*开始和*/结束来包裹注释内容。</p>
 </div>
 
 ####选择器
