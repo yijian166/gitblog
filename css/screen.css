@@ -134,7 +134,7 @@ ul.posts {
     font-size: 80%;
     color: #666;
     border-top: 4px solid #eee;
-    margin-top: 2em;
+    margin-top: 8em;
     overflow: hidden;
   }
 
@@ -227,6 +227,3 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-.footer {
-  margin-top: 20px;
-}

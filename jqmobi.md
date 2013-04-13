@@ -20,7 +20,7 @@ jQ.Mobi由三个组件组成：
 
 下面主要讲解下框架的UI部分。
 
-##1.基本页面布局
+##1 基本页面布局
 
 ![基本页面布局](images/2013/04/jqmobi-03.jpg)
 
@@ -135,7 +135,7 @@ jQ.Mobi由三个组件组成：
 
 ##3 jQ.Mobi框架细节
 
-###3.1框架基本布局
+###3.1 框架基本布局
 
 之前提到过jQ.Mobi框架的页面都在一个HTML的文档中，除去导航栏（#header）和标签栏（#navbar）之外的内容页面都存在id为content的`div`当中，三者都是绝对定位。
 其HTML和对应的CSS为：
@@ -172,7 +172,7 @@ jQ.Mobi由三个组件组成：
 
 上面的即是框架最基本的布局方式，#header，#navbar固定在屏幕的上下边，相应#content的盒子占据了其他区域。值得注意的是#navbar的z-index远高于#content的z-index。
 
-###3.2框架页面切换
+###3.2 框架页面切换
 
 框架的切换页面都包裹在class为panel的`div`中。
 
@@ -222,7 +222,7 @@ jQ.Mobi由三个组件组成：
 
 jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文档](http://app-framework-software.intel.com/documentation.php#jqUi/jqui_panels)。
 
-###3.4panel页面滚动实现方式。
+###3.4 panel页面滚动实现方式。
 
 因为ios5之前版本的webview原生不支持浏览器滚动，因此对于panel页面的滚动就不能靠CSS中的overflow属性来实现了。
 
