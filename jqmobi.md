@@ -36,13 +36,13 @@ jQ.Mobi由三个组件组成：
 对于jQ.mobi框架来说对应三部分的HTML代码为:
 	
 	<div id="jQUi">
-		<div id="header"></div>
-		<div id="content">
-			<div class="panel"></div>
-			<div class="panel"></div>
-		</div>
-		<div id="navbar"></div>
-  </div>
+    <div id="header"></div>
+    <div id="content">
+      <div class="panel"></div>
+      <div class="panel"></div>
+    </div>
+    <div id="navbar"></div>
+    </div>
 
 ##2.jQ.Mobi中四种导航模型及其基本的HTML结构
 
