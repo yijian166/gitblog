@@ -4,10 +4,19 @@ title: 小刀翻译
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>翻译文章</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
+  <h1>其他</h1>
+  <ul class="posts">
+    <li>
+    	<a href="/icon-stacks.html">icon font——堆叠按钮Demo</a>
+    </li>
+    <li>
+    	<a href="/jqmobi.html">jQ.Mobi框架介绍</a>
+    </li>
   </ul>
 </div>
