@@ -13,9 +13,10 @@ jQ.Mobi相比于其他方案具有体积小速度快的优势。
 
 
 jQ.Mobi由三个组件组成：
-*	查询（query）程序库
-*	jQ.ui——为webkit内核浏览器提供的用户界面程序库
-*	jQ.Plugin——针对webkit浏览器的插件支持
+
+-	查询（query）程序库
+-	jQ.ui——为webkit内核浏览器提供的用户界面程序库
+-	jQ.Plugin——针对webkit浏览器的插件支持
 
 下面主要讲解下框架的UI部分。
 
