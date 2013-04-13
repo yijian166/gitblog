@@ -60,11 +60,11 @@ jQ.Mobi由三个组件组成：
 在jQ.Mobi中对应的HMTL代码为：
 
 	<div id="navbar">
-  	<a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
+  		<a href="#"></a>
+  		<a href="#"></a>
+  		<a href="#"></a>
+  		<a href="#"></a>
+ 			<a href="#"></a>
 	</div>
 
 
@@ -177,27 +177,27 @@ jQ.Mobi由三个组件组成：
 框架的切换页面都包裹在class为panel的`div`中。
 
 	<div id="content">
-     <div id="page1" class="panel" title=“xxx" selected="true"></div>
-     <div id="page2"class="panel" title=“xxx"></div>
-     <div id="page3"  class="panel" title=“xxx"></div>
+     	<div id="page1" class="panel" title=“xxx" selected="true"></div>
+     	<div id="page2"class="panel" title=“xxx"></div>
+     	<div id="page3"  class="panel" title=“xxx"></div>
 	</div>
 
 	<div id="navbar">
-     <a href="#page1">XXX</a>
-     <a href="#page2">XXX</a>
-     <a href="#page3">XXX</a>
+     	<a href="#page1">XXX</a>
+     	<a href="#page2">XXX</a>
+     	<a href="#page3">XXX</a>
 	</div>
 <p></p>
 	/*---panel style---*/
 
 	.panel {
-     display:none;
-     position:absolute;
-     width:100%;
-     height:100%;
-     top:0;
-     left:0;
-     z-index:180;
+     	display:none;
+     	position:absolute;
+     	width:100%;
+     	height:100%;
+     	top:0;
+     	left:0;
+     	z-index:180;
 	}
 
 切换页面都在同一个HTML文档中，panel页面默认设置为隐藏（display:none）**使用锚链接跳转，跳转的同时需要显示页面的`display`属性设为block，同时给需要隐藏的页面一个向左移动的动画，加之panel页面使用绝对定位，宽度高度均铺满content，这样的跳转就达到了native应用页面切换的效果。**
