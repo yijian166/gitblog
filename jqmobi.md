@@ -200,10 +200,25 @@ jQ.Mobi由三个组件组成：
      z-index:180;
 	}
 
-切换页面都在同一个HTML文档中，**使用锚链接跳转，跳转的同时需要显示页面的`display`属性设为block，同时给需要隐藏的页面一个向左移动的动画，加之panel页面使用绝对定位，宽度高度均铺满content，这样的跳转就达到了native应用页面切换的效果。**
+切换页面都在同一个HTML文档中，panel页面默认设置为隐藏（display:none）**使用锚链接跳转，跳转的同时需要显示页面的`display`属性设为block，同时给需要隐藏的页面一个向左移动的动画，加之panel页面使用绝对定位，宽度高度均铺满content，这样的跳转就达到了native应用页面切换的效果。**
 
 
 而在页面切换时，另外的动作就是将panel页面中已经定义的`title`属性中的值显示到导航中，并根据jQ.Mobi定义的属性`data-tab`的值来选中标签栏对应的标签。
+
+###3.3 panel属性介绍
+
+正如前面所言应用的切换页面都包裹在class为panel的`div`中，因此jQ.Mobi预先定义了多个属性来应对不同的需求。
+
+-	**selected="true"** 当panel设置此属性后，在应用打开之后默认加载该页面。
+-	**modal="true"** 将panel转变为模态视图，框架中[模态视图](http://www.guimobile.net/ios-hig/8.3.3.html)默认铺满整个屏幕（可在CSS中更改）。
+-	**data-header="id"** 设置之后，在切换到该panel的时候将会加载对应id的自定义`header`标签。
+-	**data-footer="id"** 设置之后，在切换到该panel的时候将会加载对应id的自定义`footer`标签。
+-	**data-nav="id"** 设置之后，在切换到该panel的时候将会加载对应id的自定义`nav`标签。
+-	**data-defer="filename.html"** 设置此属性之后该panel会加载远程的页面或者url。若想将内容分属到不同的文件，该属性会很有用。在所有的文件都异步加载之后jq.ui.ready才会起作用。
+-	**data-tab="anchor_id"** 正如之前提到的，设置该属性之后，在panel加载的时候将标签栏中对应标签选中。而当你通过js而不是单击标签栏的标签来加载panel的时候此属性同样有用。
+-	**data-load="func_name"** 设置之后，panel加载之后会运行该名称的js函数。`div`作为一个参数传递，因此你可以使用一个函数来是的其他的属性起作用。
+-	**data-unload="func_name"** 与data-load相似，只是在页面关闭的时候才运行js函数。
+
 
 
 
