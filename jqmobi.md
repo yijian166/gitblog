@@ -40,10 +40,9 @@ jQ.Mobi由三个组件组成：
 		<div id="content">
 			<div class="panel"></div>
 			<div class="panel"></div>
-               …
-			</div>
-			<div id="navbar"></div>
-   </div>
+		</div>
+		<div id="navbar"></div>
+  </div>
 
 ##2.jQ.Mobi中四种导航模型及其基本的HTML结构
 
