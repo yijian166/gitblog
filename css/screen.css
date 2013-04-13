@@ -128,6 +128,7 @@ ul.posts {
 
   .site .meta {
     color: #aaa;
+    text-align: right;
   }
 
   .site .footer {
@@ -167,10 +168,17 @@ ul.posts {
 
 }
 
-#post .post-title {
-  font-size: 20px;
+#post .post-title ,
+#post h1 {
+  font-size: 22px;
   margin: 1em 0;
   text-align: center;
+}
+#post h2 {
+  font-size: 18px;
+}
+#post h3 {
+  font-size: 16px;
 }
 
   /* standard */
