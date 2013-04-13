@@ -218,6 +218,26 @@ jQ.Mobi由三个组件组成：
 -	**data-tab="anchor_id"** 正如之前提到的，设置该属性之后，在panel加载的时候将标签栏中对应标签选中。而当你通过js而不是单击标签栏的标签来加载panel的时候此属性同样有用。
 -	**data-load="func_name"** 设置之后，panel加载之后会运行该名称的js函数。`div`作为一个参数传递，因此你可以使用一个函数来是的其他的属性起作用。
 -	**data-unload="func_name"** 与data-load相似，只是在页面关闭的时候才运行js函数。
+-	**CSS属性 overflow:hidden** 设置之后，会禁止panel页面的自动滚动。当panel页面需要自动扩展的时候该设置很有用处，例如之前提到Carousel应用或者地图类应用。
+
+jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文档](http://app-framework-software.intel.com/documentation.php#jqUi/jqui_panels)。
+
+###3.4panel页面滚动实现方式。
+
+因为ios5之前版本的webview原生不支持浏览器滚动，因此对于panel页面的滚动就不能靠CSS中的overflow属性来实现了。
+
+目前的**滚动替代方案基本是靠CSS动画来实现**，jQ.Mobi中使用3D动画来实现，因为**[3D动画能够使用浏览器的硬件加速](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css)**，可以让滚动更加流畅，效果也直逼native应用。
+
+框架在panel页面允许滚动的情况下，将panel作为滚动的**容器（container）**，然后将panel元素的所有子元素**content**，再包裹一个`div`标签作为**viewport**，在这一层上面使用3D transform中的translate3d属性来达到滚动的效果，具体通过改变translate3d的Y值也就是纵轴的值来实现滚动。
+
+	/*--对应的css写法---*/
+	transform: translate3d(0, 100px, 0);
+
+![滚动实例图](images/2013/04/jqmobi-08.png)
+![滚动关键CSS代码](images/2013/04/jqmobi-09.png)
+
+
+
 
 
 
