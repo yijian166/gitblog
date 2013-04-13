@@ -167,6 +167,11 @@ ul.posts {
 
 }
 
+#post .post-title {
+  font-size: 18px;
+  margin: 1em 0;
+}
+
   /* standard */
 
   #post pre,

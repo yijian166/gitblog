@@ -2,7 +2,7 @@
 layout: share
 title: jQ.Mobi框架介绍
 ---
-
+<h1 class="post-title">jQ.Mobi框架介绍</h1>
 <p class="meta">2013/04/13</p>
 [jQ.Mobi](http://www.jqmobi.com/)是基于HTML5重写的jQuery框架，由appMobi开发并且开源托管于github，在此有简易的[在线文档](http://app-framework-software.intel.com/documentation.php)提供查阅。
 jQ.Mobi相比于其他方案具有体积小速度快的优势。
