@@ -64,7 +64,7 @@ jQ.Mobi由三个组件组成：
   		<a href="#"></a>
   		<a href="#"></a>
   		<a href="#"></a>
- 			<a href="#"></a>
+			<a href="#"></a>
 	</div>
 
 
@@ -142,32 +142,32 @@ jQ.Mobi由三个组件组成：
 
 	<!---HTML code--->
 	<div id="jQUi">
-     <div id="header"></div>
-     <div id="content"></div>
-     <div id="navbar"></div>
+     	<div id="header"></div>
+     	<div id="content"></div>
+     	<div id="navbar"></div>
 	</div>
 <p></p>
 	/*---CSS code---*/
 	#header {
-     height : 48px;
+     	height : 48px;
 	}
 
 	#content {
-     position:absolute;
-     top:48px;
-     bottom:62px;
-     left:0;
-     right:0;
-     z-index:180;
+     	position:absolute;
+     	top:48px;
+     	bottom:62px;
+     	left:0;
+     	right:0;
+     	z-index:180;
 	}
 
 	#navbar {
-     position:absolute;
-     bottom:0;
-     left:0;
-     right:0;
-     height:62px;
-     z-index:1000;
+     	position:absolute;
+     	bottom:0;
+     	left:0;
+     	right:0;
+     	height:62px;
+     	z-index:1000;
 	}
 
 上面的即是框架最基本的布局方式，#header，#navbar固定在屏幕的上下边，相应#content的盒子占据了其他区域。值得注意的是#navbar的z-index远高于#content的z-index。
