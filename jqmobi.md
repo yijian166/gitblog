@@ -35,10 +35,6 @@ jQ.Mobi由三个组件组成：
 应用的导航栏和标签栏，通常都是固定页面的顶部和底部，对于web app的布局中由于ios浏览器对于CSS的position:fixed支持很不好，因此**通用的解决方案（包括jQ.mobi)都是使用绝对定位position:absolute。**
 
 对于jQ.mobi框架来说对应三部分的HTML代码为:
-
-<div >
-  <pre>
-    <code>
     <div id="jQUi">
       <div id="header"></div>
       <div id="content">
@@ -47,9 +43,6 @@ jQ.Mobi由三个组件组成：
       </div>
       <div id="navbar"></div>
     </div>
-    </code>
-  </pre>
-</div>
 
 ##2.jQ.Mobi中四种导航模型及其基本的HTML结构
 
