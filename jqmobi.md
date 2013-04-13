@@ -35,8 +35,7 @@ jQ.Mobi由三个组件组成：
 
 对于jQ.mobi框架来说对应三部分的HTML代码为:
 
-	
-	<div id="jQUi">
+  <div id="jQUi">
     <div id="header"></div>
     <div id="content">
       <div class="panel"></div>
