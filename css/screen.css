@@ -169,29 +169,35 @@ ul.posts {
 
   /* standard */
 
-  #post pre {
+  #post pre,
+  .post-content pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
   }
 
   #post ul,
-  #post ol {
+  #post ol ,
+  .post-content ul,
+  .post-content ol {
     margin-left: 1.35em;
   }
 
-  #post code {
+  #post code ,
+  .post-content code {
     border: 1px solid #ddd;
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
   }
 
-    #post pre code {
+    #post pre code ,
+    .post-content pre code {
       border: none;
     }
 
-    #post img {
+    #post img ,
+    .post-content img {
         max-width: 500px;
     } 
 
