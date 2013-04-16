@@ -1,0 +1,126 @@
+body {
+  -ms-touch-action: none;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+}
+* {
+  -webkit-user-select: none;
+  /* Prevent copy paste for all elements except text fields */
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Set highlight color for user interaction */
+
+  -webkit-touch-callout: none;
+  /* prevent the popup menu on any links*/
+
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.news p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.news img {
+  max-width: 90% !important;
+  display: block;
+}
+.news table {
+  width: 96% !important;
+  background-color: transparent !important;
+  border: 1px solid #dddddd  !important;
+  border-collapse: separate !important;
+  *border-collapse: collapse;
+  border-left: 0 !important;
+  border-width: 1px !important;
+  margin: 10px auto!important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.news table th {
+  font-weight: bold !important;
+}
+.news table td,
+.news table th {
+  padding: 4px 2px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  vertical-align: top !important;
+  border-left: 1px solid #dddddd !important;
+  border-width: 0 0 0 1px!important;
+}
+.news table td {
+  width: 100% !important;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.news table caption + thead tr:first-child th,
+.news table caption + tbody tr:first-child th,
+.news table caption + tbody tr:first-child td,
+.news table colgroup + thead tr:first-child th,
+.news table colgroup + tbody tr:first-child th,
+.news table colgroup + tbody tr:first-child td,
+.news table thead:first-child tr:first-child th,
+.news table tbody:first-child tr:first-child th,
+.news table tbody:first-child tr:first-child td {
+  border-top: 0 !important;
+}
+.news table tbody + tbody {
+  border-top: 2px solid #dddddd !important;
+}
+.news table thead:first-child tr:first-child th:first-child,
+.news table tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  -moz-border-radius-topleft: 4px !important;
+}
+.news table thead:first-child tr:first-child th:last-child,
+.news table tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  -moz-border-radius-topright: 4px !important;
+}
+.news table thead:last-child tr:last-child th:first-child,
+.news table tbody:last-child tr:last-child td:first-child,
+.news table tfoot:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px !important;
+  -moz-border-radius: 0 0 0 4px !important;
+  border-radius: 0 0 0 4px !important;
+  -webkit-border-bottom-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  -moz-border-radius-bottomleft: 4px !important;
+}
+.news table thead:last-child tr:last-child th:last-child,
+.news table tbody:last-child tr:last-child td:last-child,
+.news table tfoot:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  -moz-border-radius-bottomright: 4px !important;
+}
+.news table caption + thead tr:first-child th:first-child,
+.news table caption + tbody tr:first-child td:first-child,
+.news table colgroup + thead tr:first-child th:first-child,
+.news table colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  -moz-border-radius-topleft: 4px !important;
+}
+.news table caption + thead tr:first-child th:last-child,
+.news table caption + tbody tr:first-child td:last-child,
+.news table colgroup + thead tr:first-child th:last-child,
+.news table colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  -moz-border-radius-topleft: 4px !important;
+}
+.news table tbody tr:nth-child(odd) td,
+.news table tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9 !important;
+}
+.news table tbody tr:hover td,
+.news table tbody tr:hover th {
+  background-color: #f5f5f5 !important;
+}
