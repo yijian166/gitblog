@@ -23,6 +23,8 @@ body {
 }
 .news img {
   max-width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 .news table {
@@ -53,7 +55,7 @@ body {
   border-width: 0 0 0 1px!important;
 }
 .news table td {
-  width: 100% !important;
+  width: auto !important;
   word-wrap: break-word;
   word-break: break-all;
 }
