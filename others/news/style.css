@@ -24,7 +24,7 @@ body {
 .news img {
   max-width: 90% !important;
   height: auto!important;
-  margin-left: 5px auto !important;
+  margin: 5px auto !important;
   display: block;
 }
 .news table {
