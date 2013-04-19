@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jqMobi Kitchen Sink</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+    	<div id="news">
+
+    		<img src="http://learn.hicc.me/images/2013/04/jqmobi-01.jpg">
+
+    		
+
+
+    	</div>
+    	<button id="refresh">refresh</button>
+    	<script type="text/javascript">
+    	$( "#refresh" ).on( "click", function( event ) {
+  			$("#news").html("<p>ssss</p><img src='http://learn.hicc.me/images/2013/04/jqmobi-01.jpg'> <img src='http://learn.hicc.me/images/2013/04/jqmobi-02.jpg'> <img src='http://learn.hicc.me/images/2013/04/jqmobi-03.jpg'><img src='http://learn.hicc.me/images/2013/04/jqmobi-04.jpg'><img src='http://learn.hicc.me/images/2013/04/jqmobi-05.jpg'>    ");
+		});
+    	</script>
+    </body>
+</html>
