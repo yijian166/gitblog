@@ -6,7 +6,7 @@
 
 /* cc Reset */
 .code-box {
-  width: 80%;
+  width: 90%;
   margin: 1em 0;
   padding: 1.2em;
   background-color: #fff;
@@ -16,6 +16,9 @@
 }
 .code-box a:hover {
   color: #dfa054;
+}
+.code-box h1 {
+  text-align: left;
 }
 /* Global Reset */
 
@@ -199,15 +202,17 @@ ul.posts {
 
   #post code ,
   .post-content code {
-    border: 1px solid #ddd;
-    background-color: #eef;
+    /*border: 1px solid #ddd;*/
+    background-color: #f0f0f0;
     font-size: 85%;
+    font-style: italic;
     padding: 0 .2em;
   }
 
     #post pre code ,
     .post-content pre code {
       border: none;
+      background-color: transparent;
     }
 
     #post img ,
