@@ -105,8 +105,7 @@ title: 元素和语义化
 
 `a`元素属于行内元素，为了将页面的的块级内容变成链接，在HTML5中容许`a`元素包裹块级元素，尽管这打破了标准约定。
 
-	<a href="http://share.9ikblog.com>飞鸟分享</a>
-
+	<a href="http://share.9ikblog.com">飞鸟分享</a>
 
 <div class="code-box">
 		<a href="http://share.9ikblog.com>飞鸟分享</a>
