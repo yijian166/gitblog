@@ -108,7 +108,7 @@ title: 元素和语义化
 	<a href="http://share.9ikblog.com">飞鸟分享</a>
 
 <div class="code-box">
-		<a href="http://share.9ikblog.com>飞鸟分享</a>
+		<a href="http://share.9ikblog.com">飞鸟分享</a>
 </div>
 
 ###相对路径和绝对路径
