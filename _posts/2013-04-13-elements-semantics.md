@@ -10,9 +10,9 @@ title: 元素和语义化
 
 简单了解了HTML和CSS之后，是时候深入学习如何组合使用这两个语言了。
 
-在开始创建一个网页之前你不当需要学习不同的类型的内容需要哪个HTML元素来显示，而且需要了解这些元素又有什么样的表现，这样你才能得到你想要的结果。
+在开始创建一个网页之前你不但需要学习不同的类型的内容需要哪个HTML元素来显示，而且需要了解这些元素有什么样的表现，这样你才能得到想要的结果。
 
-另外，一旦你开始写代码你就要做到尽可能的语义化。语义化的书写代码包括确保你的代码有组织性，并做出明知的决定。
+另外，一旦开始写代码你需做到尽可能的语义化。语义化的书写代码包括确保代码有组织性，并做出明确的决定。
 
 ##语义化概述
 
@@ -87,5 +87,64 @@ title: 元素和语义化
 	<h4>粗体文本示例</h4>
 	<p>Duis in <strong>voluptate</strong> velit esse cillum.</p>
 </div>
+
+###有强调意味的斜体文本
+
+行内元素`em`使文本倾斜并且对其施加强调语气。和`strong`一样，HTML中有两个标签可以让文本倾斜。两者在语义化上有少许不同，`em`对文本施加强调语气，因此多被选用来倾斜文本，另外的选择是`i`,在语义化上只是表达一种与上下文不同的语气。同样的，最好根据倾斜文本的重要程度来选择使用那个标签。
+
+		<p>Quae ars <em>putanda</em> est, expeteretur si nih.</p>
+
+<div class="code-box">
+		<h4>倾斜文本示例</h4>
+		<p>Quae ars <em>putanda</em> est, expeteretur si nih.</p>
+</div>
+
+###超链接
+
+互联网中核心的元素之一便是由锚建立的超链接。超链接由行内元素`a`来定义，`a`标签中还需要一个源来指向链接。其中的`href`属性也就是所谓的超链接引用，设定链接的最终能够达到的页面。
+
+`a`元素属于行内元素，为了将页面的的块级内容变成链接，在HTML5中容许`a`元素包裹块级元素，尽管这打破了标准约定。
+
+	<a href="http://share.9ikblog.com>飞鸟分享</a>
+
+<div class="code-box">
+		<a href="http://share.9ikblog.com>飞鸟分享</a>
+</div>
+
+###相对路径和绝对路径
+
+链接最常见的两种方式包括链接到同一站点内的其他页面和链接到其他站点。路径也就是`href`属性的值决定了它们如何链接。
+
+链接到同一站点内的其他页面需要**相对路径**，其中域名并不在`href`属性的值内。链接到同一站点的其他页面，`href`属性值只需包含要链接的页面，例如`/about.html`。若需要连接到子目录中的页面，同样只需在`href`属性值中反映即可，例如`about.html`页面位于`pages`目录中，相应的现对路径即为`/pages/about.html`。
+
+连接到外部站点则需要**绝对路径**，其中`href`属性值必须包含全部的域名信息。链接到Google网站，`href`属性的值则为`http://google.com`，以`http`开头并且包含域名（在例子中为`.com`）。
+
+		<!-- Relative Path -->
+		<a href="/about.html">About</a>
+		<!-- Absolute Path -->
+		<a href="http://www.google.com/">Google</a>
+
+###链接到邮箱地址
+
+偶尔你也有链接到邮箱地址的需要。当点击完链接只有会打开默认的邮箱客户端并填充一些信息。最少信息的发送地址会被填写，而其他信息例如主题和正文或许也会填写。
+
+创建一个连接到邮箱地址的链接，`href`属性值需要以`mailto:`开始紧跟收件地址。要创建一个地址为i@hicc.me邮箱链接，`href`的值为`mailto:i@hicc.me`。
+
+另外，标题和正文也可以被添加。添加标题只需在邮箱地址紧跟`subject=`参数，单词之间使用`%20`隔开。添加正文则使用`body=`参数，单词间的空格同样用`%20`编码，换行则使用`%0A`。
+
+连起来，将一封标题为“hello cc”正文为“This is awesome”的邮件发送给i@hicc.me，其链接的`href`值则为`mailto:i@hicc.me?subject=hello%20cc&body=This%20is%20awesome.`。需要注意的是邮箱地址和标题之间需要`?`隔开，标题和正文之间使用`&`隔开。
+
+如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax]（http://yoast.com/guide-mailto-links/）。
+
+		<a href="mailto:i@hicc.me?subject=hello%20cc
+&body=This%20is%20awesome.">Email Me</a>
+
+<div class="code-box">
+	<h4>邮件链接示例</h4>
+	<a href="mailto:i@hicc.me?subject=hello%20cc
+&body=This%20is%20awesome.">Email Me</a>
+</div>
+
+
 
 未完持续···
