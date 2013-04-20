@@ -18,7 +18,7 @@
   color: #dfa054;
 }
 .code-box h1 {
-  text-align: left;
+  text-align: left !important;
 }
 /* Global Reset */
 
