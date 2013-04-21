@@ -177,7 +177,7 @@ title: 元素和语义化
 
 HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structural-elements-in-html5/)，这个新增的元素都是为了提高HTML语义化。在此之前，若要在页面中声明一个块级的部分你一般会使用`div`。而在HTML5中便可以选用其他的更为语义化的块级元素。
 
-![HTML5中新增的几个结构化元素](http://learn.hicc.me/images/2013/04/HTML5.png)
+![HTML5中新增的几个结构化元素](http://learn.hicc.me/images/2013/04/html5.png)
 
 ###`header`
 
