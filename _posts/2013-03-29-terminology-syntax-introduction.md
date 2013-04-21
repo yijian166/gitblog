@@ -104,7 +104,7 @@ CSS使用选择器将样式应用到HTML元素。所有的CSS样式都可以叠�
 
 举一个例子，可以为一个页面的所有文本设置特定的颜色、大小、粗细。然后使用一个更有针对性的选择为一个单独的元素重设样式。
 
-![CSS语法概要](http://learn.hicc.me/images/selector.png)
+![CSS语法概要](http://learn.hicc.me/images/2013/04/selector.png)
 
 下面实例中语法实例了如何将样式用到所有的段落。
 

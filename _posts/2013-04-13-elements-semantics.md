@@ -134,7 +134,7 @@ title: 元素和语义化
 
 连起来，将一封标题为“hello cc”正文为“This is awesome”的邮件发送给i@hicc.me，其链接的`href`值则为`mailto:i@hicc.me?subject=hello%20cc&body=This%20is%20awesome.`。需要注意的是邮箱地址和标题之间需要`?`隔开，标题和正文之间使用`&`隔开。
 
-如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax]（http://yoast.com/guide-mailto-links/）。
+如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax](http://yoast.com/guide-mailto-links/)。
 
 		<a href="mailto:i@hicc.me?subject=hello%20cc
 &body=This%20is%20awesome.">Email Me</a>
@@ -142,8 +142,58 @@ title: 元素和语义化
 <div class="code-box">
 	<h4>邮件链接示例</h4>
 	<a href="mailto:i@hicc.me?subject=hello%20cc
-&body=This%20is%20awesome.">Email Me</a>
+	&body=This%20is%20awesome.">Email Me</a>
 </div>
+
+###在新窗口中打开链接
+
+在超链接中可以设定链接在哪里打开。经典的打开是在当前窗口打开，当然链接还可在新的窗口打开，将`target`属性的值设为`_blank`，单击时链接即可在新的窗口打开。`target`属性决定链接在哪里显示，而其值`_blank`这指定了在新窗口打开。
+
+		<a href="http://share.9ikblog.com" target="_blank" >飞鸟分享			</a>
+
+<div class="code-box">
+	<h4>在新窗口打开链接示例</h4>
+	<a href="http://share.9ikblog.com" target="_blank" >
+		飞鸟分享
+	</a>
+</div>
+
+###链接到页面内元素
+
+偶尔也会看到一些仅仅是链接到页面中其他部分的简单链接，在某些站点中的能将用户带到页面顶部的“返回顶部”按钮就是这样的链接。
+
+创建一个页面内链接你只需要赋予想要链接到的元素一个特定的ID，然后使用这个ID作为链接的`href`值。例如在`body`上设置ID属性为`main`,即可通过点击`href`属性值为`#main`的链接返回该页面的顶部。
+
+		<a href="#awesome">Awesome</a>
+		<div id="awesome">Awesome Section</div>
+
+<div class="code-box">
+	<h4>页内链接示例</h4>
+	<a href="#awesome">Awesome</a>
+	<div id="awesome">Awesome Section</div>
+</div>
+
+##HTML5结构化元素
+
+HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structural-elements-in-html5/)，这个新增的元素都是为了提高HTML语义化。在此之前，若要在页面中声明一个块级的部分你一般会使用`div`。而在HTML5中便可以选用其他的更为语义化的块级元素。
+
+![HTML5中新增的几个结构化元素](http://learn.hicc.me/images/2013/04/HTML5.png)
+
+###`header`
+
+`header`，正如其字面意义，用来标示页面、文章、章节、亦或页面其他部分的头部。一般而言，`header`中会包括标题，介绍文本，或者导航栏。在页面中你可以在多处使用`header`标签。在一个站点中，理想情况是页面的最开始会有一个`header`元素。另外必要情况下`header`元素也可能会作为文章或者其他部分的头部出现。
+
+		<header>...</header>
+
+<div class="code-box">
+	<h4><code>header</code>元素的几个要点<h4>
+	<p><code>header</code>元素最好不要和<code>head</code>元素，标题元素（从<code>h1</code>到<code>h6</code>）相混淆。</p>
+	<p><code>header</code>元素属于结构化元素，用来包裹页面的头部，只会在<code>body</code>元素中使用，而<code>head</code>元素用来包裹元数据，文档标题，或者外部文件的链接，并不在实际显示页面中出现。</p>
+	<p>标题元素，从<code>h1</code>到<code>h6</code>，用来表示整个页面的层级标题。</p>
+</div>
+
+###导航
+
 
 
 
