@@ -136,8 +136,8 @@ title: 元素和语义化
 
 如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax](http://yoast.com/guide-mailto-links/)。
 
-		<a href="mailto:i@hicc.me?subject=hello%20cc
-&body=This%20is%20awesome.">Email Me</a>
+<pre><code><a href="mailto:i@hicc.me?subject=hello%20cc
+&body=This%20is%20awesome.">Email Me</a></code><pre>
 
 <div class="code-box">
 	<h4>邮件链接示例</h4>
@@ -213,7 +213,7 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 
 ###`section`
 
-	与`article`相比`section`元素更容易和`div`混淆。`section`属于块级元素，特定为通用的文档或者应用部分所定义。`section`与`div`不同的地方在于，`section`并不用来方面样式和脚本的添加。
+与`article`相比`section`元素更容易和`div`混淆。`section`属于块级元素，特定为通用的文档或者应用部分所定义。`section`与`div`不同的地方在于，`section`并不用来方面样式和脚本的添加。
 
 换句话说，你可以给`section`元素添加样式，但是比不能仅仅为了添加样式而茫无目的使用`section`元素。在页面大的符合`section`元素价值的内容块上才使用`section`。
 
