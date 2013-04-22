@@ -137,7 +137,7 @@ title: 元素和语义化
 如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax](http://yoast.com/guide-mailto-links/)。
 
 <pre><code><a href="mailto:i@hicc.me?subject=hello%20cc
-&body=This%20is%20awesome.">Email Me</a></code><pre>
+&body=This%20is%20awesome.">Email Me</a></code></pre>
 
 <div class="code-box">
 	<h4>邮件链接示例</h4>
