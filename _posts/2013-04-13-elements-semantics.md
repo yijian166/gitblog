@@ -148,7 +148,7 @@ title: 元素和语义化
 
 在超链接中可以设定链接在哪里打开。经典的打开是在当前窗口打开，当然链接还可在新的窗口打开，将`target`属性的值设为`_blank`，单击时链接即可在新的窗口打开。`target`属性决定链接在哪里显示，而其值`_blank`这指定了在新窗口打开。
 
-		<a href="http://share.9ikblog.com" target="_blank" >飞鸟分享			</a>
+		<a href="http://share.9ikblog.com" target="_blank" >飞鸟分享</a>
 
 <div class="code-box">
 	<h4>在新窗口打开链接示例</h4>
@@ -162,8 +162,8 @@ title: 元素和语义化
 
 创建一个页面内链接你只需要赋予想要链接到的元素一个特定的ID，然后使用这个ID作为链接的`href`值。例如在`body`上设置ID属性为`main`,即可通过点击`href`属性值为`#main`的链接返回该页面的顶部。
 
-		<a href="#awesome">Awesome</a>
-		<div id="awesome">Awesome Section</div>
+	<a href="#awesome">Awesome</a>
+	<div id="awesome">Awesome Section</div>
 
 <div class="code-box">
 	<h4>页内链接示例</h4>
