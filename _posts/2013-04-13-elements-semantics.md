@@ -136,8 +136,7 @@ title: 元素和语义化
 
 如需要添加跟多的信息，如抄送和秘密抄送的添加方式可以查看Joost de Valk的教程[The Full mailto Link Syntax](http://yoast.com/guide-mailto-links/)。
 
-<pre>
-	<code><span>&lt;a</span><span> </span><span>href</span><span>=</span><span>"mailto:i@hicc.me?subject=hello%20cc&body=This%20is%20awesome."</span><span>&gt;</span><span>Email Me</span><span>&lt;/a&gt;</span></code>
+<pre><code><span>&lt;a</span><span> </span><span>href</span><span>=</span><span>"mailto:i@hicc.me?subject=hello%20cc&body=This%20is%20awesome."</span><span>&gt;</span><span>Email Me</span><span>&lt;/a&gt;</span></code>
 </pre>
 
 <div class="code-box">
