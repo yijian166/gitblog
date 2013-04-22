@@ -45,7 +45,7 @@ title: 元素和语义化
 
 ##排版
 
-大量的在线内容完全基于文本。线上也有许多其他不同形式的媒体和内容，但文本占据了大多数。HTML中有许多的元素用来显示网页上的文本。在本篇文章我们只专注最常用，最语义化的元素。更为深入了解可以查看[本篇文章](#)。
+大量的在线内容完全基于文本。线上也有许多其他不同形式的媒体和内容，但文本占据了大多数。HTML中有许多的元素用来显示网页上的文本。在本篇文章我们只专注最常用，最语义化的元素。更为深入了解可以查看[这篇文章][l4]。
 
 ###标题
 
@@ -141,8 +141,7 @@ title: 元素和语义化
 
 <div class="code-box">
 	<h4>邮件链接示例</h4>
-	<a href="mailto:i@hicc.me?subject=hello%20cc
-	&body=This%20is%20awesome.">Email Me</a>
+	<a href="mailto:i@hicc.me?subject=hello%20cc&body=This%20is%20awesome.">Email Me</a>
 </div>
 
 ###在新窗口中打开链接
@@ -192,9 +191,68 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 	<p>标题元素，从<code>h1</code>到<code>h6</code>，用来表示整个页面的层级标题。</p>
 </div>
 
-###导航
+###`nav`
+
+块级元素`nav`用来表示页面中导航类链接组。但并不是所有的链接组都包裹在`nav`元素中。`nav`应该被用在导航块中，包括全局导航，tab类内容，面包屑导航，之前/之后，或者其他值得注意的链接组。
+
+`nav`元素下的链接一般都会链接到同一站点或者同一页面中的其他部分。其他各式各样的离开站点的链接不应该包裹在`nav`元素内，且只应该使用`a`元素。
+
+		<nav>
+  		<ul>
+    			<li><a href="#">...</a></li>
+    			<li><a href="#">...</a></li>
+  		</ul>
+		</nav>
 
 
+###`article`
+
+块级元素`article`非常类似于`div`或者`section`，但是`article`元素特定用于包裹独立同一的，可独立分配，重用的内容。`article`元素在大多数情况下用于包裹博客或者其他内容发布网站中的块级已发布内容。当你决定使用`article`元素的时候需要确认元素内内容是否能无混淆的复用于其他地方。在`article`元素内的内容必须言之有物，并且能够被分享到其他地方，像RSS订阅。
+
+		<article>...</article>
+
+###`section`
+
+	与`article`相比`section`元素更容易和`div`混淆。`section`属于块级元素，特定为通用的文档或者应用部分所定义。`section`与`div`不同的地方在于，`section`并不用来方面样式和脚本的添加。
+
+换句话说，你可以给`section`元素添加样式，但是比不能仅仅为了添加样式而茫无目的使用`section`元素。在页面大的符合`section`元素价值的内容块上才使用`section`。
+
+		<section>...</section>
+
+<div class="code-box">
+	<h4>如何选择<code>section</code>，<code>div</code></h4>
+	<p>分析页面内容，如果改块级内容存在于作为数据库记录存在，并且不是特地作为css样式的钩子，<code>section</code>就非常合适。<code>section</code>元素恰当的用途是将页面分割成有层级的块，元素内部通常会有一个对应层级的标题（<code>h1</code>到<code>h6</code>）。</p>
+	<p>另一方面<code>div</code>可能用来将特定的样式施加到块级内容。例如，如果有两个段落需要和页面其他内容区别开来，最好的方案则是先将这两个段落用<code>div</code>包裹，然后给<code>div</code>施加合适的样式，样式可能是背景，边框，或者其他。</p>
+</div>
+
+###`aside`
+
+伴随`header`和`footer`元素自然还有块级元素`aside`。`aside`定义用来包裹如此内容——与文档或者页面块关联，而文档或者页面块又环绕该内容。与`header`和`footer`一样，在使用的得当的前提下，`aside`可以在页面中多次使用。
+
+需要注意的是`aside`元素属于块级元素，因此在页面中它会另起一行，宽度也会铺满可用宽度。如果你先将`aside`元素置于块级内容的左侧或者右侧，你就会需要`aside`元素浮动（`float`）起来。暂时不用担心浮动的问题，在随后的[译文][l3]中会有浮动与定位的介绍。
+
+			<aside>...</aside>
+
+###`footer`
+
+与`header`元素的用途类似，`footer`用于表示页面，文章，章节，或者页面其他部分的底部。`footer`元素不应该脱离文档或者页面块，元素内的内容应该包含相关的信息。
+
+		<footer>…</footer>
+
+##D.R.Y. – Don’t Repeat Yourself（不要重复自己）
+
+书写代码的一个原则是D.R.Y.，也就是所谓的不要重复自己原则。在CSS中这个原则很有用途，CSS中你很容易将同样的样式写了一遍又一遍，不要这样做。CSS中，允许你层叠样式，使用class类来应用和继承样式。终极的目标则是写出干净，轻量符合语义化而又易于管理的代码。
+
+##资源
+
+<ul>
+  <li><a href="http://boagworld.com/dev/semantic-code-what-why-how/" rel="nofollow">Semantic code: What? Why? How?</a> via Boagworld</li>
+  <li><a href="http://html5doctor.com/" rel="nofollow">HTML5 Doctor</a></li>
+  <li><a href="http://html5doctor.com/i-b-em-strong-element/" rel="nofollow">The i, b, em, <abbr title="and">&amp;</abbr> strong Elements</a> via HTML5 Doctor</li>
+  <li><a href="http://yoast.com/guide-mailto-links/" rel="nofollow">The Full mailto Link Syntax</a> via Joost de Valk</li>
+  <li><a href="http://dev.opera.com/articles/view/new-structural-elements-in-html5/" rel="nofollow">New Structural Elements in HTML5</a> via Dev.Opera</li>
+</ul>
 
 
-未完持续···
+[l3]:http://learn.hicc.me
+[l4]:http://learn.hicc.me

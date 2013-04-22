@@ -20,6 +20,9 @@
 .code-box h1 {
   text-align: left !important;
 }
+.code-box code {
+  background-color: transparent;
+}
 /* Global Reset */
 
 * {
