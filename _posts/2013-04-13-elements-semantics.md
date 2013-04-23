@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 元素和语义化
+categories: [html-css]
 ---
 
 {{ page.title }}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 术语、语法和介绍
+categories: [html-css]
 ---
 
 {{ page.title }}

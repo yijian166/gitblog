@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 盒模型和定位
+categories: [html-css]
 ---
 
 {{ page.title }}
