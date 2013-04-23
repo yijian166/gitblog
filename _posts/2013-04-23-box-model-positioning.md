@@ -19,7 +19,7 @@ categories: [html-css]
 
 到现在，你已经意识到在页面中的元素，无论是块级还是行内元素都是一个矩形盒子。元素盒子有不同的尺寸，或许还有`margin`，`padding`和`border`这些也会影响盒子的尺寸。把这些属性聚在一起就叫*盒模型*。让我们一并学习下盒模型和这些CSSS属性来更好的了解HTML和CSS。
 
-![盒模型示例](http://learn.hicc.me/images/2013/04/square-elements.jpg)
+![盒模型示例](../images/2013/04/square-elements.jpg)
 
 上图中所示的即是每个元素的矩形盒子（不管每个元素的实际形状）。
 
