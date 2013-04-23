@@ -23,3 +23,37 @@ categories: [html-css]
 
 上图中所示的即是每个元素的矩形盒子（不管每个元素的实际形状）。
 
+##盒模型
+
+正如之前说过的，每个元素都是一个矩形盒子，包括`width`，`height`，可能还会包括`margin`，`padding`，`border`。所有的值算到一块便构成了所谓的[盒模型](http://css-tricks.com/the-css-box-model/)。
+
+盒子首先以元素的`width`和`height`开始，宽和高可由元素的类型，元素内类容，或者指定的`width`和`height`属性决定。随后便是元素的`padding`和`border`。紧跟`border`的便是`margin`，在技术上来讲`margin`不包括在盒子的实际尺寸中，但`margin`确实帮忙定义了盒子模型。
+
+	div {
+  	background: #fff;
+  	border: 6px solid #ccc;
+  	height: 100px;
+  	margin: 20px;
+  	padding: 20px;
+  	width: 400px;
+	}
+
+分解一个元素，包括盒模型的总宽，使用如下公式：
+`margin-right` + `border-right` + `padding-right` + `width` + `padding-left` + `border-left` + `margin-left`
+
+类似的，总高公式：
+`margin-top` + `border-top` + `padding-top` + `height` + `padding-bottom` + `border-bottom` + `margin-bottom`
+
+![盒模型分解](http://learn.hicc.me/images/2013/04/box-model.png)
+
+使用上述公式，上图例中的宽高为：
+
+**宽**：`492px` = `20px` + `6px` + `20px` + `400px` + `20px` + `6px` + 20px`
+
+**高**：`192px` = `20px` + `6px` + `20px` + `100px` + `20px` + `6px` + `20px`
+
+让我们看看盒模型中的每个属性
+
+##`height`和`width`
+
+
