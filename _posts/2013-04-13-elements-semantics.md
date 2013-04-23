@@ -254,5 +254,5 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 </ul>
 
 
-[l3]:http://learn.hicc.me
-[l4]:http://learn.hicc.me
+[l3]:/html-css/box-model-positioning.html
+[l4]:/html-css/typography.html

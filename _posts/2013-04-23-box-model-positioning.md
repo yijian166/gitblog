@@ -76,7 +76,7 @@ categories: [html-css]
 
 ##`margin`和`padding`
 
-每个浏览器都给元素应用了一个基本的`margin`和`padding`值来使得元素易读和易于区别。每个浏览器的各个元素的值都不一样。在Lesson 1 中介绍过使用[css reset](../terminology-syntax-introduction.html)将这些值充值为零。使用重置样式使得我们可以在统一的基础上开始工作，也就容许我们进一步的设置特定元素的属性值。
+每个浏览器都给元素应用了一个基本的`margin`和`padding`值来使得元素易读和易于区别。每个浏览器的各个元素的值都不一样。在Lesson 1 中介绍过使用[css reset](../html-css/terminology-syntax-introduction.html)将这些值充值为零。使用重置样式使得我们可以在统一的基础上开始工作，也就容许我们进一步的设置特定元素的属性值。
 
 ###CSS中`margin`值
 
