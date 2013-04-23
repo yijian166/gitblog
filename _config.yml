@@ -1,4 +1,8 @@
 baseurl: /
+url: http://learn.hicc.me
+title: 小刀的翻译
+author: 小刀
+email: i@hicc.me
 markdown: rdiscount
 pygments: true
 permalink:/:categories/:title.html
