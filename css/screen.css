@@ -36,7 +36,7 @@ html, body {
 
 body {
   background-color: #f6f7f1;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  font: 13.34px "Trebuchet MS",Arial,Helvetica,sans-serif;
   *font-size: small;
   text-align: center;
 }
