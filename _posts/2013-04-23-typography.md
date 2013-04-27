@@ -17,7 +17,7 @@ categories: [html-css]
 
 <div class="code-box">
 <h4>字形（Typeface）vs.字体（font）</h4>
-<p>typeface和font这两个术语经常互用，也经常应次混乱。下面就分析下这两个术语究竟指的是什么，也希望所给的示例你能够明白并使用。</p>
+<p>typeface和font这两个术语经常互用，也经常引起混乱。下面就分析下这两个术语究竟指的是什么，也希望所给的示例你能够明白并使用。</p>
 <p><strong>typeface</strong>指的是你所看见的字形，它是一种文本表现，感受，阅读的艺术印象。</p>
 <p><strong>font</strong>则指的是字体文件。电脑使用字体文件（font）在屏幕上渲染成字形（typeface）</p>
 <p>另一个类似的例子（<a href="http://fontfeed.com/archives/font-or-typeface/">歌曲和MP3文件</a>）可以帮助你分清两者的区别.typeface就类似与歌曲，歌曲是一种艺术成果，是有艺术家在演出中所创造的。而font则类似于MP3文件，MP3文件并不是一种艺术印象，它只是艺术价值的载体。</p>
