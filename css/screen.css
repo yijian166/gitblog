@@ -49,6 +49,9 @@
   border: 1px solid #ddd;
   background-color: #eef;
 }
+.code-box ul.code {
+  list-style: none;
+}
 /* Global Reset */
 * {
   margin: 0;
