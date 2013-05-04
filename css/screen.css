@@ -51,6 +51,11 @@
 }
 .code-box ul.code {
   list-style: none;
+  margin-left: 0;
+}
+.code-box pre,
+.code-box code {
+  font-style: 12px;
 }
 /* Global Reset */
 * {
@@ -208,7 +213,7 @@ ul.posts span {
   /*border: 1px solid #ddd;*/
 
   background-color: #f0f0f0;
-  font-size: 85%;
+  font-size: 12px;
   font-style: italic;
   padding: 0 .2em;
 }
