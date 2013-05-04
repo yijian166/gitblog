@@ -5,9 +5,6 @@
 /*****************************************************************************/
 /* code box Reset */
 .code-box {
-  width: 90%;
-  /* cc Reset */
-
   margin: 1em 0;
   padding: 1.2em;
   background-color: #fff;
@@ -51,16 +48,16 @@
 }
 .code-box ul.code {
   list-style: none;
-  margin-left: 0;
-}
-.code-box pre,
-.code-box code {
-  font-style: 12px;
+  margin-left: 0 !important;
 }
 /* Global Reset */
 * {
   margin: 0;
   padding: 0;
+}
+pre,
+code {
+  font-size: 12px !important;
 }
 html,
 body {
