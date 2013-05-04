@@ -141,7 +141,7 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 	<h4>字体属性示例</h4>
 	<div>
 		<h5>HTML</h5>
-		<ul>
+		<ul class="code">
 			<li>
 				<code>
 					<span>&lt;h2&gt;&lt;a</span><span> </span><span>href</span><span>=</span><span>"#"</span><span> </span><span>title</span><span>=</span><span>"Sample Blog Post Title"</span><span>&gt;</span><span>Sample Blog Post Title</span><span>&lt;/a&gt;&lt;/h2&gt;</span>
@@ -164,27 +164,27 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 		<h5>CSS</h5>
 		<div>
 		<pre>
-		h2, p {
-		  color: #555;
-		  font: 13px/20px Arial, 'Helvetica Neue',
-			'Lucida Grande', sans-serif;
-		}
-		a {
-		  color: #8ec63f;
-		}
-		a:hover {
-		  color: #f7941d;
-		}
-		h2 {
-		  font-size: 22px;
-		  font-weight: bold;
-		  margin-bottom: 6px;
-		}
-		.byline {
-		  color: #8c8c8c;
-		  font-family: Georgia, Times, 'Times New Roman', serif;
-		  font-style: italic;
-		}
+h2, p {
+  color: #555;
+  font: 13px/20px Arial, 'Helvetica Neue',
+	'Lucida Grande', sans-serif;
+}
+a {
+  color: #8ec63f;
+}
+a:hover {
+  color: #f7941d;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.byline {
+  color: #8c8c8c;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
 		</pre>
 		</div>
 	</div>

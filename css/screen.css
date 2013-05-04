@@ -45,6 +45,10 @@
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
 }
+.code-box .code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+}
 /* Global Reset */
 * {
   margin: 0;
