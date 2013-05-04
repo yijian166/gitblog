@@ -130,19 +130,21 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 
 值得一提的是，**除了**`font-size`和`font-family`属性，`font`属性中的其他值都是可选的，也就是说一般所见到的`font`属性中只有`font-size`和`font-family`属性值。
 
+<pre>
 	p {
-  	font: italic small-caps bold 13px/20px 'Helvetica Neue', 
-  Arial, Helvetica, sans-serif;
+  	font: italic small-caps bold 13px/20px 'Helvetica Neue',
+  	Arial, Helvetica, sans-serif;
 		}
+</pre>
 
 <div class="code-box">
 <h4>字体属性示例</h4>
 <div>
 <h5>HTML</h5>
 <pre>
-<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
-<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+<code><h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2></code>
+<code><p class="byline">Posted by Shay Howe on February 5th, 2012</p></code>
+<code><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p></code>
 </pre>
 </div>
 <div>
@@ -151,7 +153,8 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 <pre>
 h2, p {
   color: #555;
-  font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font: 13px/20px Arial, 'Helvetica Neue',
+	'Lucida Grande', sans-serif;
 }
 a {
   color: #8ec63f;
@@ -170,6 +173,7 @@ h2 {
   font-style: italic;
 }
 </pre>
+</div>
 </div>
 <div>
 <h5>Demo</h5>
