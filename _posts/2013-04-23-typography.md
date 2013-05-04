@@ -123,3 +123,62 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 	p {
   	line-height: 20px;
 	}
+
+###字体属性简易写法
+
+上面提到的针对字体的属性可以合并到`font`属性中作为[简写值](http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/)，值的顺序从左到右依次为：`font-style` `font-variant` `font-weight` `font-size` `line-height` `font-family`，各个值之间无需逗号隔开，只需用空格即可，字体名称间用逗号隔开，`font-size`	和`line-height`之间使用间隔符`/`隔开。
+
+值得一提的是，**除了**`font-size`和`font-family`属性，`font`属性中的其他值都是可选的，也就是说一般所见到的`font`属性中只有`font-size`和`font-family`属性值。
+
+	p {
+  	font: italic small-caps bold 13px/20px 'Helvetica Neue', 
+  Arial, Helvetica, sans-serif;
+		}
+
+<div class="code-box">
+<h4>字体属性示例</h4>
+<div>
+<h5>HTML</h5>
+<pre>
+<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
+<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+</pre>
+</div>
+<div>
+<h5>CSS</h5>
+<div>
+<pre>
+h2, p {
+  color: #555;
+  font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+}
+a {
+  color: #8ec63f;
+}
+a:hover {
+  color: #f7941d;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.byline {
+  color: #8c8c8c;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+</pre>
+</div>
+<div>
+<h5>Demo</h5>
+<div  class="code-box-2">
+<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
+<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+</div>
+</div>
+</div>
+
+###文本属性

@@ -3,10 +3,11 @@
 /* Common
 /*
 /*****************************************************************************/
-
-/* cc Reset */
+/* code box Reset */
 .code-box {
   width: 90%;
+  /* cc Reset */
+
   margin: 1em 0;
   padding: 1.2em;
   background-color: #fff;
@@ -23,82 +24,91 @@
 .code-box code {
   background-color: transparent;
 }
+.code-box .code-box-2 h2,
+.code-box .code-box-2 p {
+  color: #555;
+  font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+}
+.code-box .code-box-2 a {
+  color: #8ec63f;
+}
+.code-box .code-box-2 a:hover {
+  color: #f7941d;
+}
+.code-box .code-box-2 h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.code-box .code-box-2 .byline {
+  color: #8c8c8c;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
 /* Global Reset */
-
 * {
   margin: 0;
   padding: 0;
 }
-
-html, body {
+html,
+body {
   height: 100%;
 }
-
 body {
   background-color: #f6f7f1;
-  font: 13.34px "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font: 13.34px "Trebuchet MS", Arial, Helvetica, sans-serif;
   *font-size: small;
   text-align: center;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   margin-top: 1em;
 }
-
 h1 {
   margin-bottom: 1em;
 }
-
 p {
   margin: 1em 0;
 }
-
 a {
   color: #00a;
   text-decoration: none;
 }
-
-a:hover {
+a:hover,
+a:visited {
   color: black;
 }
-
-a:visited {
-  color: #a0a;
-}
-
 table {
   font-size: inherit;
   font: 100%;
 }
-
 /*****************************************************************************/
 /*
 /* Home
 /*
 /*****************************************************************************/
-
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
-
-  ul.posts li {
-    line-height: 1.75em;
-  }
-
-  ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
-  }
-
+ul.posts li {
+  line-height: 1.75em;
+}
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
-
 .site {
   font-size: 110%;
   text-align: left;
@@ -106,75 +116,58 @@ ul.posts {
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
-
+.site .title a {
+  color: #a00;
+  text-decoration: none;
+}
+.site .title a:hover {
+  color: black;
+}
+.site .title a.extra {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 1em;
+}
+.site .title a.extra:hover {
+  color: black;
+}
+.site .meta {
+  color: #aaa;
+  text-align: right;
+}
+.site .footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 8em;
+  overflow: hidden;
+}
+.site .footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+.site .footer .contact a {
+  color: #8085C1;
+}
+.site .footer .rss {
+  margin-top: 1.1em;
+  margin-right: -0.2em;
+  float: right;
+}
+.site .footer .rss img {
+  border: 0;
+}
 .title {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
 }
-
-  .site .title a {
-    color: #a00;
-    text-decoration: none;
-  }
-
-  .site .title a:hover {
-    color: black;
-  }
-
-  .site .title a.extra {
-    color: #aaa;
-    text-decoration: none;
-    margin-left: 1em;
-  }
-
-  .site .title a.extra:hover {
-    color: black;
-  }
-
-  .site .meta {
-    color: #aaa;
-    text-align: right;
-  }
-
-  .site .footer {
-    font-size: 80%;
-    color: #666;
-    border-top: 4px solid #eee;
-    margin-top: 8em;
-    overflow: hidden;
-  }
-
-    .site .footer .contact {
-      float: left;
-      margin-right: 3em;
-    }
-
-      .site .footer .contact a {
-        color: #8085C1;
-      }
-
-    .site .footer .rss {
-      margin-top: 1.1em;
-      margin-right: -.2em;
-      float: right;
-    }
-
-      .site .footer .rss img {
-        border: 0;
-      }
-
 /*****************************************************************************/
 /*
 /* Posts
 /*
 /*****************************************************************************/
-
-#post {
-
-}
-
-#post .post-title ,
+#post .post-title,
 #post h1 {
   font-size: 22px;
   margin: 1em 0;
@@ -186,66 +179,54 @@ ul.posts {
 #post h3 {
   font-size: 16px;
 }
+/* standard */
+#post pre,
+.post-content pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+#post pre code,
+.post-content pre code {
+  border: none;
+  background-color: transparent;
+}
+#post ul,
+.post-content ul,
+#post ol,
+.post-content ol {
+  margin-left: 1.35em;
+}
+#post code,
+.post-content code {
+  /*border: 1px solid #ddd;*/
 
-  /* standard */
-
-  #post pre,
-  .post-content pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
-  }
-
-  #post ul,
-  #post ol ,
-  .post-content ul,
-  .post-content ol {
-    margin-left: 1.35em;
-  }
-
-  #post code ,
-  .post-content code {
-    /*border: 1px solid #ddd;*/
-    background-color: #f0f0f0;
-    font-size: 85%;
-    font-style: italic;
-    padding: 0 .2em;
-  }
-
-    #post pre code ,
-    .post-content pre code {
-      border: none;
-      background-color: transparent;
-    }
-
-    #post img ,
-    .post-content img {
-        max-width: 500px;
-    } 
-
-  /* terminal */
-
-  #post pre.terminal {
-    border: 1px solid black;
-    background-color: #333;
-    color: white;
-  }
-
-  #post pre.terminal code {
-    background-color: #333;
-  }
-
+  background-color: #f0f0f0;
+  font-size: 85%;
+  font-style: italic;
+  padding: 0 .2em;
+}
+#post img,
+.post-content img {
+  max-width: 500px;
+}
+/* terminal */
+#post pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white;
+}
+#post pre.terminal code {
+  background-color: #333;
+}
 #related {
   margin-top: 2em;
 }
-
-  #related h2 {
-    margin-bottom: 1em;
-  }
-
-  /*****************************************************************************/
+#related h2 {
+  margin-bottom: 1em;
+}
+/*****************************************************************************/
 /*
 /* footer
 /*
 /*****************************************************************************/
-
