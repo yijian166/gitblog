@@ -22,7 +22,7 @@
   text-align: left !important;
 }
 .code-box code {
-  background-color: transparent;
+  background-color: transparent!important;
 }
 .code-box .code-box-2 h2,
 .code-box .code-box-2 p {
@@ -79,8 +79,7 @@ a {
   color: #00a;
   text-decoration: none;
 }
-a:hover,
-a:visited {
+a:hover {
   color: black;
 }
 table {

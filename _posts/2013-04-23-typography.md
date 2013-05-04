@@ -141,7 +141,7 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 	<h4>字体属性示例</h4>
 	<div>
 		<h5>HTML</h5>
-		<ol>
+		<ul>
 			<li>
 				<code>
 					<span>&lt;h2&gt;&lt;a</span><span> </span><span>href</span><span>=</span><span>"#"</span><span> </span><span>title</span><span>=</span><span>"Sample Blog Post Title"</span><span>&gt;</span><span>Sample Blog Post Title</span><span>&lt;/a&gt;&lt;/h2&gt;</span>
@@ -158,7 +158,7 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 					<span>&lt;p&gt;</span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… </span><span>&lt;a</span><span> </span><span>href</span><span>=</span><span>"#"</span><span> </span><span>title</span><span>=</span><span>"Sample Blog Post Title"</span><span>&gt;</span><span>Continue reading →</span><span>&lt;/a&gt;&lt;/p&gt;</span>
 				</code>
 			</li>
-		</ol>
+		</ul>
 	</div>
 	<div>
 		<h5>CSS</h5>
