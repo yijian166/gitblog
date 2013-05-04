@@ -134,55 +134,68 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 	p {
   	font: italic small-caps bold 13px/20px 'Helvetica Neue',
   	Arial, Helvetica, sans-serif;
-		}
+	}
 </pre>
 
 <div class="code-box">
-<h4>字体属性示例</h4>
-<div>
-<h5>HTML</h5>
-<pre>
-<code><h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2></code>
-<code><p class="byline">Posted by Shay Howe on February 5th, 2012</p></code>
-<code><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p></code>
-</pre>
-</div>
-<div>
-<h5>CSS</h5>
-<div>
-<pre>
-h2, p {
-  color: #555;
-  font: 13px/20px Arial, 'Helvetica Neue',
-	'Lucida Grande', sans-serif;
-}
-a {
-  color: #8ec63f;
-}
-a:hover {
-  color: #f7941d;
-}
-h2 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.byline {
-  color: #8c8c8c;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
-}
-</pre>
-</div>
-</div>
-<div>
-<h5>Demo</h5>
-<div  class="code-box-2">
-<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
-<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
-</div>
-</div>
+	<h4>字体属性示例</h4>
+	<div>
+		<h5>HTML</h5>
+		<ol>
+			<li>
+				<code>
+					<span>&lt;h2&gt;&lt;a</span><span> </span><span>href</span><span>=</span><span>"#"</span><span> </span><span>title</span><span>=</span><span>"Sample Blog Post Title"</span><span>&gt;</span><span>Sample Blog Post Title</span><span>&lt;/a&gt;&lt;/h2&gt;</span>
+				</code>
+			</li>
+			<li><code></code></li>
+			<li>
+				<code><span>&lt;p</span><span> </span><span>class</span><span>=</span><span>"byline"</span><span>&gt;</span><span>Posted by Shay Howe on February 5th, 2012</span><span>&lt;/p&gt;</span>
+				</code>
+			</li>
+			<li><code></code></li>
+			<li>
+				<code>
+					<span>&lt;p&gt;</span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… </span><span>&lt;a</span><span> </span><span>href</span><span>=</span><span>"#"</span><span> </span><span>title</span><span>=</span><span>"Sample Blog Post Title"</span><span>&gt;</span><span>Continue reading →</span><span>&lt;/a&gt;&lt;/p&gt;</span>
+				</code>
+			</li>
+		</ol>
+	</div>
+	<div>
+		<h5>CSS</h5>
+		<div>
+		<pre>
+		h2, p {
+		  color: #555;
+		  font: 13px/20px Arial, 'Helvetica Neue',
+			'Lucida Grande', sans-serif;
+		}
+		a {
+		  color: #8ec63f;
+		}
+		a:hover {
+		  color: #f7941d;
+		}
+		h2 {
+		  font-size: 22px;
+		  font-weight: bold;
+		  margin-bottom: 6px;
+		}
+		.byline {
+		  color: #8c8c8c;
+		  font-family: Georgia, Times, 'Times New Roman', serif;
+		  font-style: italic;
+		}
+		</pre>
+		</div>
+	</div>
+	<div>
+		<h5>Demo</h5>
+		<div class="code-box-2">
+			<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
+			<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+		</div>
+	</div>
 </div>
 
 ###文本属性
