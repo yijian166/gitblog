@@ -161,7 +161,9 @@ pre[data-line] {
 .token.tab:not(:empty):before {
 	content: '▸';
 }
-
+.token.lf {
+	display: none; /*---cc change--*/
+}
 /*
 .token.cr:before {
 	content: '␍';
