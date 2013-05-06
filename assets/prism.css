@@ -162,7 +162,8 @@ pre[data-line] {
 	content: '▸';
 }
 .token.lf {
-	display: none; /*---cc change--*/
+	/*display: none; ---cc change--*/
+	height: 0 !important;
 }
 /*
 .token.cr:before {
