@@ -148,8 +148,9 @@ categories: [html-css]
 ###在新窗口中打开链接
 
 在超链接中可以设定链接在哪里打开。经典的打开是在当前窗口打开，当然链接还可在新的窗口打开，将`target`属性的值设为`_blank`，单击时链接即可在新的窗口打开。`target`属性决定链接在哪里显示，而其值`_blank`这指定了在新窗口打开。
-
-		<a href="http://share.9ikblog.com" target="_blank" >飞鸟分享</a>
+<pre><code class="language-css">
+<a href="http://share.9ikblog.com" target="_blank" >飞鸟分享</a>
+</code></pre>
 
 <div class="code-box">
 	<h4>在新窗口打开链接示例</h4>

@@ -43,14 +43,14 @@ categories: [html-css]
 
 可以使用`strong`元素来让文本变粗，`strong`元素不仅能使文本变粗，在语义上它表示页面中较为重要的文本。
 
-		<p>Duis in <strong>voluptate</strong> velit cillum.</p>
+	<p>Duis in <strong>voluptate</strong> velit cillum.</p>
 
 
 ###斜体文本
 
 斜体文本通过`em`元素来实现。而`em`元素在语义上表示有强调意味的文本。
 
-		<p>Quae vivendi <em>putanda</em> est, expeteretur nih.</p>
+	<p>Quae vivendi <em>putanda</em> est, expeteretur nih.</p>
 
 
 ##文本颜色
