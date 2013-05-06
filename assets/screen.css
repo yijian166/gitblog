@@ -58,6 +58,15 @@
 pre,
 code {
   font-size: 12px !important;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+pre.language-css,
+code.language-css {
+  margin-top: 0 !important;
 }
 html,
 body {

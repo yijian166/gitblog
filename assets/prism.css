@@ -161,8 +161,9 @@ pre[data-line] {
 .token.tab:not(:empty):before {
 	content: '▸';
 }
+/*
 .token.lf {
-	/*display: none; ---cc change--*/
+	display: none;
 	height: 0 !important;
 }
 .token.lf:first-child {
@@ -171,7 +172,8 @@ pre[data-line] {
 	display: inline-block;
 	*display: inline;
 	*zoom:1;
-}
+} 
+---cc change--*/
 /*
 .token.cr:before {
 	content: '␍';
