@@ -131,10 +131,12 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 值得一提的是，**除了**`font-size`和`font-family`属性，`font`属性中的其他值都是可选的，也就是说一般所见到的`font`属性中只有`font-size`和`font-family`属性值。
 
 <pre>
+<code class="language-css">
 p {
 	font: italic small-caps bold 13px/20px 'Helvetica Neue',
 	Arial, Helvetica, sans-serif;
 }
+</code>
 </pre>
 
 <div class="code-box">
