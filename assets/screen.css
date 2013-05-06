@@ -62,8 +62,8 @@ code {
   *display: inline;
   *zoom: 1;
   width: 100%;
-  padding-left: 0 ;
-  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 22px;
   margin-bottom: 22px;
 }
