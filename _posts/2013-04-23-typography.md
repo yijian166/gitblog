@@ -30,36 +30,28 @@ categories: [html-css]
 ###标题
 
 共有6个不同级别的标题元素，`h1`到`h6`，每个标题都是作为前一标题的补充性的标题，现对于其他标题元素，`h1`应该用于大的、更为重要的标题。在合适的情景下使用HTML5的结构性元素，标题元素则可以重复使用。
-<pre>
-	<code class="language-html"><h1>Lorem ipsum dolor sit amet...</h1>
-<h2>Pellentesque habitant morb...</h2></code>
-</pre>
+
+	<h1>Lorem ipsum dolor sit amet...</h1>
+	<h2>Pellentesque habitant morb...</h2>
 ###段落
 
 段落元素，简单来说是页面中内容增加段落的完美选择。每个段落都应该以`<p>`起始以`</p>`结束。
-<pre>
-	<code class="language-html">
-		<p>Id quil una virtute ponunt...</p>
-	</code>
-</pre>
+
+	<p>Id quil una virtute ponunt...</p>
 
 ###粗体文本
 
 可以使用`strong`元素来让文本变粗，`strong`元素不仅能使文本变粗，在语义上它表示页面中较为重要的文本。
-<pre>
-	<code class="language-html">
+
 		<p>Duis in <strong>voluptate</strong> velit cillum.</p>
-	</code>
-</pre>
+
 
 ###斜体文本
 
 斜体文本通过`em`元素来实现。而`em`元素在语义上表示有强调意味的文本。
-<pre>
-	<code class="language-html">
+
 		<p>Quae vivendi <em>putanda</em> est, expeteretur nih.</p>
-	</code>
-</pre>
+
 
 ##文本颜色
 
@@ -68,9 +60,9 @@ categories: [html-css]
 设置文本颜色只需`color`属性即可。`color`属性只接受一个值，颜色值支持多种格式，支持关键词、十六进制的值、RGB、RGBa和HSLa，最常用的是十六进制的值，因为它可高效地控制颜色。为了支持颜色透明度，在CSS3中支持了RGBa值，但是不是所有浏览器都支持，因此最好能使用对应的十六进制值。
 <pre>
 	<code class="language-css">
-		body {
-	  		color: #555;
-		}
+body {
+	color: #555;
+}
 	</code>
 </pre>
 <div class="code-box">
@@ -87,9 +79,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 `font-family`属性用来声明文本使用那个字体，那些备用字体。`font-family`属性包含了多个值，每个之间用逗号隔开。左边第一个所声明的，是首要选择的字体，若第一个声明的无法使用则从左往右选择备用字体。若字体名称包含两个或两个以上的单词，需要使用引号包起来。另外，最后的一个值应该是个关键词，指定了系统该类型下的默认字体。
 <pre>
 	<code class="language-css">
-		p {
-	  		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-		}
+p {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 	</code>
 </pre>
 
@@ -98,9 +90,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 `font-size`属性可以让我们使用通用的[长度值](http://css-tricks.com/css-font-size/)来控制文本中的字体大小，这些值可以是像素，em，百分制，以及`font-size`关键词。像素值能够精准地控制字体大小，因此别广泛使用。在之前，使用em和百分制较为合适，是因为当用户缩放浏览器中页面的时候设置这两个属性的字体也可以相对缩放。而现代浏览器大多都能够很好的缩放像素值。因此em和百分制的使用大大减少。
 <pre>
 	<code class="language-css">
-		p {
-	  		font-size: 14px;
-		}
+p {
+	font-size: 14px;
+}
 	</code>
 </pre>
 
@@ -109,9 +101,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 `font-style`属性可以用来倾斜字体，或者将倾斜字体恢复正常。`font-style`属性接受四个关键词的值，包括`normal`，`italic`，`oblique`和`inherit`。这四个值中最常用的有`normal`和`italic`。`italic`可以使字体倾斜，而`normal`则让字体恢复正常。
 <pre>
 	<code class="language-css">
-		p {
-	  		font-style: italic;
-		}
+p {
+	font-style: italic;
+}
 	</code>
 </pre>
 
@@ -121,9 +113,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 `font-variant`属性结构三个值，包括`normal`，`small-caps`和`inherit`。常见的用法是将小写设置`small-caps`或者将小型大写设置`normal`。若字体不支持小型大写，那么该文本使用`small-caps`将没有效果。因此使用这个属性之前请仔细检查所使用字体是否支持。
 <pre>
 	<code class="language-css">
-		p {
-	  		font-variant: small-caps;
-		}
+p {
+	font-variant: small-caps;
+}
 	</code>
 </pre>
 
@@ -135,9 +127,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 除此之外`font-weight`属性也支持数值类的值`100` `200` `300` `400` `500` `600` `700` `800` `900`。从最细的值`100`到最粗的`900`.这些值间粗细细分成了更多个等级，而不是简单的正常（`400`）和粗体（`700`）。在使用数值类值之前也需要检查所用的字体，尝试使用`100`细细的字体听起来是个不错的选择，但你的字体或许并没有这样的细度，属性也就不能生效。
 <pre>
 	<code class="language-css">
-		p {
-	  		font-weight: bold;
-		}
+p {
+	font-weight: bold;
+}
 	</code>
 </pre>
 
@@ -148,9 +140,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 行高也可以用来使元素中单行文本垂直居中。设置元素的`line-height`值和`height`值相等即可使文本垂直居中。这个技巧大多用在按钮，警告文本，等一些单行块级文本中。
 <pre>
 	<code class="language-css">
-		p {
-	  			line-height: 20px;
-		}
+p {
+	line-height: 20px;
+}
 	</code>
 </pre>
 
@@ -162,9 +154,9 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 
 <pre>
 	<code class="language-css">
-		p {
-			font: italic small-caps bold 13px/20px 'Helvetica Neue',Arial, Helvetica, sans-serif;
-		}
+p {
+	font: italic small-caps bold 13px/20px 'Helvetica Neue',Arial, Helvetica, sans-serif;
+}
 	</code>
 </pre>
 
@@ -172,7 +164,6 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 	<h4>字体属性示例</h4>
 	<div>
 		<h5>HTML</h5>
-		<!--
 		<ul class="code">
 			<li>
 				<code>
@@ -191,42 +182,32 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 				</code>
 			</li>
 		</ul>
-	-->
-	<pre>
-		<code class="language-html">
-			<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
-			<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
-		</code>
-	</pre>
-
 	</div>
 	<div>
 		<h5>CSS</h5>
 		<div>
 		<pre>
 			<code class="language-css">
-				h2, p {
-				  color: #555;
-				  font: 13px/20px Arial, 'Helvetica Neue',
-					'Lucida Grande', sans-serif;
-				}
-				a {
-				  color: #8ec63f;
-				}
-				a:hover {
-				  color: #f7941d;
-				}
-				h2 {
-				  font-size: 22px;
-				  font-weight: bold;
-				  margin-bottom: 6px;
-				}
-				.byline {
-				  color: #8c8c8c;
-				  font-family: Georgia, Times, 'Times New Roman', serif;
-				  font-style: italic;
-				}
+h2, p {
+  color: #555;
+  font: 13px/20px Arial, 'Helvetica Neue','Lucida Grande', sans-serif;
+}
+a {
+  color: #8ec63f;
+}
+a:hover {
+  color: #f7941d;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.byline {
+  color: #8c8c8c;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
 			</code>
 		</pre>
 		</div>

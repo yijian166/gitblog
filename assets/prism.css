@@ -162,6 +162,7 @@ pre[data-line] {
 	content: '▸';
 }
 
+/*
 .token.cr:before {
 	content: '␍';
 }
@@ -169,6 +170,7 @@ pre[data-line] {
 .token.lf:before {
 	content: '␊';
 }
+*/
 .token a {
 	color: inherit;
 }
