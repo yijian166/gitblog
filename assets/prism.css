@@ -167,6 +167,7 @@ pre[data-line] {
 }
 .token.lf:first-child {
 	line-height: 0 !important;
+	font-size: 0px!important;
 }
 /*
 .token.cr:before {
