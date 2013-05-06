@@ -132,7 +132,7 @@ CSS中有许多属性用开编辑页面中文本的感观。这些属性可分�
 
 <pre>
 <code class="language-css">p {
-font: italic small-caps bold 13px/20px 'Helvetica Neue',Arial, Helvetica, sans-serif;
+	font: italic small-caps bold 13px/20px 'Helvetica Neue',Arial, Helvetica, sans-serif;
 }</code>
 </pre>
 
