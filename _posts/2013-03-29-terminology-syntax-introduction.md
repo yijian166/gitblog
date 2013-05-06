@@ -168,7 +168,7 @@ HTML
 
 CSS
 <pre><code class="language-css">
-	.awesome { ... }
+.awesome { ... }
 </code></pre>
 
 ###ID 选择器
@@ -181,23 +181,23 @@ HTML
 
 CSS
 <pre><code class="language-css">	
-	#shayhowe { ... }
+#shayhowe { ... }
 </code></pre>	
 
 ###组合选择器
 
 CSS的漂亮之处在于选择器能够组合并且样式能够继承。因此你可以首先定义通用的选择器，在必要的时候以你的方式定义更为具体的，此外你可以将不同的选择器组合成你想要的更为具体的选择器。
 <pre><code class="language-css">	
-	ul#social li {
-  	padding: 0 3px;
-	}
-	ul#social li a {
-  	height: 17px;
-  	width: 16px;
-	}
-	ul#social li.tumblr a {
-  	background: url('tumblr.png') 0 0 no-repeat;
-	}
+ul#social li {
+	padding: 0 3px;
+}
+ul#social li a {
+	height: 17px;
+	width: 16px;
+}
+ul#social li.tumblr a {
+	background: url('tumblr.png') 0 0 no-repeat;
+}
 </code></pre>	
 ###其他选择器
 

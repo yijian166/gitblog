@@ -117,7 +117,7 @@ div {
 div {
 	margin: 10px 20px;
 }
-<code></pre>
+</code></pre>
 
 若元素的四个方向值不同，则四个值按照top,right,bottom,left的顺序声明。
 <pre><code class="language-css">
