@@ -165,6 +165,9 @@ pre[data-line] {
 	/*display: none; ---cc change--*/
 	height: 0 !important;
 }
+.token.lf:first-child {
+	display: none;/*---cc change--*/
+}
 /*
 .token.cr:before {
 	content: '␍';
