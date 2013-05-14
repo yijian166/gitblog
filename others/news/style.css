@@ -37,11 +37,66 @@ body {
   color: #787878;
 }
 .news .title-info span {
-  color: #aaa!important;
+  color: #8c8c8c!important;
 }
 .news p {
   color: #787878 !important;
 }
+/*---font size small ---*/
+.news {
+  font-size: 14px;
+}
+.news p {
+  font-size: 14px;
+}
+.news h1 {
+  font-size: 18px;
+}
+.news h2 {
+  font-size: 16px;
+}
+.news h3,
+.news h4,
+.news h5,
+.news h6 {
+  font-size: 14px;
+}
+/*---font size middle ---*/
+.news {
+  font-size: 15px !important;
+}
+.news p {
+  font-size: 15px !important;
+}
+.news h1 {
+  font-size: 19px !important;
+}
+.news h2 {
+  font-size: 17px !important;
+}
+.news h3,
+.news h4,
+.news h5,
+.news h6 {
+  font-size: 15px !important;
+}
+/*---font size large 
+.news {
+	font-size: 16px !important;
+	p {
+		font-size: 16px !important;
+	}
+	h1 {
+		font-size: 20px!important ;
+	}
+	h2 {
+		font-size: 18px !important;
+	}
+	h3,h4,h5,h6 {
+		font-size: 16px !important;
+	}
+}
+---*/
 .news {
   padding: 4px 12px;
 }
@@ -63,22 +118,7 @@ body {
   font-weight: bold;
   line-height: 1.2em;
 }
-.news h1 {
-  font-size: 20px;
-}
-.news h2 {
-  font-size: 18px;
-}
-.news h3 {
-  font-size: 16px;
-}
-.news h4,
-.news h5,
-.news h6 {
-  font-size: 14px;
-}
 .news p {
-  font-size: 14px;
   line-height: 1.5em;
   text-indent: 2em;
   color: #000;
