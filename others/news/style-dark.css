@@ -1,0 +1,14 @@
+/*---for dark module---*/
+.news {
+  background-color: #090909;
+  color: #787878;
+}
+.news .title-info {
+  border-bottom: 1px solid #6e6e6e!important;
+}
+.news .title-info span {
+  color: #6e6e6e!important;
+}
+.news p {
+  color: #787878 !important;
+}

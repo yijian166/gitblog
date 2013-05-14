@@ -1,0 +1,19 @@
+/*---font size small ---*/
+.news {
+  font-size: 12px !important;
+}
+.news p {
+  font-size: 12px !important;
+}
+.news h1 {
+  font-size: 16px !important ;
+}
+.news h2 {
+  font-size: 14px !important;
+}
+.news h3,
+.news h4,
+.news h5,
+.news h6 {
+  font-size: 12px !important;
+}
