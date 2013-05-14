@@ -30,6 +30,10 @@ body {
 }
 
 --*/
+.news {
+  background-color: #090909;
+  color: #787878;
+}
 .news .title-info {
   border-bottom: 1px solid #999;
   text-indent: 0;
@@ -66,6 +70,7 @@ body {
   font-size: 14px;
   line-height: 1.5em;
   text-indent: 2em;
+  color: #000;
 }
 .news img {
   max-width: 90% !important;
