@@ -56,6 +56,7 @@ body {
 .news .title-info {
   border-bottom: 1px solid #999;
   text-indent: 0;
+  margin-bottom: 4px;
 }
 .news .title-info span {
   font-size: 12px;
