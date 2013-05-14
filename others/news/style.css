@@ -13,6 +13,7 @@ body {
   -webkit-touch-callout: none;
   /* prevent the popup menu on any links*/
 
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -33,6 +34,12 @@ body {
 .news {
   background-color: #090909;
   color: #787878;
+}
+.news p {
+  color: #787878;
+}
+.news {
+  padding: 4px 8px;
 }
 .news .title-info {
   border-bottom: 1px solid #999;
