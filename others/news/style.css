@@ -44,41 +44,41 @@ body {
 }
 /*---font size small ---*/
 .news {
-  font-size: 14px;
+  font-size: 12px;
 }
 .news p {
-  font-size: 14px;
+  font-size: 12px;
 }
 .news h1 {
-  font-size: 18px;
+  font-size: 16px;
 }
 .news h2 {
-  font-size: 16px;
+  font-size: 14px;
 }
 .news h3,
 .news h4,
 .news h5,
 .news h6 {
-  font-size: 14px;
+  font-size: 12px;
 }
 /*---font size middle ---*/
 .news {
-  font-size: 15px !important;
+  font-size: 14px !important;
 }
 .news p {
-  font-size: 15px !important;
+  font-size: 14px !important;
 }
 .news h1 {
-  font-size: 19px !important;
+  font-size: 18px !important;
 }
 .news h2 {
-  font-size: 17px !important;
+  font-size: 16px !important;
 }
 .news h3,
 .news h4,
 .news h5,
 .news h6 {
-  font-size: 15px !important;
+  font-size: 14px !important;
 }
 /*---font size large 
 .news {
