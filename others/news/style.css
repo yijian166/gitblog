@@ -135,7 +135,7 @@ body {
   border-top: 0 !important;
 }
 .news table tbody + tbody {
-  border-top: 2px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 .news table thead:first-child tr:first-child th:first-child,
 .news table tbody:first-child tr:first-child td:first-child {
