@@ -1,15 +1,49 @@
 /*---for dark module---*/
 
+@color-whitebg:#f9f9f9;
+@color-whitebg-gray:#999;
+@color-whitebg-font:#000;
+
+
+@color-darkbg:#090909;
+@color-darkbg-gray:#6e6e6e;
+@color-darkbg-font:#787878;
+
 .news {
-	background-color: #090909;
-	color: #787878;
+	background-color: @color-darkbg;
+	color: @color-darkbg-font;
 	.title-info {
-		border-bottom: 1px solid #6e6e6e!important;
+		border-bottom: 1px solid @color-darkbg-gray!important;
 		span {
-			color: #6e6e6e!important;
+			color: @color-darkbg-gray!important;
 		}
 	}
 	p {
-		color: #787878 !important;
+		color: @color-darkbg-font !important;
 	}
+
+	table {
+		border: 1px solid darken(@color-darkbg-gray , 30%)!important;
+		
+		td ,
+		th {
+			border-left: 1px solid darken(@color-darkbg-gray , 30%)!important;
+		}
+		
+		tbody + tbody  {
+			border-top: 2px solid darken(@color-darkbg-gray , 30%)!important;
+		}
+
+		tbody tr:nth-child(odd) td,
+		tbody tr:nth-child(odd) th {
+		  background-color: lighten(@color-darkbg , 2%)!important;
+		}
+
+		tbody tr:hover td,
+		tbody tr:hover th {
+		  background-color: lighten(@color-darkbg , 6%)!important;
+		}
+		
+	}
+
 }

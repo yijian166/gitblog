@@ -54,13 +54,13 @@ body {
   padding: 4px 12px;
 }
 .news .title-info {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #999999;
   text-indent: 0;
   margin-bottom: 4px;
 }
 .news .title-info span {
   font-size: 12px;
-  color: #999;
+  color: #999999;
   padding-right: 4px;
 }
 .news h1,
@@ -75,7 +75,12 @@ body {
 .news p {
   line-height: 1.5em;
   text-indent: 2em;
-  color: #000;
+  color: #000000;
+}
+.news hr {
+  color: transparent !important;
+  background-color: transparent !important;
+  border-width: 0 !important;
 }
 .news img {
   max-width: 90% !important;
@@ -88,7 +93,7 @@ body {
 .news table {
   width: 96% !important;
   background-color: transparent !important;
-  border: 1px solid #dddddd  !important;
+  border: 1px solid #d9d9d9;
   border-collapse: separate !important;
   *border-collapse: collapse;
   border-left: 0 !important;
@@ -110,7 +115,7 @@ body {
   text-align: center !important;
   vertical-align: top !important;
   text-indent: 0 !important;
-  border-left: 1px solid #dddddd !important;
+  border-left: 1px solid #d9d9d9;
   border-width: 0 0 0 1px!important;
 }
 .news table td {
@@ -130,7 +135,7 @@ body {
   border-top: 0 !important;
 }
 .news table tbody + tbody {
-  border-top: 2px solid #dddddd !important;
+  border-top: 2px solid #d9d9d9;
 }
 .news table thead:first-child tr:first-child th:first-child,
 .news table tbody:first-child tr:first-child td:first-child {
@@ -179,9 +184,9 @@ body {
 }
 .news table tbody tr:nth-child(odd) td,
 .news table tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9 !important;
+  background-color: #f9f9f9;
 }
 .news table tbody tr:hover td,
 .news table tbody tr:hover th {
-  background-color: #f5f5f5 !important;
+  background-color: #f4f4f4;
 }

@@ -27,8 +27,16 @@ body {
 }
 
 --*/
+@font-size-m:14px; 
+@font-size-s:12px;
+@font-size-l:16px; 
+
+@color-whitebg:#f9f9f9;
+@color-whitebg-gray:#999;
+@color-whitebg-font:#000;
 
 
+@color-darkbg:#090909;
 
 
 /*---font size middle ---*/
@@ -52,12 +60,12 @@ body {
 .news {
 	padding: 4px 12px;
 	.title-info {
-  		border-bottom: 1px solid #999;
+  		border-bottom: 1px solid @color-whitebg-gray;
   		text-indent: 0;
   		margin-bottom: 4px;
   		span {
 			font-size: 12px;
-			color: #999;
+			color: @color-whitebg-gray;
 			padding-right: 4px;
   		}
 	}
@@ -69,7 +77,12 @@ body {
 		line-height: 1.5em;
 		//white-space:normal !important;
 		text-indent: 2em;
-		color: #000;
+		color: @color-whitebg-font;
+	}
+	hr {
+		color: transparent !important;
+		background-color:  transparent !important;
+		border-width: 0 !important;
 	}
 
 	 img {
@@ -86,7 +99,7 @@ body {
 	table {
 		width: 96% !important;
 		background-color: transparent !important;
-		border: 1px solid #dddddd  !important;
+		border: 1px solid lighten(@color-whitebg-gray , 25%);
 		border-collapse: separate !important;
 		*border-collapse: collapse;
 		border-left: 0 !important;
@@ -108,7 +121,7 @@ body {
 			text-align: center !important;
 			vertical-align: top !important;
 			text-indent: 0 !important;
-			border-left: 1px solid #dddddd !important;
+			border-left: 1px solid lighten(@color-whitebg-gray , 25%);
 			border-width: 0 0 0 1px!important;
 		}
 		td {
@@ -133,7 +146,7 @@ body {
 		  border-top: 0 !important;
 		}
 		tbody + tbody  {
-			border-top: 2px solid #dddddd !important;
+			border-top: 2px solid lighten(@color-whitebg-gray , 25%);
 		}
 
 		thead:first-child tr:first-child th:first-child,
@@ -188,12 +201,12 @@ body {
 
 		tbody tr:nth-child(odd) td,
 		tbody tr:nth-child(odd) th {
-		  background-color: #f9f9f9 !important;
+		  background-color: @color-whitebg;
 		}
 
 		tbody tr:hover td,
 		tbody tr:hover th {
-		  background-color: #f5f5f5 !important;
+		  background-color: darken(@color-whitebg , 2%);
 		}
 		
 	}

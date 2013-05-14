@@ -4,11 +4,29 @@
   color: #787878;
 }
 .news .title-info {
-  border-bottom: 1px solid #6e6e6e!important;
+  border-bottom: 1px solid #6e6e6e !important;
 }
 .news .title-info span {
-  color: #6e6e6e!important;
+  color: #6e6e6e !important;
 }
 .news p {
   color: #787878 !important;
+}
+.news table {
+  border: 1px solid #222222 !important;
+}
+.news table td,
+.news table th {
+  border-left: 1px solid #222222 !important;
+}
+.news table tbody + tbody {
+  border-top: 2px solid #222222 !important;
+}
+.news table tbody tr:nth-child(odd) td,
+.news table tbody tr:nth-child(odd) th {
+  background-color: #0e0e0e !important;
+}
+.news table tbody tr:hover td,
+.news table tbody tr:hover th {
+  background-color: #181818 !important;
 }
