@@ -3,6 +3,6 @@ url: http://learn.hicc.me
 title: 小刀的翻译
 author: 小刀
 email: i@hicc.me
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 permalink: /:categories/:title.html

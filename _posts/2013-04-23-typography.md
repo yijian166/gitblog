@@ -31,8 +31,10 @@ categories: [html-css]
 
 共有6个不同级别的标题元素，`h1`到`h6`，每个标题都是作为前一标题的补充性的标题，现对于其他标题元素，`h1`应该用于大的、更为重要的标题。在合适的情景下使用HTML5的结构性元素，标题元素则可以重复使用。
 
-	<h1>Lorem ipsum dolor sit amet...</h1>
-	<h2>Pellentesque habitant morb...</h2>
+```html
+<h1>Lorem ipsum dolor sit amet...</h1>
+<h2>Pellentesque habitant morb...</h2>
+```
 ###段落
 
 段落元素，简单来说是页面中内容增加段落的完美选择。每个段落都应该以`<p>`起始以`</p>`结束。
