@@ -58,6 +58,7 @@
 pre,
 code {
   font-size: 12px !important;
+  overflow-x: auto;
   /*
         display: inline-block;
         *display: inline;
