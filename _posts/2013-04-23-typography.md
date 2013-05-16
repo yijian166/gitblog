@@ -69,6 +69,7 @@ categories: [html-css]
 ```css
 body {
 	color: #555;
+}
 ```
 
 <div class="code-box">
