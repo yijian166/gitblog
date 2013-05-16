@@ -207,8 +207,7 @@ ul.posts span {
 .post-content .highlight {
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 #post pre,
 .post-content pre {

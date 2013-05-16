@@ -28,7 +28,8 @@ categories: [html-css]
 正如之前说过的，每个元素都是一个矩形盒子，包括`width`，`height`，可能还会包括`margin`，`padding`，`border`。所有的值算到一块便构成了所谓的[盒模型](http://css-tricks.com/the-css-box-model/)。
 
 盒子首先以元素的`width`和`height`开始，宽和高可由元素的类型，元素内类容，或者指定的`width`和`height`属性决定。随后便是元素的`padding`和`border`。紧跟`border`的便是`margin`，在技术上来讲`margin`不包括在盒子的实际尺寸中，但`margin`确实帮忙定义了盒子模型。
-<pre><code class="language-css">
+
+```css
 div {
 	background: #fff;
 	border: 6px solid #ccc;
@@ -37,7 +38,7 @@ div {
 	padding: 20px;
 	width: 400px;
 }
-</code></pre>
+```
 
 分解一个元素，包括盒模型的总宽，使用如下公式：
 `margin-right` + `border-right` + `padding-right` + `width` + `padding-left` + `border-left` + `margin-left`
@@ -62,20 +63,22 @@ div {
 ###CSS中`height`属性
 
 元素默认的`height`属性由其内容决定。在垂直方向上所有元素都会尽可能的伸缩来适应内容。给一个**块级**元素设置一个特定的高度则需要使用`height`属性。
-<pre><code class="language-css">
+
+```css
 div {
 	height: 100px;
 }
-</code></pre>
+```
 
 ###CSS中`width`属性
 
 一个元素的`width`取决于它的显示类型。块级元素的`width`默认100%，它会铺满可用的整个横向空间。行内元素则是在横向方向尽可能的伸缩来适应内容。因为行内元素尺寸不可更改，CSS中`width`和`height`值只能在**块级**元素上起作用。
-<pre><code class="language-css">
+
+```css
 div {
 	width: 400px;
 }
-</code></pre>
+```
 
 ##`margin`和`padding`
 
@@ -84,21 +87,22 @@ div {
 ###CSS中`margin`值
 
 给元素设置`margin`属性，即在元素的四周设置了一段空间。`margin`的值即外边据处在边框的外面完全透明。可以用`margin`来将元素定位到页面中特定的位置或者是将所有的元素隔开，给元素提供一个呼吸的空间。
-<pre><code class="language-css">
+
+```css
 div {
 	margin: 20px;
 }
-</code></pre>
+```
 
 ###CSS中`padding`值
 
 `padding`和`margin`十分相像，只是`padding`处于元素边框的里面。`padding`值也就是内边距继承元素的背景，用来给元素内部提供空间，并不和`margin`一样用来定位元素。
-<pre><code class="language-css">
+
+```css
 div {
 	padding: 20px;
 }
-</code></pre>
-
+```
 ![margin和padding](http://learn.hicc.me/images/2013/04/margin-padding.png)
 
 上图展示了盒模型中使用`margin`将元素相互间隔开，使用`padding`来设置元素内空间。
@@ -106,44 +110,50 @@ div {
 ###`margin`和`padding`的声明
 
 `margin`和`padding`的值支持简写和完整写法。给元素的四个方向的`margin`和`padding`设置同样的值只需这样：
-<pre><code class="language-css">
+
+```css
 div {
 	margin: 20px;
 }
-</code></pre>
+```
 
 元素顶部和底部的值相等，左右方向的相等只需设置连个值，顶部和底部的写在前面。
-<pre><code class="language-css">
+
+```css
 div {
 	margin: 10px 20px;
 }
-</code></pre>
+```
 
 若元素的四个方向值不同，则四个值按照top,right,bottom,left的顺序声明。
-<pre><code class="language-css">
+
+```css
 div {
 	margin: 10px 20px 0 15px;
 }
-</code></pre>
+```
 
 另外，你还可以使用单独的属性一次只设置一个方向的值。每个属性以`margin`或者`padding`开始中间连字符然后紧跟需要设置的方向（`top`,`right`,`bottom`,`left`）。例如`padding-left`使用一个值，设置了元素左边的内边距。
-<pre><code class="language-css">
+
+```css
 div {
 	margin-top: 10px;
 	padding-left: 6px;
 }
-</code></pre>
+```
 
 ##`border`
 
 边框处在元素内边据和外边据之间，设置了元素的轮廓。边框的设置需要三个值，宽度，样式，和颜色。简写模式中按照宽度（width），样式（style），颜色（color）的顺序即可。完整模式则分解为三个属性`border-width`，`border-style`和`border-color`。
 
 一般见到的都是单位宽度，实线，单色的边款，但[边框](http://www.quackit.com/html/codes/html_borders.cfm)支持不同尺寸多色多样式。
-<pre><code class="language-css">
+
+
+```css
 div {
 	border: 6px solid #ccc;
 }
-</code></pre>
+```
 
 <div class="code-box">
 	<h4>长度值</h4>
@@ -161,7 +171,8 @@ div {
 ![通用页面布局](http://learn.hicc.me/images/2013/04/floats.png)
 
 对于[浮动元素](http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/)有几个重要的地方需要注意。首先是，当一个元素设置浮动之后，它会浮动紧靠到父元素容器的边界，如果该元素没有父元素，它就会浮动到页面容器的边界。其次，一个元素浮动之后，页面正常流里面的其他元素会环绕该元素。
-<pre><code class="language-css">
+
+```css
 section {
 	float: left;
 	margin: 10px;
@@ -172,7 +183,8 @@ aside {
 	margin: 10px;
 	width: 320px;
 }
-</code></pre>
+```
+
 ###清除元素浮动
 
 当一个元素浮动之后，它会打破页面正常的文档流，其他的元素会尽可能的环绕这个浮动的元素。有时候这是好事，例如当图片浮动到块级内容的边界，但有时候这并不是好事。
@@ -180,11 +192,12 @@ aside {
 当一个元素，或者几个元素浮动之后，你可以使用`clear`属性来使文档流恢复到正常。给每个需要回到正常文档流的元素使用`clear`属性。
 
 在上面的例子中，`section`和`aside`浮动。我们给`footer`元素使用`clear`属性迫使它回到正常的文档流——定位到俩个浮动元素的下面。
-<pre><code class="language-css">
+
+```css
 footer {
 	clear: both;
 }
-</code></pre>
+```
 
 ##元素定位（`postion`）
 
@@ -198,12 +211,16 @@ footer {
 
 图示例子的代码为：
 HTML
-	<header>
-  		<ul>...</ul>
-	</header>
+
+```html
+<header>
+	<ul>...</ul>
+</header>
+```
 
 CSS
-<pre><code class="language-css">
+
+```css
 header {
 	position: relative;
 }
@@ -212,7 +229,7 @@ ul {
 	right: 10px;
 	top: 10px;
 }
-</code></pre>
+```
 
 ###盒子偏移（offset）属性
 

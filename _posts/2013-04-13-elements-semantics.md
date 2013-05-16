@@ -36,13 +36,15 @@ categories: [html-css]
 
 例如，如果你有一个橙色背景的`div`里面包含了一些社交媒体的链接，你首次可能选用"orange"作为你的class名。但是之后你将背景换成了蓝色，"orange"的class名便讲不通了。更好的，更为语义化的方案是，选用”social“这个关联`div`内容而不是样式的class名。
 
-		<!-- div -->
-		<div class="social">
-  			<p>Lorem ipsum dolor sit amet...</p>
-  			<p>Lorem ipsum dolor sit amet...</p>
-		</div>
-		<!-- span -->
-		<p>Lorem ipsum dolor sit amet, <span class="tooltip">consectetur</span> elit.</p>
+```html
+<!-- div -->
+<div class="social">
+		<p>Lorem ipsum dolor sit amet...</p>
+		<p>Lorem ipsum dolor sit amet...</p>
+</div>
+<!-- span -->
+<p>Lorem ipsum dolor sit amet, <span class="tooltip">consectetur</span> elit.</p>
+```
 
 ##排版
 
@@ -54,9 +56,11 @@ categories: [html-css]
 
 标题应该用在相关有顺序的内容上。页面或者内容块中初级标题应该使用`h1`，若还有下级标题，应该使用紧跟其后的`h2`。标题应该用于分类而不是用于能够让文本变粗或者变大。
 
-		<h1>这是一级标题</h1>
-		<h2>这是二级标题</h2>
-		<h3>这是三级标题</h3>
+```html
+<h1>这是一级标题</h1>
+<h2>这是二级标题</h2>
+<h3>这是三级标题</h3>
+```
 
 <div class="code-box">
 		<h4>标题示例</h4>
@@ -69,8 +73,10 @@ categories: [html-css]
 
 标题之后通常会紧跟段落。段落使用块级元素`p`元素来定义。段落一个接一个的出现，以此来给页面填充信息。
 
-		<p>我希望能够远走，逃离我的所知，逃离我的所有，逃离我的所爱。</p>
-		<p>大多数的人以其愚笨生活在他们的生活之中。</p>
+```html
+<p>我希望能够远走，逃离我的所知，逃离我的所有，逃离我的所爱。</p>
+<p>大多数的人以其愚笨生活在他们的生活之中。</p>
+```
 
 <div class="code-box">
 	<h4>段落示例</h4>
@@ -82,7 +88,9 @@ categories: [html-css]
 
 使用`strong`行内元素使文本变粗来表示重要。重要的是要理解`strong`和`b`在语义化上的区别，两者都可以使文本变粗，`strong`在语义上被用来表示文本很重要，而`b`在多数情况下只是用来使文本变粗，从另一个角度来说`b`的语义化意义只是使得文本在样式风格上有所偏移不同，而不应该使文本得到过多的注意。最好根据粗体文本的重要程度来选择使用那个标签。
 
-		<p>Duis in <strong>voluptate</strong> velit esse cillum.</p>
+```html
+<p>Duis in <strong>voluptate</strong> velit esse cillum.</p>
+```
 
 <div class="code-box">
 	<h4>粗体文本示例</h4>
@@ -93,7 +101,9 @@ categories: [html-css]
 
 行内元素`em`使文本倾斜并且对其施加强调语气。和`strong`一样，HTML中有两个标签可以让文本倾斜。两者在语义化上有少许不同，`em`对文本施加强调语气，因此多被选用来倾斜文本，另外的选择是`i`,在语义化上只是表达一种与上下文不同的语气。同样的，最好根据倾斜文本的重要程度来选择使用那个标签。
 
-		<p>Quae ars <em>putanda</em> est, expeteretur si nih.</p>
+```html
+<p>Quae ars <em>putanda</em> est, expeteretur si nih.</p>
+```
 
 <div class="code-box">
 		<h4>倾斜文本示例</h4>
@@ -106,7 +116,9 @@ categories: [html-css]
 
 `a`元素属于行内元素，为了将页面的的块级内容变成链接，在HTML5中容许`a`元素包裹块级元素，尽管这打破了标准约定。
 
-	<a href="http://share.9ikblog.com">飞鸟分享</a>
+```html
+<a href="http://share.9ikblog.com">飞鸟分享</a>
+```
 
 <div class="code-box">
 		<a href="http://share.9ikblog.com">飞鸟分享</a>
@@ -120,10 +132,12 @@ categories: [html-css]
 
 连接到外部站点则需要**绝对路径**，其中`href`属性值必须包含全部的域名信息。链接到Google网站，`href`属性的值则为`http://google.com`，以`http`开头并且包含域名（在例子中为`.com`）。
 
-		<!-- Relative Path -->
-		<a href="/about.html">About</a>
-		<!-- Absolute Path -->
-		<a href="http://www.google.com/">Google</a>
+```html
+<!-- Relative Path -->
+<a href="/about.html">About</a>
+<!-- Absolute Path -->
+<a href="http://www.google.com/">Google</a>
+```
 
 ###链接到邮箱地址
 
@@ -148,9 +162,10 @@ categories: [html-css]
 ###在新窗口中打开链接
 
 在超链接中可以设定链接在哪里打开。经典的打开是在当前窗口打开，当然链接还可在新的窗口打开，将`target`属性的值设为`_blank`，单击时链接即可在新的窗口打开。`target`属性决定链接在哪里显示，而其值`_blank`这指定了在新窗口打开。
-<pre><code class="language-css">
+
+```css
 <a href="http://share.9ikblog.com" target="_blank" >飞鸟分享</a>
-</code></pre>
+```
 
 <div class="code-box">
 	<h4>在新窗口打开链接示例</h4>
@@ -164,8 +179,10 @@ categories: [html-css]
 
 创建一个页面内链接你只需要赋予想要链接到的元素一个特定的ID，然后使用这个ID作为链接的`href`值。例如在`body`上设置ID属性为`main`,即可通过点击`href`属性值为`#main`的链接返回该页面的顶部。
 
-	<a href="#awesome">Awesome</a>
-	<div id="awesome">Awesome Section</div>
+```html
+<a href="#awesome">Awesome</a>
+<div id="awesome">Awesome Section</div>
+```
 
 <div class="code-box">
 	<h4>页内链接示例</h4>
@@ -183,7 +200,9 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 
 `header`，正如其字面意义，用来标示页面、文章、章节、亦或页面其他部分的头部。一般而言，`header`中会包括标题，介绍文本，或者导航栏。在页面中你可以在多处使用`header`标签。在一个站点中，理想情况是页面的最开始会有一个`header`元素。另外必要情况下`header`元素也可能会作为文章或者其他部分的头部出现。
 
-		<header>...</header>
+```html
+<header>...</header>
+```
 
 <div class="code-box">
 	<h4><code>header</code>元素的几个要点<h4>
@@ -198,19 +217,22 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 
 `nav`元素下的链接一般都会链接到同一站点或者同一页面中的其他部分。其他各式各样的离开站点的链接不应该包裹在`nav`元素内，且只应该使用`a`元素。
 
-		<nav>
-  		<ul>
-    			<li><a href="#">...</a></li>
-    			<li><a href="#">...</a></li>
-  		</ul>
-		</nav>
-
+```html
+<nav>
+	<ul>
+		<li><a href="#">...</a></li>
+		<li><a href="#">...</a></li>
+	</ul>
+</nav>
+```
 
 ###`article`
 
 块级元素`article`非常类似于`div`或者`section`，但是`article`元素特定用于包裹独立同一的，可独立分配，重用的内容。`article`元素在大多数情况下用于包裹博客或者其他内容发布网站中的块级已发布内容。当你决定使用`article`元素的时候需要确认元素内内容是否能无混淆的复用于其他地方。在`article`元素内的内容必须言之有物，并且能够被分享到其他地方，像RSS订阅。
 
-		<article>...</article>
+```html
+<article>...</article>
+```
 
 ###`section`
 
@@ -218,7 +240,9 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 
 换句话说，你可以给`section`元素添加样式，但是比不能仅仅为了添加样式而茫无目的使用`section`元素。在页面大的符合`section`元素价值的内容块上才使用`section`。
 
-		<section>...</section>
+```html
+<section>...</section>
+```
 
 <div class="code-box">
 	<h4>如何选择<code>section</code>，<code>div</code></h4>
@@ -232,13 +256,17 @@ HTML5中新增了几个[元素](http://dev.opera.com/articles/view/new-structura
 
 需要注意的是`aside`元素属于块级元素，因此在页面中它会另起一行，宽度也会铺满可用宽度。如果你先将`aside`元素置于块级内容的左侧或者右侧，你就会需要`aside`元素浮动（`float`）起来。暂时不用担心浮动的问题，在随后的[译文][l3]中会有浮动与定位的介绍。
 
-			<aside>...</aside>
+```html
+<aside>...</aside>
+```
 
 ###`footer`
 
 与`header`元素的用途类似，`footer`用于表示页面，文章，章节，或者页面其他部分的底部。`footer`元素不应该脱离文档或者页面块，元素内的内容应该包含相关的信息。
 
-		<footer>…</footer>
+```html
+<footer>…</footer>
+```
 
 ##D.R.Y. – Don’t Repeat Yourself（不要重复自己）
 

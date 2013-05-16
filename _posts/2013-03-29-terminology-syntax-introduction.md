@@ -25,24 +25,25 @@ categories: [html-css]
 
 元素是定义页面内对象结构和内容的指示符，比较常见的有 `h1` 到 `h6`  , `p` , `a` , `div` , `span` , `strong` , `em`。
 
-
-	<a>
+```html
+<a>
+```
 
 ###标签
 
 元素通常由标签成对组成——开始标签以及闭合标签。开始标签标记了元素的开始，例如`<div>` 。闭合标签标记了一个元素的结束，标签内以一个斜杠开始，例如`</div>`。
 
-
-
-	<a> ... </a>
-
+```html
+<a> ... </a>
+```
 
 ###属性
 
 属性是用于给元素提供额外指令，通常情况，属性用来给一个元素分配 id 、class、或者title，给媒体元素资源路径（src），或者提供一个超链接（href）。
 
-
+```html
 	<a href="http://learn.hicc.me">HTML&CSS基础教程</a>
+```
 
 <div class="code-box">
 	<h4>普通HTML术语例子</h4>
@@ -59,17 +60,19 @@ categories: [html-css]
 
 如下便是一般HTML文档的样子：
 
-	<!DOCTYPE html>
-	<html lang="en">
-  	<head>
-    	<meta charset="utf-8">
-    	<title>Hello World</title>
-  	</head>
-  	<body>
-    	<h1>Hello World</h1>
-    	<p>This is a website.</p>
-  	</body>
-	</html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+	</head>
+	<body>
+	<h1>Hello World</h1>
+	<p>This is a website.</p>
+	</body>
+</html>
+```
 
 ##基础的CSS术语
 
@@ -79,27 +82,31 @@ categories: [html-css]
 
 一个CSS选择器决定了对应的样式被精确地应用到哪个元素或者哪些元素。选择器可以组合包含不同的ID，class，type，以及其他的属性——一切都取决于你的具体所需。第一个大括号{之前的都属于CSS选择器。
 
-	p { … }
+```
+p { … }
+```
 
 ###属性
 
 一个属性决定了所应用元素的样式。属性被定义为冒号之前的文本，CSS现已有大量丰富的属性可以被使用，而且不断有新的属性增加。
-<pre><code class="language-css">
+
+```css
 p {
 	color: #ff0;
 	font-size: 16px;
 }
-</code></pre>
+```
 
 ###值
 
 一个值决定了对应属性的行为。值被定义为冒号和分号之间的文本。
-<pre><code class="language-css">
+
+```html
 p {
 	color: #ff0;
 	font-size: 16px;
 }
-</code></pre>
+```
 
 ##CSS的结构和语法
 
@@ -110,17 +117,19 @@ CSS使用选择器将样式应用到HTML元素。所有的CSS样式都可以叠�
 ![CSS语法概要](http://learn.hicc.me/images/2013/04/selector.png)
 
 下面实例中语法实例了如何将样式用到所有的段落。
-<pre><code class="language-css">
+
+```css
 p {
 	color: #ff0;
 	font-size: 16px;
 }
-</code></pre>	
+```
 
 ###完整模式vs简写模式
 
 在CSS中一个属性值的申明有很多种方法。使用完整模式，你一个接一个的堆砌每个属性和值。而使用间歇模式你只需为一个属性列出多个值即可。简写模式只需少量的代码因此推荐使用。不是所有的CSS属性都支持简写模式，因此你需要确保使用正确的属性值结构。
-<pre><code class="language-css">
+
+```css
 /* Long Hand */
 p {
 	padding-top: 10px;
@@ -136,7 +145,8 @@ p {
 p {
 	padding: 10px;
 }
-</code></pre>	
+```
+
 <div class="code-box">
 	<h4>HTML和CSS中的注释</h4>
 	<p>HTML和CSS允许你在代码内注释。这些注释可以被用来帮助组织，设置提醒，并更有效的管理代码。当有多个人协作开发同一份代码的时候注释便显得更为重要。任何注释内的文本将不会在实际的页面中出现。</p>
@@ -152,42 +162,54 @@ p {
 类型选择器属于最基本的选择器。非常的简单，类型选择器被用于将样式应用到不带任何必要属性的元素上面。从代码简洁和易于管理方面来考虑，属性选择器是首选。
 
 HTML
-	<p>...</p>
+
+```html
+<p>...</p>
+```
 
 CSS
-<pre><code class="language-css">
+
+```css
 p { ... }
-</code></pre>
+```
+
 ###类选择器
 
 类（class）选择器允许将相同的样式应用到所有带同一个类属性的元素上。在CSS中将类名前面加个点号来标示类选择器。在HTML文档中不同的元素允许使用同样的类属性。
 
 HTML
 
+````html
 	<div class="awesome">...</div>
+```
 
 CSS
-<pre><code class="language-css">
+
+```css
 .awesome { ... }
-</code></pre>
+```
 
 ###ID 选择器
 
 ID选择器有点像类选择器，只是Id选择器一次只能针对一个特定的元素。ID选择器自然使用ID属性。类选择器使用点号表示，在CSS中在ID名前面加一个井号来标示ID选择器。每个文档中一个ID属性只容许使用一次，ID属性应该用于较为重要的元素。
 
 HTML
-	
-	<div id="shayhowe">...</div>
+
+```html
+<div id="shayhowe">...</div>
+```
 
 CSS
-<pre><code class="language-css">	
+
+```css	
 #shayhowe { ... }
-</code></pre>	
+```
 
 ###组合选择器
 
 CSS的漂亮之处在于选择器能够组合并且样式能够继承。因此你可以首先定义通用的选择器，在必要的时候以你的方式定义更为具体的，此外你可以将不同的选择器组合成你想要的更为具体的选择器。
-<pre><code class="language-css">	
+
+```css	
 ul#social li {
 	padding: 0 3px;
 }
@@ -198,7 +220,8 @@ ul#social li a {
 ul#social li.tumblr a {
 	background: url('tumblr.png') 0 0 no-repeat;
 }
-</code></pre>	
+```
+
 ###其他选择器
 
 CSS选择器非常的强大，而上面的选择器概述只是个开始。还有许多[高级选择器](http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/)可随时使用。在你随机将class属性和id属性赋予元素之前你可以考虑其他的选择器是否能够更好完成你的目的。在此值得提及的是不是高级选择器并没有得到每个浏览器的支持，特别是在CSS 3中才被提出的选择器。如果你的高级选择器没有工作你可以检查该浏览器对其的支持。
@@ -211,17 +234,19 @@ CSS选择器非常的强大，而上面的选择器概述只是个开始。还�
 
 其他的选择有内部样式和内联样式。而这些不推荐的原因是，这些方式将会导致网站的更新变得频繁而笨重。
 
-	<!-- External CSS File -->
-	<link rel="stylesheet" href="file.css">
-	<!-- Internal CSS -->
-	<style type="text/css">
-	p {
-  	color: #f60;
-  	font-size: 16px;
-	}
-	</style>
-	<!-- Inline CSS -->
-	<p style="color: #f60; font-size: 16px;">Lorem ipsum dolor sit amet...</p>
+```html
+<!-- External CSS File -->
+<link rel="stylesheet" href="file.css">
+<!-- Internal CSS -->
+<style type="text/css">
+p {
+	color: #f60;
+	font-size: 16px;
+}
+</style>
+<!-- Inline CSS -->
+<p style="color: #f60; font-size: 16px;">Lorem ipsum dolor sit amet...</p>
+```
 
 ###使用外部CSS样式表
 
@@ -233,9 +258,11 @@ CSS选择器非常的强大，而上面的选择器概述只是个开始。还�
 
 当CSS文件在子目录的情况下，`href`属性中的路径也需确保正确。例如，如果file.css存储在名为styles的子目录中，`href`属性中的路径则需设置为styles/file.css。
 
-	<head>
-  	<link rel="stylesheet" href="styles/file.css">
-	</head>
+```html
+<head>
+	<link rel="stylesheet" href="styles/file.css">
+</head>
+```
 
 ##CSS重置
 
