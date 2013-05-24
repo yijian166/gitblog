@@ -213,3 +213,131 @@ p {
 
 ###文本对齐
 
+文本对齐对构建一个有韵律且通畅的页面尤为重要，使用`text-align`属性即可设置文本对齐。`text-align`属性有五个值，包括`left` `right` `center` `justify` `inherit`。这些值都非常的简洁明了，其表现也如它们的字面意思。但是实用`text-align`属性不要和`float`属性混淆，`text-align`属性的值`left`和`right`使得元素内文本对齐，而`float`属性值`left`和`right`则移动整个元素。对`float`属性的更多介绍，可以查阅[盒模型和定位](../box-model-positioning.html)这篇文章。
+
+```css
+p {
+  text-align: center;
+}
+```
+
+###文本装饰
+
+`text-decoration`属性提供了少量的几个方式来装扮文本。其接受以下几个关键词：`none` `underline` `over line` `line-thought` `blink` `inherit`。`text-decoration`属性常用在链接的下划线。虽然`blink`值存在，但因为它很容易让人分心，所以不推荐使用。而从语义化的角度，`line-thought`值可以使用`del`元素(用来标示该文本从文本移出)，或者`s`（用来标示该文本不再正确或关联）元素来替代。其他属性值可以随意使用。
+
+···css
+p {
+  text-decoration: underline;
+}
+```
+
+###文本缩进
+
+`text-indent`属性可以让文本像印刷书中文本那样缩进。根据不同的值可以实现向内以及向外缩进。`text-indent`属性支持其他属性说使用的长度值，像素，点，百分制，等等。
+
+```css
+p {
+  text-indent: 20px;
+}
+```
+
+###文本阴影
+
+`text-shadow`属性容许你给文本添加一个或者多个文本。其值从左往右依次四个。前三个值都是长度值，最后一个为颜色。前三个值中第一个决定了阴影的横向偏移，第二个值决定了阴影的纵向偏移，第三个则决定了阴影的模糊半径。第四个值也就是最后一个值是阴影的颜色，属性值`color`属性值一样。
+
+文本阴影属性中使用逗号来隔开多个阴影值。给文本添加多个阴影可以使其置于文本上面或者下面，或者任何你想要的效果。
+
+```css
+p {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+```
+
+###文本变换
+
+`text-transform`属性和`font-variant`属性较为相似。`font-variant`属性用来设置字体内的大小写变换，而`text-transform`属性则用来改变整个文本的大小写。`text-transform`属性接受五个值：`none` `capitalize` `uppercase` `lowercase`以及`inherit`。
+
+```css
+p {
+  text-transform: uppercase;
+}
+```
+
+###字母间距
+
+使用`letter-spacing`属性即可调整页面中文字的字距。使用正直或者负值你即可将字母间距调大或者调小。使用关键词`none`则可以将其恢复默认。`letter-spacing`属性中使用相对值则可以保证不同的文本都有着合适字距。当然你最好对文本进行双重验证。
+
+```css
+p {
+  letter-spacing: -.5em;
+}
+```
+
+###单词间距
+
+和`letter-spacing`属性相似，还可以使用`word-spacing`属性调整单词间的间距。`word-spacing`属性值接受同样的长度或者关键字。并且将其应用到单词而不是字母。
+
+```css
+p {
+  word-spacing: .25em;
+}
+```
+
+HTML
+
+```html
+<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
+<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+```
+
+CSS
+
+```css
+h2, p {
+  color: #555;
+  font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+}
+a {
+  color: #8ec63f;
+}
+a:hover {
+  color: #f7941d;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -.9px;
+  margin-bottom: 6px;
+}
+h2 a {
+  text-shadow: 1px 1px 0 #75a334;
+}
+h2 a:hover {
+  text-shadow: 1px 1px 0 #d48019;
+}
+p {
+  text-indent: 15px;
+}
+.byline {
+  color: #8c8c8c;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  text-indent: 0;
+}
+p a {
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+```
+<div class="code-box">
+<h4>上述代码表现</h4>
+<div class="text">
+<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
+<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+</div>
+
+
