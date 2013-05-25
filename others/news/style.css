@@ -33,22 +33,22 @@ body {
 --*/
 /*---font size middle ---*/
 .news {
-  font-size: 14px;
+  font-size: 16px;
 }
 .news p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .news h1 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .news h2 {
-  font-size: 16px;
+  font-size: 18px;
 }
 .news h3,
 .news h4,
 .news h5,
 .news h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 .news {
   padding: 4px 12px;

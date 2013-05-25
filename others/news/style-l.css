@@ -1,19 +1,19 @@
 /*---font size large ---*/
 .news {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 .news p {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 .news h1 {
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 .news h2 {
-  font-size: 18px !important;
+  font-size: 20px !important;
 }
 .news h3,
 .news h4,
 .news h5,
 .news h6 {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
