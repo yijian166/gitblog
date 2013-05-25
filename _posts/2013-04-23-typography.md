@@ -283,57 +283,55 @@ p {
 }
 ```
 
-HTML
-
-```html
-<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
-<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
-```
-
-CSS
-
-```css
-h2, p {
-  color: #555;
-  font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
-}
-a {
-  color: #8ec63f;
-}
-a:hover {
-  color: #f7941d;
-}
-h2 {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: -.9px;
-  margin-bottom: 6px;
-}
-h2 a {
-  text-shadow: 1px 1px 0 #75a334;
-}
-h2 a:hover {
-  text-shadow: 1px 1px 0 #d48019;
-}
-p {
-  text-indent: 15px;
-}
-.byline {
-  color: #8c8c8c;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
-  text-indent: 0;
-}
-p a {
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-```
 <div class="code-box">
-<h4>上述代码表现</h4>
+<h4>文本属性实例</h4>
+<div>
+
+<h5>HTML</h5>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Sample Blog Post Title<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe on February 5th, 2012<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Continue reading →<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</code></pre></div>
+<h5>CSS</h5>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">h2</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#555</span><span class="p">;</span>
+  <span class="k">font</span><span class="o">:</span> <span class="m">13px</span><span class="o">/</span><span class="m">20px</span> <span class="n">Arial</span><span class="o">,</span> <span class="s1">'Helvetica Neue'</span><span class="o">,</span> <span class="s1">'Lucida Grande'</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#8ec63f</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#f7941d</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">letter-spacing</span><span class="o">:</span> <span class="m">-.9px</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#75a334</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#d48019</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="k">text-indent</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.byline</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#8c8c8c</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="n">Times</span><span class="o">,</span> <span class="s1">'Times New Roman'</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+  <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span>
+  <span class="k">text-indent</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">11px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span>
+  <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <div class="text">
 <h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
 <p class="byline">Posted by Shay Howe on February 5th, 2012</p>
