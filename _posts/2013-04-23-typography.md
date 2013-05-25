@@ -332,10 +332,13 @@ p {
 <span class="p">}</span>
 </code></pre></div>
 </div>
+<div>
+<h4>Demo</h4>
 <div class="text">
 <h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
 <p class="byline">Posted by Shay Howe on February 5th, 2012</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
+</div>
 </div>
 
 
