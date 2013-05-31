@@ -88,6 +88,15 @@
   text-decoration: underline;
   text-transform: uppercase;
 }
+.post-links {
+  width: 400px;
+  padding: 10px 0;
+  border-left: 1px solid #ddd;
+}
+.post-links ul {
+  list-style: none;
+  padding-left: 10px;
+}
 /* Global Reset */
 * {
   margin: 0;

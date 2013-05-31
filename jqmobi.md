@@ -4,6 +4,66 @@ title: jQ.Mobi框架介绍
 ---
 <h1 class="post-title">jQ.Mobi框架介绍</h1>
 <p class="meta">2013/04/13</p>
+
+<div class="post-links">
+  <ul>
+    <li>
+      <a href="#layout">基本页面布局</a>
+    </li>
+    <li>
+      <a href="#nav_module">四种导航模型</a>
+      <ul>
+        <li>
+          <a href="#nav_module_1">标签栏导航模型</a>
+        </li>
+        <li>
+          <a href="#nav_module_2">树形结构导航模型</a>
+        </li>
+        <li>
+          <a href="#nav_module_3">平铺页面导航模型</a>
+        </li>
+        <li>
+          <a href="#nav_module_3">“抽屉式”导航模型</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#details">jQ.Mobi框架细节</a>
+      <ul>
+        <li>
+          <a href="#details_layout">框架基本布局</a>
+        </li>
+        <li>
+          <a href="#details_pages">框架页面切换</a>
+        </li>
+        <li>
+          <a href="#details_panel">panel属性介绍</a>
+        </li>
+        <li>
+          <a href="#details_scroll">panel页面滚动实现方式</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#tips">一些使用帮助</a>
+        <ul>
+        <li>
+          <a href="#tips_1">header和navbar的隐藏</a>
+        </li>
+        <li>
+          <a href="#tips_2">jQ.Mobi禁止滚动</a>
+        </li>
+        <li>
+          <a href="#tips_3">jQ.Mobi中使用iScroll</a>
+        </li>
+        <li>
+          <a href="#tips_4">jQ.Mobi的远程调试</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 [jQ.Mobi](http://www.jqmobi.com/)是基于HTML5重写的jQuery框架，由appMobi开发并且开源托管于github，在此有简易的[在线文档](http://app-framework-software.intel.com/documentation.php)提供查阅。
 jQ.Mobi相比于其他方案具有体积小速度快的优势。
 
@@ -20,7 +80,7 @@ jQ.Mobi由三个组件组成：
 
 下面主要讲解下框架的UI部分。
 
-##1 基本页面布局
+<h2 id="layout">基本页面布局</h2>
 
 ![基本页面布局](images/2013/04/jqmobi-03.jpg)
 
@@ -49,11 +109,11 @@ jQ.Mobi由三个组件组成：
 </div>
 ```
 
-##2.jQ.Mobi中四种导航模型及其基本的HTML结构
+<h2 id="nav_module">2.jQ.Mobi中四种导航模型及其基本的HTML结构</h2>
 
 苹果app定义了三种典型的导航模式再加上现在广为使用的“抽屉式”导航，四种导航模型在App设计中大量使用也覆盖了大部分应用的需求。
 
-###2.1 标签栏导航模型
+<h3 id="nav_module_1">2.1 标签栏导航模型</h3>
 
 上面的图示则是典型的标签栏导航，也是目前最为欢迎的导航模型。
 
@@ -88,7 +148,7 @@ jQ.Mobi由三个组件组成：
 
 **不同的页面包含在不同的class为panel的`div`中。**
 
-###2.2 树形结构导航模型
+<h3 id="nav_module_2">2.2 树形结构导航模型</h3>
 
 ![树形结构导航](images/2013/04/jqmobi-06.jpg)
 
@@ -103,7 +163,7 @@ jQ.Mobi由三个组件组成：
 </ul>
 ```
 
-###2.3 平铺页面导航模型
+<h3 id="nav_module_3">2.3 平铺页面导航模型</h3>
 
 ![平铺页面导航](images/2013/04/jqmobi-07.jpg)
 
@@ -121,7 +181,7 @@ jQ.Mobi由三个组件组成：
  </div>
 ```
 
-2.4 “抽屉式”导航模型
+<h3 id="nav_module_4">2.4 “抽屉式”导航模型</h3>
 
 ![“抽屉式”导航](images/2013/04/jqmobi-08.jpg)
 
@@ -144,9 +204,9 @@ jQ.Mobi由三个组件组成：
 
 而对于实际的应用可以看出大多数的应用并不是使用单一的导航模型，而是各种导航模型混用，至于**选择那种导航模型作为主导航，则需根据应用的功能，使用场景以及用户群体等因素综合考虑。**
 
-##3 jQ.Mobi框架细节
+<h2 id="details">3 jQ.Mobi框架细节</h2>
 
-###3.1 框架基本布局
+<h3 id="details_layout">###3.1 框架基本布局</h3>
 
 之前提到过jQ.Mobi框架的页面都在一个HTML的文档中，除去导航栏（#header）和标签栏（#navbar）之外的内容页面都存在id为content的`div`当中，三者都是绝对定位。
 
@@ -188,7 +248,7 @@ jQ.Mobi由三个组件组成：
 
 上面的即是框架最基本的布局方式，#header，#navbar固定在屏幕的上下边，相应#content的盒子占据了其他区域。值得注意的是#navbar的z-index远高于#content的z-index。
 
-###3.2 框架页面切换
+<h3 id="details_pages">3.2 框架页面切换</h3>
 
 框架的切换页面都包裹在class为panel的`div`中。
 
@@ -225,7 +285,7 @@ jQ.Mobi由三个组件组成：
 
 而在页面切换时，另外的动作就是将panel页面中已经定义的`title`属性中的值显示到导航中，并根据jQ.Mobi定义的属性`data-tab`的值来选中标签栏对应的标签。
 
-###3.3 panel属性介绍
+<h3 id="details_panel">3.3 panel属性介绍</h3>
 
 正如前面所言应用的切换页面都包裹在class为panel的`div`中，因此jQ.Mobi预先定义了多个属性来应对不同的需求。
 
@@ -242,7 +302,7 @@ jQ.Mobi由三个组件组成：
 
 jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文档](http://app-framework-software.intel.com/documentation.php#jqUi/jqui_panels)。
 
-###3.4 panel页面滚动实现方式。
+<h3 id="details_scroll">3.4 panel页面滚动实现方式。</h3>
 
 因为ios5之前版本的webview原生不支持浏览器滚动，因此对于panel页面的滚动就不能靠CSS中的overflow属性来实现了。
 
@@ -254,6 +314,64 @@ jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文
 /*--对应的css写法---*/
 transform: translate3d(0, 100px, 0);
 ```
+
+<h2 id="tips">4. 一些使用帮助</h2>
+
+<h3 id="tips_1">4.1 jQ.Mobi中header和footer（#navbar）的隐藏</h3>
+
+每个panel页面不一定都有上面所属的三个板块，如果想要隐藏header和footer（#navbar）在jQ.Mobi中也很方面就能实现，只需在panel中设置对应标签即可。
+
+隐藏header只需设置`data-header="none"`。
+
+```html
+<!--header 隐藏-->
+<div title="home" class="panel" data-header="none">
+</div>
+```
+
+相应隐藏footer（#navbar）只需设置`data-footer="none"`
+
+```html
+<!--footer（#navbar）隐藏-->
+<div title="home" class="panel" data-footer="none">
+</div>
+```
+
+<h3 id="tips_2">4.2 jQ.Mobi禁止滚动</h3>
+
+jQ.Mobi中页面默认滚动，如果想要禁止滚动，这需在panel中设置`style="overflow:hidden"`
+
+```html
+<!--禁止滚动-->
+<div title="home" class="panel" style="overflow:hidden">
+</div>
+```
+
+<h3 id="tips_3">4.3 jQ.Mobi中使用iScroll实现更高级的滚动</h3>
+
+jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中的部分滚动，最常见的场景便是搜索框不滚动，下面的结果滚动，这种情况jQ.Mobi便没法实现了（或者我没发现？），可行的解决方案就是使用大名鼎鼎的[iScroll](http://cubiq.org/iscroll-4) 。
+
+在复杂的场景中推荐使用iScroll，因为最新iScroll 4 做了很多兼容性的处理和扩展，添加了**缩放、下拉式刷新、自定义滚动条、元素捕捉以及更多更高级别可编程性的自定义事件**。
+
+结合上面的[滚动原理](#details_scroll),	iScroll理想的HTML结构为：
+
+```html
+<div id="wrapper">
+	<ul>
+		<li></li>
+		...
+		...
+	</ul>
+</div>
+```
+
+因此若要使用iScroll最好在代码布局的时候就考虑清楚，免得以后麻烦（这也是笔者挖过的坑~·~）。
+
+<h3 id="tips_4">4.4 jQ.Mobi的远程调试工具weinre</h3>
+
+手机中web view和浏览器毕竟还是you'qu有区别，因此一个调试工具就非常有必要，在此推荐lynn的[weinre教程](http://i-buffer.com/entry/weinre-tutorial),里面有详细的配置教程，甚至还有打包好的一键开启工具下载。
+
+
 
 ![滚动实例图](images/2013/04/jqmobi-08.png)
 ![滚动关键CSS代码](images/2013/04/jqmobi-09.png)

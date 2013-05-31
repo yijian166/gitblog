@@ -169,10 +169,11 @@ p {
 <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Sample Blog Post Title<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe on February 5th, 2012<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Continue reading →<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-</code></pre></div>
-	</div>
-	<div>
-		<h5>CSS</h5>
+</code></pre>
+</div>
+</div>
+<div>
+<h5>CSS</h5>
 <div class="highlight"><pre><code class="css language-css" data-lang="css">
 <span class="nt">h2</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
 <span class="k">color</span><span class="o">:</span> <span class="m">#555</span><span class="p">;</span>
@@ -194,16 +195,17 @@ p {
 <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="n">Times</span><span class="o">,</span> <span class="s1">'Times New Roman'</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
 <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
-	</div>
-	<div>
+</code></pre>
+</div>
+</div>
+<div>
 		<h5>Demo</h5>
 		<div class="code-box-2">
 			<h2><a href="#" title="Sample Blog Post Title">Sample Blog Post Title</a></h2>
 			<p class="byline">Posted by Shay Howe on February 5th, 2012</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <a href="#" title="Sample Blog Post Title">Continue reading →</a></p>
 		</div>
-	</div>
+</div>
 </div>
 
 
@@ -291,7 +293,8 @@ p {
 <div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Sample Blog Post Title<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe on February 5th, 2012<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla vehicula nisi vitae rutrum. Donec laoreet, arcu in elementum, dui mi auctor tortor, et lorem massa orci… <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Sample Blog Post Title"</span><span class="nt">&gt;</span>Continue reading →<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-</code></pre></div>
+</code></pre>
+</div>
 <h5>CSS</h5>
 <div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">h2</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
   <span class="k">color</span><span class="o">:</span> <span class="m">#555</span><span class="p">;</span>
@@ -330,7 +333,8 @@ p {
   <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span>
   <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 </div>
 <div>
 <h4>Demo</h4>
