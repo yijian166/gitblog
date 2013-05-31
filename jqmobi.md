@@ -6,6 +6,7 @@ title: jQ.Mobi框架介绍
 <p class="meta">2013/04/13</p>
 
 <div class="post-links">
+  <h4>页面导航</h4>
   <ul>
     <li>
       <a href="#layout">基本页面布局</a>
@@ -314,6 +315,8 @@ jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文
 /*--对应的css写法---*/
 transform: translate3d(0, 100px, 0);
 ```
+![滚动实例图](images/2013/04/jqmobi-08.png)
+![滚动关键CSS代码](images/2013/04/jqmobi-09.png)
 
 <h2 id="tips">4. 一些使用帮助</h2>
 
@@ -371,10 +374,6 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 
 手机中web view和浏览器毕竟还是you'qu有区别，因此一个调试工具就非常有必要，在此推荐lynn的[weinre教程](http://i-buffer.com/entry/weinre-tutorial),里面有详细的配置教程，甚至还有打包好的一键开启工具下载。
 
-
-
-![滚动实例图](images/2013/04/jqmobi-08.png)
-![滚动关键CSS代码](images/2013/04/jqmobi-09.png)
 
 
 
