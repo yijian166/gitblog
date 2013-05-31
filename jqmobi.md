@@ -6,7 +6,7 @@ title: jQ.Mobi框架介绍
 <p class="meta">2013/04/13</p>
 
 <div class="post-links">
-  <h4>页面导航</h4>
+  <h4  class="post-links-title">页面导航</h4>
   <ul>
     <li>
       <a href="#layout">基本页面布局</a>
