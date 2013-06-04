@@ -350,6 +350,48 @@ p {
 
 ##网页安全字体
 
+电脑、平板、手机或者其他可浏览网页设备中默认安装几个特殊字体。因此在站点中使用这些预装字体，无论使用什么设备访问站点，字体都能够被很好的渲染。这些字体即就是所谓的“网页安全字体”。网页安全字体只有少数的几个，其中最安全如下列。
+
+<ul class="list-2">
+  <li>Arial</li>
+  <li>Courier New, Courier</li>
+  <li>Garamond</li>
+  <li>Georgia</li>
+  <li>Lucida Sans, Lucida Grande, Lucida</li>
+  <li>Palatino Linotype</li>
+  <li>Tahoma</li>
+  <li>Times New Roman ,Times</li>
+  <li>Trebuchet</li>
+  <li>Verdana</li>
+</ul>
+
+##网页中引入web font
+
+最近网页安全字体的替代方案逐渐流行。现在可以将字体上传到服务器，然后使用CSS中的`@font-face`属性将其引入站点。这对在线排版有着非凡的意义。
+
+```css
+@font-face {
+  font-family: 'Bryant Normal';
+  src: url('bryant-normal.eot');
+  src: url('bryant-normal.eot') format('embedded-opentype'),
+       url('bryant-normal.woff') format('woff'),
+       url('bryant-normal.ttf') format('truetype'),
+       url('bryant-normal.svg') format('svg');
+}
+body {
+  font-family: 'Bryant Normal', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+```
+
+在此的一个小的缺陷是，在站点中使用任何字体从技术上来说可行，但并不意味着在法律上有权这么做。字体属于艺术作品，若将其放到你的服务器，则可能会被别人偷用。总之字体的使用都需要授权（license）的容许。
+
+幸运的是，新字体的价值已经被认可，而且许多公司也以及开始开发授权的方式，依次来将字体引入网站。一些公司，例如[TypeKit](https://typekit.com/)和[Fontdeck](http://fontdeck.com/)采用订购方式来授权字体，而其他的，例如[Google Fonts]（http://www.google.com/webfonts）则采用免费授权的方式。在上传任何字体之前请确保你这样做得到了必要的授权，如果尚未得到，你可以再上述的公司中寻求帮助来找到同样的字体或者合适的替代字体。
+
+还有一个小的缺陷便是浏览器的支持。尽管`@font-face`属性出现已经有段时间了，但是老点的浏览器对齐支持很差。现代的浏览器对其的支持则很是完美。幸运的是，我们可以使用新的字体，遇到不支持的则可降级到其他字体。这些在之前`font-family`属性中已经讨论。
+
+未完继续···
+
+
 
 
 
