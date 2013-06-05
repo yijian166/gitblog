@@ -472,7 +472,7 @@ fortune_archive/2000/01/24/272277/index.htm">
 在	CSS中给引用文本自动添加引号，需要使用`before`和`after`伪元素。`before`和`after`伪元素使用`quotes` 和`content`属性在必要的时候动态添加引号。</p>
 <p>
 
-如下便是如何使用伪元素自动给`q`元素添加引号。对此深入了解可以查看 [pseudo-elements](http://css-tricks.com/pseudo-element-roundup/)和[how to use quotation marks](http://css-tricks.com/pseudo-element-roundup/)这两篇文章。
+如下便是如何使用伪元素自动给`q`元素添加引号。对此深入了解可以查看 <a href="http://css-tricks.com/pseudo-element-roundup/">pseudo-elements</a>和<a href="http://css-tricks.com/pseudo-element-roundup/">how to use quotation marks</a>这两篇文章。
 </p>
 <div class="highlight"><pre><code class="html language-html" data-lang="html">q {
   quotes: '“' '”' '‘' '’';
