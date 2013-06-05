@@ -488,20 +488,6 @@ q:after {
 </code></pre></div>
 </div>
 
-```html
-q {
-  quotes: '“' '”' '‘' '’';
-}
-q:before {
-  content: '“';
-  content: open-quote;
-}
-q:after {
-  content: '”';
-  content: close-quote;
-}
-```
-
 ##资源
 <ul class="col-2">
   <li><a href="http://dev.opera.com/articles/view/29-text-styling-with-css/" title="Text styling with CSS" rel="nofollow">Text styling with CSS</a> via Dev.Opera</li>
