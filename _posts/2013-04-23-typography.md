@@ -385,11 +385,121 @@ body {
 
 在此的一个小的缺陷是，在站点中使用任何字体从技术上来说可行，但并不意味着在法律上有权这么做。字体属于艺术作品，若将其放到你的服务器，则可能会被别人偷用。总之字体的使用都需要授权（license）的容许。
 
-幸运的是，新字体的价值已经被认可，而且许多公司也以及开始开发授权的方式，依次来将字体引入网站。一些公司，例如[TypeKit](https://typekit.com/)和[Fontdeck](http://fontdeck.com/)采用订购方式来授权字体，而其他的，例如[Google Fonts]（http://www.google.com/webfonts）则采用免费授权的方式。在上传任何字体之前请确保你这样做得到了必要的授权，如果尚未得到，你可以再上述的公司中寻求帮助来找到同样的字体或者合适的替代字体。
+幸运的是，新字体的价值已经被认可，而且许多公司也以及开始开发授权的方式，依次来将字体引入网站。一些公司，例如[TypeKit](https://typekit.com/)和[Fontdeck](http://fontdeck.com/)采用订购方式来授权字体，而其他的，例如[Google Fonts](http://www.google.com/webfonts)则采用免费授权的方式。在上传任何字体之前请确保你这样做得到了必要的授权，如果尚未得到，你可以再上述的公司中寻求帮助来找到同样的字体或者合适的替代字体。
 
-还有一个小的缺陷便是浏览器的支持。尽管`@font-face`属性出现已经有段时间了，但是老点的浏览器对齐支持很差。现代的浏览器对其的支持则很是完美。幸运的是，我们可以使用新的字体，遇到不支持的则可降级到其他字体。这些在之前`font-family`属性中已经讨论。
+还有一个小的缺陷便是浏览器的支持。尽管`@font-face`属性出现已经有段时间了，但是老点的浏览器对其支持很差。现代的浏览器对其的支持则很是完美。幸运的是，我们可以使用新的字体，遇到不支持的则可降级到其他字体。这些在之前`font-family`属性中已经讨论。
 
-未完继续···
+##`cite`,`q`&`blockquote` 
+
+在线写作可能会有作品名称或者引语（quotation）的引用。引语包括，对话（dialog），叙述性文字（prose），以及一些来源外部资源的引语。这些作品名或者引语在HTML中可以全部用`cite`,`q`&`blockquote`元素语义地包裹。
+
+###作品名称的引用（`cite`元素）
+
+HTML中`cite`元素用来标示作品名称的引用。`cite`元素和`cite`属性不应该混淆。`cite`元素为作品名称提供了一个富有语义化的语境，而`cite`属性则属于是引用资源的一种唯一标识符（URI）。`cite`元素中只用来表示作品名称的引用，不应该包裹引用资源的其他内容。作品则包括书籍，电影，歌曲，等等。对于外部引用，`cite`元素可以用来包含有相关性的超链接。
+
+```html
+<p><cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537" title="Steve Jobs">Steve Jobs</a></cite> by Walter Isaacson is truly inspirational.</p>
+```
+
+<div class="code-box">
+<h4>作品名引用的Demo</h4>
+<p><cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537" title="Steve Jobs">Steve Jobs</a></cite> by Walter Isaacson is truly inspirational.</p>
+</div>
+
+###`q`
+
+一段文字中经常会有对话或者叙述性文字的引用。在这种情景下，行内元素`q`也就是所谓的引语就很适合使用。`q`元素应该用来语义化的表示对话或者叙述性的文本，而不用来标示其他类型的引用。
+
+```html
+<p>Steve Jobs once said, <q>“One home run is much better than two doubles.”</q></p>
+```
+
+##`cite`属性
+
+`q`元素中一个可用的属性便是`cite`。`cite`属性以唯一标识符的形式标示了引语的引用。`cite`属性不会改变元素的视觉表现，它仅仅对屏幕阅读器或者其他设备有价值。因为`cite`属性在浏览器中不会有视觉的表现，如果可能推荐将引语的超链接作为它的值。
+
+```html
+<p><a href="http://www.businessweek.com/magazine/content/06_06/b3970001.htm" title="Steve Jobs' Magic Kingdom">Steve Jobs</a> once said, <q cite="http://www.businessweek.com/magazine/content/06_06/b3970001.htm">“One home run is much better than two doubles.”</q></p>
+```
+
+<div class="code-box">
+<h4>引用Demo</h4>
+<p><a href="http://www.businessweek.com/magazine/content/06_06/b3970001.htm" title="Steve Jobs' Magic Kingdom">Steve Jobs</a> once said, <q cite="http://www.businessweek.com/magazine/content/06_06/b3970001.htm">“One home run is much better than two doubles.”</q></p>
+</div>
+
+###附加引用（`blockquote`元素）
+
+`blockquote`元素用来表示，来源于外部通常有多行的块级文本的引用。`blockquote`元素属于块级元素，它可能会在其中嵌套其他的块级元素，包括标题和段落。
+
+```html
+<blockquote>
+  <p>“In most people’s vocabularies, design is a veneer. It’s interior decorating. It’s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.”</p>
+  <p>— Steve Jobs in Fortune Magazine</p>
+</blockquote>
+```
+
+###大段引语（External Quotation）中的来源声明（Citation）
+
+`blockquote`元素中的大段引用通常需要声明其出处。这个声明或许很简单，例如，作者或者来源。当然它也可以包括更多的信息。
+
+大段引用中可会同事包含`cite`属性和`cite`元素。就像上诉的`q`元素一样`blockquote`元素中可以包含`cite`元素。`cite`元素可以跟随在实际引语的后面，用来表示这段引用的来源。
+
+`cite`元素和`cite`属性都只有纯粹的语义化意义，没有视觉上的变化，因此如果可能最好包含相关的超链接。这些超链接无论是作品的标题或者其他引用（作者、艺术家等）在其首次出现的时候都应该高亮显示。
+
+```html
+<blockquote cite="http://money.cnn.com/magazines/fortune/
+fortune_archive/2000/01/24/272277/index.htm">
+  <p>“In most people’s vocabularies, design is a veneer. It’s interior decorating. It’s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.”</p>
+  <p>— <a href="http://en.wikipedia.org/wiki/Steve_Jobs" title="Steve Jobs">Steve Jobs</a> in <cite><a href="http://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/index.htm" title="Apple's One-Dollar-a-Year Man">Fortune Magazine</a></cite></p>
+</blockquote>
+```
+
+<div class="code-box">
+<h4>大段引用Demo</h4>
+<blockquote cite="http://money.cnn.com/magazines/fortune/
+fortune_archive/2000/01/24/272277/index.htm">
+  <p>“In most people’s vocabularies, design is a veneer. It’s interior decorating. It’s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.”</p>
+  <p>— <a href="http://en.wikipedia.org/wiki/Steve_Jobs" title="Steve Jobs">Steve Jobs</a> in <cite><a href="http://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/index.htm" title="Apple's One-Dollar-a-Year Man">Fortune Magazine</a></cite></p>
+</blockquote>
+</div>
+
+<div class="code-box">
+<h4>在	CSS中自动标记引用文本</h4>
+<p>
+与其在HTML中添加引用文本的表示，不如在CSS中让其自动完成。老的浏览器中英文语言的支持问题，在	CSS中实现这个有点羸弱，而现代浏览器对语言的越来越好的支持，实现自动化就越发的简单。
+</p>
+<p>
+在	CSS中给引用文本自动添加引号，需要使用`before`和`after`伪元素。`before`和`after`伪元素使用`quotes` 和`content`属性在必要的时候动态添加引号。
+
+如下便是如何使用伪元素自动给`q`元素添加引号。对此深入了解可以查看 [pseudo-elements](http://css-tricks.com/pseudo-element-roundup/)和[how to use quotation marks](http://css-tricks.com/pseudo-element-roundup/)这两篇文章。
+</p>
+<div>
+
+</div>
+</div>
+
+```html
+q {
+  quotes: '“' '”' '‘' '’';
+}
+q:before {
+  content: '“';
+  content: open-quote;
+}
+q:after {
+  content: '”';
+  content: close-quote;
+}
+```
+
+##资源
+<ul class="col-2">
+  <li><a href="http://dev.opera.com/articles/view/29-text-styling-with-css/" title="Text styling with CSS" rel="nofollow">Text styling with CSS</a> via Dev.Opera</li>
+  <li><a href="http://html5doctor.com/blockquote-q-cite/" title="Quoting and citing with blockquote, q, cite, and the cite attribute" rel="nofollow">Quoting and citing with blockquote, q, cite, and the cite attribute</a> via HTML5 Doctor</li>
+  <li><a href="http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/" title="CSS Font Shorthand Property Cheat Sheet" rel="nofollow">CSS Font Shorthand Property Cheat Sheet</a> via Impressive Webs</li>
+  <li><a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326" title="The Elements of Typographic Style" rel="nofollow">The Elements of Typographic Style</a> by Robert Bringhurst</li>
+</ul>
+
 
 
 
