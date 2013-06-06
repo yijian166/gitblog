@@ -1,6 +1,7 @@
 html,
 body {
   -webkit-touch-callout: none;
+  min-height: 100%;
 }
 body {
   -ms-touch-action: none;
