@@ -5,6 +5,9 @@
 /*****************************************************************************/
 
 /* code box Reset */
+
+@base-url : "../images" ;
+
 .code-box {
     //width: 90%;/* cc Reset */
     margin: 1em 0;
@@ -21,6 +24,15 @@
     }
     code {
         background-color: transparent!important;
+    }
+    .code-box-alertbg {
+        p {
+          background: #fff6cc url("@{base-url}/06/warning.png") 15px 50% no-repeat;
+          border-radius: 6px;
+          border: 1px solid #ffd100;
+          color: #000;
+          padding: 10px 10px 10px 38px;
+        }
     }
     .code-box-2 {
         h2, p {

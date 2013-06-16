@@ -50,4 +50,75 @@ div {
 
 ###背景重复
 
-未完持续
+背景图片在默认情况下会在横向和纵向方向无限重复，背景图片的重复可以在`background`属性`url`值后面或者使用`backgrond-repeat`属性设置。
+
+```css
+div {
+  background: url('alert.png') no-repeat;
+  background-image: url('alert.png');
+  background-repeat: no-repeat;
+}
+```
+
+背景重复的值接受四个值，`repeat` `repeat-x` `repeat-y` `no-repeat`。`repeat`值是默认值，它会让背景图片在横向和纵向方向重复平铺，`repeat-x`设置背景图片横向平铺，相应`repeat-y`则为纵向平铺。`no-repeat`如其字面意义一样，使背景图片只显示一次，不再重复平铺。
+
+###背景位置
+
+使用`background-position`属性可以设置背景图片在哪个地方显示或者从那个地方开始重复平铺。就像其他背景属性一样，背景位置也可以在`background`属性`url`值后面，或者单独使用`backgrond-position`属性。
+
+```css
+div {
+  background: url('alert.png') 10px 10px no-repeat;
+  background-image: url('alert.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+```
+
+`background-position`属性需要两个值，横向偏移值（第一个值）和纵向偏移值（第二个值）。设置背景位置的值可以使用`top` `right` `bottom` `left`等关键词，像素值，百分数，或者其他尺寸值。关键词和百分数的工作方式比较相似。关键词`top` `left`等同于百分数`0` `0`， `right` `bottom`则等同于百分数`100%` `100%`。与关键词相比百分数还可以使用一个值`50%`将背景图片定为到元素的中间。定为背景图片到元素顶部居中可以使用`50%` `0`。像素值在此也经常使用，因为使用像素值可以很精准地定为背景图片。
+
+![使用百分数和关键词定为背景图片][img-1]
+
+HTML
+
+```html
+<p><strong>Warning!</strong> You are walking on thin ice.</p>
+```
+
+CSS
+
+```css
+p {
+  background: #fff6cc url('warning.png') 15px 50% no-repeat;
+  border-radius: 6px;
+  border: 1px solid #ffd100;
+  color: #000;
+  padding: 10px 10px 10px 38px;
+}
+```
+
+<div class="code-box">
+<h4></h4>
+<div>
+<h5>HTML</h5>
+<div>
+
+</div>
+<h5>CSS</h5>
+<div>
+
+</div>
+</div>
+<div class="code-box-alertbg">
+<h5>Demo</h5>
+<p><strong>Warning!</strong> You are walking on thin ice.</p>
+</div>
+</div>
+
+
+[img-1]:http://learn.hicc.me/images/06/background-percentages.png
+
+
+
+
+
