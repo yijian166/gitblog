@@ -79,35 +79,21 @@ div {
 
 ![使用百分数和关键词定为背景图片][img-1]
 
-HTML
-
-```html
-<p><strong>Warning!</strong> You are walking on thin ice.</p>
-```
-
-CSS
-
-```css
-p {
-  background: #fff6cc url('warning.png') 15px 50% no-repeat;
-  border-radius: 6px;
-  border: 1px solid #ffd100;
-  color: #000;
-  padding: 10px 10px 10px 38px;
-}
-```
-
 <div class="code-box">
-<h4></h4>
+<h4>警告文字背景示例</h4>
 <div>
 <h5>HTML</h5>
-<div>
-
-</div>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> You are walking on thin ice.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
 <h5>CSS</h5>
-<div>
-
-</div>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fff6cc</span> <span class="sx">url('warning.png')</span> <span class="m">15px</span> <span class="m">50</span><span class="o">%</span> <span class="k">no-repeat</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ffd100</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">38px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <div class="code-box-alertbg">
 <h5>Demo</h5>
@@ -116,7 +102,7 @@ p {
 </div>
 
 
-[img-1]:http://learn.hicc.me/images/06/background-percentages.png
+[img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
 
 
 
