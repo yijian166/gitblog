@@ -18,6 +18,34 @@ layout: dafault
     </div>
 </article>
 
+<script type="text/javascript">
+ var TutorialFixed = $(".tutorial-title");
+ var Tutorial = $(".tutorial");
+ var TutorialOffset = $(".tutorial").offset().top;
+$(document).scroll(function(e) {
+    if($(this).scrollTop() > TutorialOffset) {
+        TutorialFixed.css({
+            "position" : "fixed",
+             "top" : "0" ,
+             "z-index" : "999"
+         });
+        Tutorial.css({
+            "padding-top" : "50px"
+         });
+    } else {
+        TutorialFixed.css({
+            "position": "relative" ,
+            "z-index" : "999"
+
+        });
+        Tutorial.css({
+            "padding-top" : "0"
+         });
+    }
+});
+
+</script>
+
 <!-- Duoshuo Comment BEGIN -->
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"hicclearn"};
