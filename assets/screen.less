@@ -98,7 +98,7 @@ a:hover  {
         width: @size-site-big !important;
     }
     .post-content {
-        width: 100%;
+        //width: 100%;
         padding-left: @size-site-big / (1+1.618)  + @size-space !important;
     }
     .aside ,
@@ -124,7 +124,7 @@ h1,h2,h3,h4,h5,h6, {
 }
 
 .post-content {
-    width: 100%;
+    //width: 100%;
     padding-left: @size-site / (1+1.618) + @size-space ;
 }
 .aside ,
@@ -134,6 +134,9 @@ h1,h2,h3,h4,h5,h6, {
     text-align: right;
 }
 .header-title {
+    h1 {
+        height: 100%;
+    }
     border-bottom: 3px solid @color-font-hover;
     .header-title-big {
         font-size: @size-font-hd-b;

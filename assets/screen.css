@@ -650,7 +650,6 @@ a:hover {
     width: 1200px !important;
   }
   .post-content {
-    width: 100%;
     padding-left: 468.36516424751716px !important;
   }
   .aside,
@@ -677,7 +676,6 @@ h6 {
   width: 100%;
 }
 .post-content {
-  width: 100%;
   padding-left: 376.6921313980137px;
 }
 .aside,
@@ -689,6 +687,9 @@ h6 {
 .header-title {
   border-bottom: 3px solid #9e1c39;
   margin-bottom: 15px;
+}
+.header-title h1 {
+  height: 100%;
 }
 .header-title .header-title-big {
   font-size: 34px;
