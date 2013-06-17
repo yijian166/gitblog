@@ -648,22 +648,28 @@ a:hover {
     height: auto;
   }
 }
+/*--
 @media (min-width: 1200px) {
-  .site {
-    width: 1200px !important;
-  }
-  .post-content {
-    padding-left: 468.36516424751716px !important;
-  }
-  .aside,
-  .header-title {
-    width: 448.36516424751716px !important;
-  }
-  .header-title,
-  .post-content h1:first-child {
-    height: 171.26247679431518px;
-  }
+
+    .site {
+        width: @size-site-big !important;
+    }
+    .post-content {
+        //width: 100%;
+        padding-left: @size-site-big / (1+1.618)  + @size-space !important;
+    }
+    .aside ,
+    .header-title {
+        width: @size-site-big / (1+1.618)  - @size-space  !important;
+    }
+    .header-title ,
+    .post-content h1:first-child {
+        height: (@size-site-big / (1+1.618) - @size-space ) / (1+1.618);
+    }
+
 }
+
+--*/
 h1,
 h2,
 h3,
