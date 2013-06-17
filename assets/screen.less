@@ -213,6 +213,12 @@ h1,h2,h3,h4,h5,h6, {
         vertical-align: middle;
     }
 
+    .meta {
+        color: @color-font-gray;
+        text-align: center;
+        font-size: 12px;
+    }
+
     .highlight {
         background: @color-code-bg;
         padding: @size-space * 0.6;
@@ -234,25 +240,37 @@ h1,h2,h3,h4,h5,h6, {
         } 
     }
     p {
-        margin:@size-space  0 @size-space * 1.5;
+        margin:@size-space   0 @size-space * 2.5;
     }
     h1,h2,h3,h4,h5,h6 {
-        margin:@size-space * 0.5 0 @size-space * 0.4;
-        font-weight: border;
+        margin:@size-space * 2.5 0 @size-space;
+        font-weight: bolder;
+    }
+    h2 {
+        font-size: 18px !important;
+    }
+    h3,h4,h5,h6 {
+        font-size: 16px !important;
     }
 
+}
+
+.meta ,
+.aside ,
+.footer {
+    a {
+        color: @color-font-gray;
+        &:hover  {
+            color :darken(@color-font-gray,20%);
+        }
+    }
 }
 
 .aside {
     li {
         line-height: 2em;
         font-size: @color-font-gray;
-        a {
-            color: @color-font-gray;
-            &:hover  {
-                color :darken(@color-font-gray,20%);
-            }
-        }
+        
     }
 }
 
@@ -262,19 +280,16 @@ h1,h2,h3,h4,h5,h6, {
     padding: @size-space * 0.4 0 @size-space * 3; 
     margin-top:@size-space * 4;  
     border-top: 1px solid @color-font-gray;
-    &,
-    a {
-       color: @color-font-gray;
-       &:hover  {
-            color :darken(@color-font-gray,20%);
-        }
-    }
+    color: @color-font-gray;
     li {
         display: inline-block;
         *display: inline;
         *zoom:1;
         padding: @size-space * 0.4  @size-space  @size-space * 0.4 0; 
 
+    }
+    &,a {
+        font-size: 12px;
     }
 }
 

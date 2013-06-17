@@ -757,6 +757,11 @@ h6 {
   margin: 0 !important;
   vertical-align: middle;
 }
+.post-content .meta {
+  color: #9fa0a0;
+  text-align: center;
+  font-size: 12px;
+}
 .post-content .highlight {
   background: #f8f8f8;
   padding: 6px;
@@ -774,7 +779,7 @@ h6 {
   color: #9e1c39;
 }
 .post-content p {
-  margin: 10px 0 15px;
+  margin: 10px 0 25px;
 }
 .post-content h1,
 .post-content h2,
@@ -782,18 +787,31 @@ h6 {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  margin: 5px 0 4px;
-  font-weight: border;
+  margin: 25px 0 10px;
+  font-weight: bolder;
+}
+.post-content h2 {
+  font-size: 18px !important;
+}
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-size: 16px !important;
+}
+.meta a,
+.aside a,
+.footer a {
+  color: #9fa0a0;
+}
+.meta a:hover,
+.aside a:hover,
+.footer a:hover {
+  color: #6c6d6d;
 }
 .aside li {
   line-height: 2em;
   font-size: #9fa0a0;
-}
-.aside li a {
-  color: #9fa0a0;
-}
-.aside li a:hover {
-  color: #6c6d6d;
 }
 .footer {
   width: 100%;
@@ -801,20 +819,17 @@ h6 {
   padding: 4px 0 30px;
   margin-top: 40px;
   border-top: 1px solid #9fa0a0;
-}
-.footer,
-.footer a {
   color: #9fa0a0;
-}
-.footer:hover,
-.footer a:hover {
-  color: #6c6d6d;
 }
 .footer li {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 4px 10px 4px 0;
+}
+.footer,
+.footer a {
+  font-size: 12px;
 }
 .post-links {
   float: right;
