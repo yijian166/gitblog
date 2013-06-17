@@ -26,6 +26,7 @@
 @color-font-gray        :   #9fa0a0;
 @color-font-hover       :   #9e1c39;
 @color-code-bg          :   #f8f8f8;
+@color-font-selected    :   #ffffff; 
 
 
 
@@ -38,6 +39,10 @@ body {
 a ,
 a:hover  {
     text-decoration: none;
+}
+::selection{
+    background:@color-font-gray;
+    color:@color-font-selected ;
 }
 
 /*

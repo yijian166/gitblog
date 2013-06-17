@@ -602,6 +602,10 @@ a,
 a:hover {
   text-decoration: none;
 }
+::selection {
+  background: #9fa0a0;
+  color: #ffffff;
+}
 /*
 @media (min-width: 768px) and (max-width: 979px) {
     .site {
