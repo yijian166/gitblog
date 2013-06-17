@@ -760,6 +760,8 @@ h6 {
   *zoom: 1;
   margin: 0 !important;
   vertical-align: middle;
+  text-align: center;
+  width: 100%;
 }
 .post-content .meta {
   color: #9fa0a0;
