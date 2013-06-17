@@ -761,10 +761,13 @@ h6 {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin: 0 0 18px 0 0 !important;
+  margin: 0 !important;
   vertical-align: middle;
   text-align: center;
   width: 100%;
+}
+.post-content p:first-child {
+  margin-top: 18px !important;
 }
 .post-content .meta {
   color: #9fa0a0;
@@ -782,10 +785,10 @@ h6 {
   font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 }
 .post-content a {
-  color: #666666;
+  color: #4d4d4d;
 }
 .post-content a:hover {
-  color: #4d4d4d;
+  color: #404040;
 }
 .post-content ul,
 .post-content ol {

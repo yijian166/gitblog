@@ -220,10 +220,13 @@ h1,h2,h3,h4,h5,h6, {
         display: inline-block;
         *display: inline;
         *zoom:1;
-        margin: 0 0 @header-h-margin 0 0 !important;
+        margin: 0 !important;
         vertical-align: middle;
         text-align: center;
         width: 100%;
+    }
+    p:first-child {
+        margin-top: @header-h-margin !important;
     }
 
     .meta {
@@ -247,9 +250,9 @@ h1,h2,h3,h4,h5,h6, {
     }
 
     a {
-       color: lighten(@color-font , 20%);
+       color: lighten(@color-font , 10%);
         &:hover  {
-            color :lighten(@color-font , 10%);
+            color :lighten(@color-font , 5%);
         } 
     }
     ul ,
