@@ -702,6 +702,9 @@ h6 {
   width: 583.3078686019862px;
   float: right;
 }
+.post-content img {
+  max-width: 583.3078686019862px;
+}
 .aside,
 .header-title {
   width: 356.6921313980137px;
