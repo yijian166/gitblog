@@ -1,75 +1,33 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="xiaodao" />
-   <!--
-   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
- -->
+---
+layout: dafault
+---
 
-   
-
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/assets/screen.css" type="text/css" media="screen, projection" />
-
-    <!-- syntax highlighting -->
-   <link rel="stylesheet" href="/assets/pygments-style.css" type="text/css" />
-  <!--<script type="text/javascript" src="/assets/prism.js"></script>-->
-  
-</head>
-<body>
-
-<!-- ClickTale Top part -->
-<script type="text/javascript">
-var WRInitTime=(new Date()).getTime();
-</script>
-<!-- ClickTale end of Top part -->
-
-<div class="site">
-  <div class="title">
-    <a href="/">小刀分享</a>
-    <a class="extra" href="/">home</a>
-  </div>
-  <article class="post-content">
-    <div id="post" class="post-content">
-      {{ content }}
+<header class="header">
+    <div class="header-title">
+        <h1>
+            <a href="/">
+                <span class="header-title-big">小刀分享</span>
+            </a>
+        </h1>
     </div>
-  </article>
+</header>
 
-  <!-- Duoshuo Comment BEGIN -->
-  <div class="ds-thread"></div>
+<article>
+    <div id="post" class="post-content">
+    {{ content }}
+    </div>
+</article>
+
+<!-- Duoshuo Comment BEGIN -->
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"hicclearn"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- Duoshuo Comment END -->
-  
-  <div class="footer">
-    <div class="contact">
-    </div>
-    <div class="contact">
-      <p>
-        由<a href="http://weibo.com/ixiaodao">小刀</a>原创 | Host by <a href="https://github.com/yijian166">Github</a> | 
-        <!-- baidu Analytics -->
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Feadded3e5730fb5f7310d48877326716' type='text/javascript'%3E%3C/script%3E"));
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
 </script>
-
-<!-- baidu Analytics end --><br />
-      </p>
-    </div>
-  </div>
-</div>
-
-
-</body>
-</html>
+<!-- Duoshuo Comment END -->

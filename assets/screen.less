@@ -1,109 +1,16 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+@import "reset" ;
+@import "web-font" ;
+
+/* syntax highlighting  */
+@import "pygments-style" ;
 
 /* code box Reset */
+@import "code-box" ;
 
 @base-url : "../images" ;
 
-.code-box {
-    //width: 90%;/* cc Reset */
-    margin: 1em 0;
-    padding: 1.2em;
-    background-color: #fff;
-    a {
-        color: #8ec63f;
-        &:hover {
-            color: #dfa054;
-        }
-    }
-    h1 {
-        text-align: left !important;
-    }
-    code {
-        background-color: transparent!important;
-    }
-    .code-box-alertbg {
-        p {
-          background: #fff6cc url("@{base-url}/2013/06/warning.png") 15px 50% no-repeat;
-          border-radius: 6px;
-          border: 1px solid #ffd100;
-          color: #000;
-          padding: 10px 10px 10px 38px;
-        }
-    }
-    .code-box-2 {
-        h2, p {
-            color: #555;
-            font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
-        }
-        a {
-            color: #8ec63f;
-            &:hover  {
-                color: #f7941d;
-            }
-        }
-        h2 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 6px;
-        }
-        .byline {
-            color: #8c8c8c;
-            font-family: Georgia, Times, 'Times New Roman', serif;
-            font-style: italic;
-        }
-    }
-    .code {
-        border: 1px solid #ddd;
-        background-color: #eef;
-    }
-    ul.code {
-        list-style: none;
-        margin-left: 0 !important;
-    }
-    .text {
-        h2, p {
-          color: #555;
-          font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
-        }
-        a {
-          color: #8ec63f;
-        }
-        a:hover {
-          color: #f7941d;
-        }
-        h2 {
-          font-size: 22px;
-          font-weight: bold;
-          letter-spacing: -.9px;
-          margin-bottom: 6px;
-        }
-        h2 a {
-          text-shadow: 1px 1px 0 #75a334;
-        }
-        h2 a:hover {
-          text-shadow: 1px 1px 0 #d48019;
-        }
-        p {
-          text-indent: 15px;
-        }
-        .byline {
-          color: #8c8c8c;
-          font-family: Georgia, Times, 'Times New Roman', serif;
-          font-style: italic;
-          text-indent: 0;
-        }
-        p a {
-          font-size: 11px;
-          font-weight: bold;
-          text-decoration: underline;
-          text-transform: uppercase;
-        }
-    }
-}
+@color-bg : #f6f7f1;
+
 
 .post-links{
     .post-links-title {
@@ -125,35 +32,31 @@
 }
 /* Global Reset */
 
-* {
-    margin: 0;
-    padding: 0;
-}
 pre,
-    code {
-        font-size: 12px !important;
-        overflow-x:auto; 
-        /*
-        display: inline-block;
-        *display: inline;
-        *zoom:1;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        &.language-css {
-            margin-top: 0 !important;
-        }
-        */
+code {
+    font-size: 12px !important;
+    overflow-x:auto; 
+    /*
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    &.language-css {
+        margin-top: 0 !important;
     }
+    */
+}
 html, body {
     height: 100%;
 }
 
 body {
     background-color: #f6f7f1;
-    font: 13.34px "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font: 13.34px "proxima-nova","Trebuchet MS",Arial,Helvetica,sans-serif;
     *font-size: small;
     text-align: center;
 }
@@ -344,6 +247,25 @@ ul.posts {
   h2 {
     margin-bottom: 1em;
   }
+}
+
+pre,
+code {
+    font-size: 12px !important;
+    overflow-x:auto; 
+    /*
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    &.language-css {
+        margin-top: 0 !important;
+    }
+    */
 }
 
   /*****************************************************************************/

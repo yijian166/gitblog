@@ -1,7 +1,19 @@
 ---
-layout: default
+layout: dafault
 ---
-<article class="post-content">
+
+<header class="header">
+    <div class="header-title">
+        <h1>
+            <a href="/">
+                <span class="header-title-big">HTML&CSS</span>
+                <span class="header-title-small">基础教程</span>
+            </a>
+        </h1>
+    </div>
+</header>
+
+<article>
 	<div id="post" class="post-content">
 	{{ content }}
 	</div>
@@ -16,7 +28,6 @@ layout: default
   </ul>
 </div>
 <!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"hicclearn"};
 	(function() {
@@ -27,5 +38,5 @@ var duoshuoQuery = {short_name:"hicclearn"};
 		(document.getElementsByTagName('head')[0] 
 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
-	</script>
+</script>
 <!-- Duoshuo Comment END -->
