@@ -681,7 +681,7 @@ h6 {
 .aside,
 .header-title {
   width: 356.6921313980137px;
-  font: left;
+  float: left;
   text-align: right;
 }
 .header-title {
