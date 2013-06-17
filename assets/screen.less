@@ -22,7 +22,7 @@
 @size-font-pg-title-s   :   18px;
 
 @color-bg               :   #f6f7f1;
-@color-font             :   #000000;
+@color-font             :   #333333;
 @color-font-gray        :   #9fa0a0;
 @color-font-hover       :   #9e1c39;
 @color-code-bg          :   #f8f8f8;
@@ -200,10 +200,12 @@ h1,h2,h3,h4,h5,h6, {
     margin-bottom: @size-space * 1.5;
 }
 
-@header-height : (@size-site / (1+1.618) - @size-space ) / (1+1.618);
+@header-height :  @size-space * 10;
+
+
 .header-title ,
 .post-content h1:first-child {
-    height: (@size-site / (1+1.618) - @size-space ) / (1+1.618);  
+    height: @header-height;  
 }
 
 .post-content {
