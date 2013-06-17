@@ -1,5 +1,6 @@
 .highlight {
   background: #f8f8f8;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
   /* Comment */
 
   /* Error */
