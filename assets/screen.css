@@ -618,6 +618,9 @@ a:hover {
   body {
     padding: 4px !important;
   }
+  .site {
+    width: 100% !important ;
+  }
   .aside {
     display: none !important;
   }
@@ -673,7 +676,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%;
+  width: 960px;
 }
 .post-content {
   padding-left: 376.6921313980137px;
