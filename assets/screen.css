@@ -758,7 +758,7 @@ h6 {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin: 0 !important;
+  margin: 0 0 18px 0 0 !important;
   vertical-align: middle;
   text-align: center;
   width: 100%;
@@ -779,10 +779,15 @@ h6 {
   font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 }
 .post-content a {
-  color: #c92449;
+  color: #666666;
 }
 .post-content a:hover {
-  color: #9e1c39;
+  color: #4d4d4d;
+}
+.post-content ul,
+.post-content ol {
+  line-height: 2.2em;
+  color: #9fa0a0;
 }
 .post-content p {
   margin: 10px 0 25px;
