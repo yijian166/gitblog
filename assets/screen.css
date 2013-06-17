@@ -729,6 +729,9 @@ h6 {
 .aside li a:hover {
   color: #000000;
 }
+.post-content {
+  text-align: left;
+}
 .post-content a {
   color: #9fa0a0;
 }
