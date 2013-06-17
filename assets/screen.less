@@ -34,6 +34,7 @@ body {
     background-color: @color-bg;
     font: 14px/1.5 "proxima-nova","Trebuchet MS",Arial,Helvetica,sans-serif;
     color:@color-font;
+    padding: @size-space * 0.4 !important;
 }
 
 a ,
@@ -57,9 +58,7 @@ a:hover  {
 
 @media (max-width: 767px) {
 
-    body {
-        padding: @size-space * 0.4 !important;
-    }
+
     .site {
         width: 100% !important ;
     }
@@ -101,36 +100,39 @@ a:hover  {
 }
 
 
-/*--
+
 @media (min-width: 1200px) {
 
     .site {
         width: @size-site-big !important;
     }
+
     .post-content {
-        //width: 100%;
-        padding-left: @size-site-big / (1+1.618)  + @size-space !important;
+        width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
+        img {
+            max-width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
+        }
     }
     .aside ,
     .header-title {
-        width: @size-site-big / (1+1.618)  - @size-space  !important;
+        width: @size-site-big / (1+1.618) - @size-space  !important;
     }
-    .header-title ,
-    .post-content h1:first-child {
-        height: (@size-site-big / (1+1.618) - @size-space ) / (1+1.618);
+
+    .footer {
+        padding-left: (@size-site-big  * 1.618)/ (1+1.618) + @size-space * 2 !important;
     }
 
 }
 
---*/
+
 
 h1,h2,h3,h4,h5,h6, {
     line-height: 1em;
 }
 
 .site {
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
     text-align: center;
     width: @size-site ;
     //margin-top: @size-space * 5;
@@ -161,6 +163,9 @@ h1,h2,h3,h4,h5,h6, {
     width: @size-site / (1+1.618) - @size-space ;
     float: left;
     text-align: right;
+}
+.footer {
+    padding-left: @size-site/ (1+1.618) + @size-space * 2 ;
 }
 .header-title {
     h1 {
@@ -278,7 +283,7 @@ h1,h2,h3,h4,h5,h6, {
 
 .meta ,
 .aside ,
-.footer {
+.footer-main {
     a {
         color: @color-font-gray;
         &:hover  {
@@ -295,7 +300,7 @@ h1,h2,h3,h4,h5,h6, {
     }
 }
 
-.footer {
+.footer-main {
     width: 100%;
     text-align: left;
     padding: @size-space * 0.4 0 @size-space * 3; 

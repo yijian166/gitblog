@@ -597,6 +597,7 @@ body {
   background-color: #f6f7f1;
   font: 14px/1.5 "proxima-nova", "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: #333333;
+  padding: 4px !important;
 }
 a,
 a:hover {
@@ -616,9 +617,6 @@ a:hover {
 
 */
 @media (max-width: 767px) {
-  body {
-    padding: 4px !important;
-  }
   .site {
     width: 100% !important ;
   }
@@ -650,28 +648,24 @@ a:hover {
     height: auto!important;
   }
 }
-/*--
 @media (min-width: 1200px) {
-
-    .site {
-        width: @size-site-big !important;
-    }
-    .post-content {
-        //width: 100%;
-        padding-left: @size-site-big / (1+1.618)  + @size-space !important;
-    }
-    .aside ,
-    .header-title {
-        width: @size-site-big / (1+1.618)  - @size-space  !important;
-    }
-    .header-title ,
-    .post-content h1:first-child {
-        height: (@size-site-big / (1+1.618) - @size-space ) / (1+1.618);
-    }
-
+  .site {
+    width: 1200px !important;
+  }
+  .post-content {
+    width: 731.6348357524828px !important;
+  }
+  .post-content img {
+    max-width: 731.6348357524828px !important;
+  }
+  .aside,
+  .header-title {
+    width: 448.36516424751716px !important;
+  }
+  .footer {
+    padding-left: 761.6348357524828px !important;
+  }
 }
-
---*/
 h1,
 h2,
 h3,
@@ -681,8 +675,6 @@ h6 {
   line-height: 1em;
 }
 .site {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   width: 960px;
 }
@@ -710,6 +702,9 @@ h6 {
   width: 356.6921313980137px;
   float: left;
   text-align: right;
+}
+.footer {
+  padding-left: 386.6921313980137px;
 }
 .header-title {
   border-bottom: 3px solid #9e1c39;
@@ -818,19 +813,19 @@ h6 {
 }
 .meta a,
 .aside a,
-.footer a {
+.footer-main a {
   color: #9fa0a0;
 }
 .meta a:hover,
 .aside a:hover,
-.footer a:hover {
+.footer-main a:hover {
   color: #6c6d6d;
 }
 .aside li {
   line-height: 2em;
   font-size: #9fa0a0;
 }
-.footer {
+.footer-main {
   width: 100%;
   text-align: left;
   padding: 4px 0 30px;
@@ -838,14 +833,14 @@ h6 {
   border-top: 1px solid #9fa0a0;
   color: #9fa0a0;
 }
-.footer li {
+.footer-main li {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 4px 10px 4px 0;
 }
-.footer,
-.footer a {
+.footer-main,
+.footer-main a {
   font-size: 12px;
 }
 .post-links {
