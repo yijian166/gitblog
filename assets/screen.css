@@ -176,8 +176,6 @@ table {
 }
 /* syntax highlighting  */
 .highlight {
-  background: #f8f8f8;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
   /* Comment */
 
   /* Error */
@@ -600,11 +598,6 @@ body {
   font: 14px/1.5 "proxima-nova", "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: #000000;
 }
-pre,
-code {
-  overflow-x: auto;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-}
 a,
 a:hover {
   text-decoration: none;
@@ -634,7 +627,7 @@ a:hover {
     height: auto!important;
   }
   .header-title .header-title-big {
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
   .header-title .header-title-small {
     font-size: 24px !important;
@@ -719,7 +712,7 @@ h6 {
   height: 100%;
 }
 .header-title .header-title-big {
-  font-size: 34px;
+  font-size: 28px;
 }
 .header-title .header-title-small {
   font-size: 24px;
@@ -734,6 +727,9 @@ h6 {
 .header-title a:hover {
   color: #000000;
 }
+.header-title a span {
+  line-height: 1em;
+}
 .header-title a .header-title-big {
   position: absolute;
   bottom: 4px;
@@ -741,7 +737,7 @@ h6 {
 }
 .header-title a .header-title-small {
   position: absolute;
-  bottom: 40px;
+  bottom: 34px;
   color: #9fa0a0;
   right: 0;
 }
@@ -749,13 +745,45 @@ h6 {
 .post-content h1:first-child {
   height: 136.2460394950396px;
 }
+.post-content {
+  text-align: left;
+}
 .post-content h1:first-child {
-  font-size: 30px;
-  line-height: 238.49207899007922px;
+  font-size: 20px;
+  line-height: 244.49207899007922px;
   display: inline-block;
   *display: inline;
   *zoom: 1;
+  margin: 0 !important;
   vertical-align: middle;
+}
+.post-content .highlight {
+  background: #f8f8f8;
+  padding: 6px;
+}
+.post-content pre,
+.post-content code {
+  overflow: auto;
+  background: #f8f8f8;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+}
+.post-content a {
+  color: #c92449;
+}
+.post-content a:hover {
+  color: #9e1c39;
+}
+.post-content p {
+  margin: 10px 0 15px;
+}
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin: 5px 0 4px;
+  font-weight: border;
 }
 .aside li {
   line-height: 2em;
@@ -766,26 +794,6 @@ h6 {
 }
 .aside li a:hover {
   color: #6c6d6d;
-}
-.post-content {
-  text-align: left;
-}
-.post-content a {
-  color: #c92449;
-}
-.post-content a:hover {
-  color: #9e1c39;
-}
-.post-content p {
-  margin: 3px 0 10px;
-}
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  margin: 10px 0 3px;
 }
 .footer {
   width: 100%;
