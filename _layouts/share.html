@@ -19,9 +19,9 @@ layout: default
 </article>
 
 <script type="text/javascript">
- var PostLinkFixed = $(".PostLink-title");
- var PostLink = $(".PostLink");
- var PostLinkOffset = $(".PostLink").offset().top;
+ var PostLinkFixed = $(".post-links");
+ var PostLink = $(".post-content");
+ var PostLinkOffset = $(".post-links").offset().top;
 $(document).scroll(function(e) {
     if($(this).scrollTop() > PostLinkOffset) {
         PostLinkFixed.css({
@@ -29,18 +29,19 @@ $(document).scroll(function(e) {
              "top" : "0" ,
              "z-index" : "999"
          });
-        PostLink.css({
-            "padding-top" : "50px"
-         });
+        //PostLink.css({
+            //"padding-top" : "50px"
+         //});
     } else {
         PostLinkFixed.css({
-            "position": "relative" ,
+            "position": "absolute" ,
+            "top" : "200px" ,
             "z-index" : "999"
 
         });
-        PostLink.css({
-            "padding-top" : "0"
-         });
+        //PostLink.css({
+            //"padding-top" : "0"
+         //});
     }
 });
 
