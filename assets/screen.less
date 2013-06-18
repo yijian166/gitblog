@@ -298,6 +298,30 @@ h1,h2,h3,h4,h5,h6, {
         font-size: @color-font-gray;
         
     }
+    .aside-social {
+        a {
+            display: inline-block;
+            *display: inline;
+            *zoom:1;
+            width:24px;
+            height: 24px;
+            span {
+                display: none;
+            } 
+        }
+        .aside-social-weibo {
+            background: url(../assets/weibo.png) no-repeat;
+            &:hover {
+                background: url(../assets/weibo_hover.png) no-repeat;
+            }
+        } 
+        .aside-social-twitter {
+            background: url(../assets/twitter.png) no-repeat;
+            &:hover {
+                background: url(../assets/twitter_hover.png) no-repeat;
+            }
+        } 
+    }
 }
 
 .footer-main {

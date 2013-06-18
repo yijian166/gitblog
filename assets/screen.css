@@ -825,6 +825,28 @@ h6 {
   line-height: 2em;
   font-size: #9fa0a0;
 }
+.aside .aside-social a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 24px;
+  height: 24px;
+}
+.aside .aside-social a span {
+  display: none;
+}
+.aside .aside-social .aside-social-weibo {
+  background: url(../assets/weibo.png) no-repeat;
+}
+.aside .aside-social .aside-social-weibo:hover {
+  background: url(../assets/weibo_hover.png) no-repeat;
+}
+.aside .aside-social .aside-social-twitter {
+  background: url(../assets/twitter.png) no-repeat;
+}
+.aside .aside-social .aside-social-twitter:hover {
+  background: url(../assets/twitter_hover.png) no-repeat;
+}
 .footer-main {
   width: 100%;
   text-align: left;
