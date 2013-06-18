@@ -19,26 +19,26 @@ layout: default
 </article>
 
 <script type="text/javascript">
- var TutorialFixed = $(".tutorial-title");
- var Tutorial = $(".tutorial");
- var TutorialOffset = $(".tutorial").offset().top;
+ var PostLinkFixed = $(".PostLink-title");
+ var PostLink = $(".PostLink");
+ var PostLinkOffset = $(".PostLink").offset().top;
 $(document).scroll(function(e) {
-    if($(this).scrollTop() > TutorialOffset) {
-        TutorialFixed.css({
+    if($(this).scrollTop() > PostLinkOffset) {
+        PostLinkFixed.css({
             "position" : "fixed",
              "top" : "0" ,
              "z-index" : "999"
          });
-        Tutorial.css({
+        PostLink.css({
             "padding-top" : "50px"
          });
     } else {
-        TutorialFixed.css({
+        PostLinkFixed.css({
             "position": "relative" ,
             "z-index" : "999"
 
         });
-        Tutorial.css({
+        PostLink.css({
             "padding-top" : "0"
          });
     }

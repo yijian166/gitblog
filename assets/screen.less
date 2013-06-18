@@ -62,7 +62,8 @@ a:hover  {
     .site {
         width: 100% !important ;
     }
-    .aside {
+    .aside ,
+    .post-links {
         display: none !important;
     }
 
@@ -119,7 +120,7 @@ a:hover  {
     }
 
     .footer {
-        padding-left: @size-site-big/ (1+1.618) + @size-space * 2 !important;
+        padding-left: @size-site-big/ (1+1.618) + @size-space !important;
     }
 
 }
@@ -154,6 +155,7 @@ h1,h2,h3,h4,h5,h6, {
     //width: 100%;
     width: (@size-site  * 1.618)/ (1+1.618) - @size-space ;
     float: right;
+    position: relative;
     img {
         max-width: (@size-site  * 1.618)/ (1+1.618) - @size-space ;
     }
@@ -165,7 +167,7 @@ h1,h2,h3,h4,h5,h6, {
     text-align: right;
 }
 .footer {
-    padding-left: @size-site/ (1+1.618) + @size-space * 2 ;
+    padding-left: @size-site/ (1+1.618) + @size-space ;
 }
 .header-title {
     h1 {
@@ -253,6 +255,9 @@ h1,h2,h3,h4,h5,h6, {
         font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 
     }
+    strong {
+        font-weight: bolder;
+    }
 
     a {
        color: lighten(@color-font , 10%);
@@ -262,8 +267,24 @@ h1,h2,h3,h4,h5,h6, {
     }
     ul ,
     ol {
-        line-height: 2.2em;
-        color: @color-font-gray;
+        li {
+            //line-height: 2.2em;
+        }
+        //color: @color-font-gray;
+    }
+    .post-list {
+        li {
+            color:  @color-font-gray;
+            a {
+               color: darken(@color-font , 10%);
+                &:hover  {
+                    color :darken(@color-font , 5%);
+                } 
+            } 
+        }
+    }
+    .index-text {
+        color: lighten(@color-font , 10%);
     }
     p {
         margin:@size-space   0 @size-space * 2;
@@ -344,24 +365,29 @@ h1,h2,h3,h4,h5,h6, {
     }
 }
 
-.post-links{
+@post-link-w    :   200px;
+
+.post-links {
     .post-links-title {
-        padding-left: 10px;
+        padding-top: @size-space * 0.4;
         margin-top: 0 !important;
+        border-top: 1px solid @color-font-hover;
     }
-    float: right;
-    width: 200px;
-    margin-bottom: 10px;
-    border-left: 1px solid #ddd;
+    //float: right;
+    width: @post-link-w ;
+    left:-@post-link-w ; 
+    margin-bottom: @size-space;
+    //border-left: 1px solid #ddd;
     ul {
-        list-style: none;
-        padding-left: 10px;
+        //list-style: none;
+        padding-right: @size-space;
+        text-align: right;
         margin-left: 0 !important;
         a {
             font-size: 12px;
-            color: @color-font-gray;
+            color: darken(@color-font-gray ,5% );
             &:hover  {
-                color :@color-font;
+                color :darken(@color-font-gray ,10% );
             }
         }
     }
