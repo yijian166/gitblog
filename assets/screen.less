@@ -71,6 +71,8 @@ a:hover  {
         float: none !important;
         width: 100% !important;
         height: auto!important;
+        text-align: center !important;
+        padding-bottom: @size-space * 0.6 ;
         .header-title-big {
             font-size: @size-font-hd-b!important;
         }
@@ -91,9 +93,16 @@ a:hover  {
         h1:first-child {
             font-size: @size-font-pg-title-s!important;
             height: auto!important;
+            line-height: 1.2em !important;
             //margin-bottom: @size-space;
         }
+        img {
+            max-width: 100% !important;
+        }
 
+    }
+    .footer {
+        padding-left: 0 !important;
     }
 
 
@@ -112,6 +121,9 @@ a:hover  {
         width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
         img {
             max-width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
+        }
+        .post-links {
+            left:(@size-site-big )/ (1+1.618) - @size-space - @post-link-w !important ; 
         }
     }
     .aside ,
@@ -155,7 +167,10 @@ h1,h2,h3,h4,h5,h6, {
     //width: 100%;
     width: (@size-site  * 1.618)/ (1+1.618) - @size-space ;
     float: right;
-    position: relative;
+    //position: relative;
+    .post-links {
+        left:(@size-site )/ (1+1.618) - @size-space - @post-link-w ; 
+    }
     img {
         max-width: (@size-site  * 1.618)/ (1+1.618) - @size-space ;
     }
@@ -372,13 +387,16 @@ h1,h2,h3,h4,h5,h6, {
     position: fixed;
     top: 200px;
     .post-links-title {
-        padding-top: @size-space * 0.4;
+        padding-bottom: @size-space * 0.6;
         margin-top: 0 !important;
-        border-top: 1px solid @color-font-hover;
+        display: inline-block;
+        *display: inline;
+        *zoom:1;
+        border-bottom: 1px solid @color-font-hover;
     }
     //float: right;
     width: @post-link-w ;
-    left:-@post-link-w ; 
+    
     margin-bottom: @size-space;
     //border-left: 1px solid #ddd;
     ul {
@@ -387,9 +405,18 @@ h1,h2,h3,h4,h5,h6, {
         margin-left: 0 !important;
         a {
             font-size: 12px;
-            color: darken(@color-font-gray ,5% );
+            color: darken(@color-font-gray ,10% );
             &:hover  {
-                color :darken(@color-font-gray ,10% );
+                color :darken(@color-font-gray ,15% );
+            }
+        }
+
+        ul {
+            a {
+                color: darken(@color-font-gray ,5% );
+                &:hover  {
+                    color :darken(@color-font-gray ,10% );
+                }
             }
         }
     }
