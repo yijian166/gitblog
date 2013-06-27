@@ -120,6 +120,26 @@ div {
 </ul>
 </div>
 
+###线性渐变背景
+
+在此之前设计师和开发者一直裁剪图片来作为渐变背景，这行得通，只是这样费时又难以更换。幸运的是这样的日子就要过去了，现在可以通过CSS来实现线性渐变背景。如果渐变色需要改变，再也不用重新裁剪图片然后上传到服务器这么麻烦了，只需简单的改变CSS值即可达到目的。这确实很棒！
+
+```css
+div {
+  background: #70bf32;
+  background: url('linear-gradient.png') 0 0 repeat-x;
+  background: -webkit-linear-gradient(#a1e048, #6a942f);
+  background:    -moz-linear-gradient(#a1e048, #6a942f);
+  background:     -ms-linear-gradient(#a1e048, #6a942f);
+  background:      -o-linear-gradient(#a1e048, #6a942f);
+  background:         linear-gradient(#a1e048, #6a942f);
+}
+```
+
+<p class="post5-demo-1">Linear Gradient Background</p>
+
+
+
 [img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
 
 
