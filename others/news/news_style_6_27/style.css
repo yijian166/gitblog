@@ -82,10 +82,6 @@ body {
   text-indent: 2em;
   color: #000000;
 }
-.news img,
-.news video {
-  max-width: 96%;
-}
 .news hr {
   color: transparent !important;
   background-color: transparent !important;

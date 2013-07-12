@@ -121,7 +121,8 @@ a:hover  {
     .post-content {
         width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
         img {
-            max-width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
+            //max-width: (@size-site-big  * 1.618)/ (1+1.618) - @size-space !important;
+            max-width: @size-site-big * 0.5 !important;
         }
         .post-links {
             left:(@size-site-big )/ (1+1.618) - @size-space - @post-link-w !important ; 
@@ -346,21 +347,28 @@ h1,h2,h3,h4,h5,h6, {
                 display: none;
             } 
         }
-        .aside-social-weibo {
+        .aside-social-weibo ,
+        .aside-social-weibo:hover ,
+        .aside-social-twitter ,
+        .aside-social-twitter:hover {
             background: url(http://learn.hicc.me/assets/weibo.png) no-repeat;
+        }
+        .aside-social-weibo {
+            background-position: 0 -24px;
             margin-right: @size-space * 0.5;
             &:hover {
-                background: url(http://learn.hicc.me/assets/weibo_hover.png) no-repeat;
+                background-position: 0 0;
             }
         } 
         .aside-social-twitter {
-            background: url(http://learn.hicc.me/assets/twitter.png) no-repeat;
+            background-position: 0 -48px;
             &:hover {
-                background: url(http://learn.hicc.me/assets/twitter_hover.png) no-repeat;
+                background-position: 0 -72px;
             }
         } 
     }
 }
+
 
 .footer-main {
     width: 100%;
