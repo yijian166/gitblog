@@ -387,7 +387,8 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 根据经验第一个可行的解决方案为：
 
 ```css
--webkit-perspective:0px!important;-webkit-backface-visibility:visible!important;
+-webkit-perspective:0px!important;
+-webkit-backface-visibility:visible!important;
 -webkit-font-smoothing: subpixel-antialiased;
 ```
 
