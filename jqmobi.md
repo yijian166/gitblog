@@ -60,6 +60,10 @@ title: jQ.Mobi框架介绍
         <li>
           <a href="#tips_4">jQ.Mobi的远程调试</a>
         </li>
+				<li>
+          <a href="#tips_5">jQ.Mobi中字体模糊问题</a>
+        </li>
+
       </ul>
     </li>
   </ul>
@@ -373,6 +377,22 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 <h3 id="tips_4">4.4 jQ.Mobi的远程调试工具weinre</h3>
 
 手机中web view和浏览器毕竟还是you'qu有区别，因此一个调试工具就非常有必要，在此推荐lynn的[weinre教程](http://i-buffer.com/entry/weinre-tutorial),里面有详细的配置教程，甚至还有打包好的一键开启工具下载。
+
+<h3 id="tips_5">4.5 jQ.Mobi中字体模糊问题</h3>
+
+低版本iOS（6以下）中字体（特别是动画滚动中的字体）模糊的问题较为复杂，可能的原因主要有两点：
+-	`-webkit-transform: translate3d (0,0,0)`使用所造成的问题。
+-	处理大量数据引起字体渲染所需内存分配不够。
+
+根据经验第一个可行的解决方案为：
+
+```css
+-webkit-perspective:0px!important;-webkit-backface-visibility:visible!important;
+-webkit-font-smoothing: subpixel-antialiased;
+```
+
+第二个则需要优化代码了，更深入的日后会有博文分析。
+
 
 
 
