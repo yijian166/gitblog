@@ -91,7 +91,7 @@ jQ.Mobi由三个组件组成：
 
 <h2 id="layout">基本页面布局</h2>
 
-![基本页面布局](http://http://learn.hicc.me/images/2013/07/jqmobi-03.jpg)
+![基本页面布局](http://learn.hicc.me/images/2013/07/jqmobi-03.jpg)
 
 上图即为jQ.mobi提供的基本布局，从视觉上分为三个部分**头部、内容区域、底部**，如下图。
 
