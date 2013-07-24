@@ -172,6 +172,9 @@ h1,h2,h3,h4,h5,h6, {
     //position: relative;
     .post-links {
         left:(@size-site )/ (1+1.618) - @size-space - @post-link-w ; 
+        ul {
+            list-style: none;
+        }
     }
     img {
         max-width: (@size-site  * 1.618)/ (1+1.618) - @size-space ;
@@ -277,13 +280,14 @@ h1,h2,h3,h4,h5,h6, {
     }
 
     a {
-       color: lighten(@color-font , 10%);
+       color: lighten(@color-font , 20%);
         &:hover  {
-            color :lighten(@color-font , 5%);
+            color :lighten(@color-font , 10%);
         } 
     }
     ul {
         list-style:circle;
+        margin-left: 30px;
     }
     ul ,
     ol {

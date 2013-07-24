@@ -63,6 +63,10 @@ title: jQ.Mobi框架介绍
 				<li>
           <a href="#tips_5">jQ.Mobi中字体模糊问题</a>
         </li>
+         </li>
+				<li>
+          <a href="#tips_6">jQ.Mobi分平台主题</a>
+        </li>
 
       </ul>
     </li>
