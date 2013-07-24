@@ -103,7 +103,7 @@ jQ.Mobi由三个组件组成：
 -	content内容区则用于**承载应用的不同页面**。
 -	footer底部区则属于**标签栏固定于整个应用的底部**，用户可以通过点击不同的标签到达不同的页面。
 
-应用的导航栏和标签栏，通常都是固定页面的顶部和底部，对于web app的布局中由于ios浏览器对于CSS的position:fixed支持很不好，因此**通用的解决方案（包括jQ.mobi)都是使用绝对定位position:absolute。**
+应用的导航栏和标签栏，通常都是固定页面的顶部和底部，对于web app的布局中由于ios浏览器对于CSS的position:fixed支持很不好(在[caniuse](http://caniuse.com/#search=fixed)查看浏览器的支持情况。)，因此**通用的解决方案（包括jQ.mobi)都是使用绝对定位position:absolute。**
 
 对于jQ.mobi框架来说对应三部分的HTML代码为:
 
@@ -215,7 +215,7 @@ jQ.Mobi由三个组件组成：
 
 <h2 id="details">3 jQ.Mobi框架细节</h2>
 
-<h3 id="details_layout">###3.1 框架基本布局</h3>
+<h3 id="details_layout">3.1 框架基本布局</h3>
 
 之前提到过jQ.Mobi框架的页面都在一个HTML的文档中，除去导航栏（#header）和标签栏（#navbar）之外的内容页面都存在id为content的`div`当中，三者都是绝对定位。
 
