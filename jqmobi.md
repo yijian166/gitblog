@@ -323,8 +323,8 @@ jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文
 /*--对应的css写法---*/
 transform: translate3d(0, 100px, 0);
 ```
-![滚动实例图](http://learn.hicc.me/images/2013/07/jqmobi-08.png)
-![滚动关键CSS代码](http://learn.hicc.me/images/2013/07/jqmobi-09.png)
+![滚动实例图](http://learn.hicc.me/images/2013/07/jqmobi-09.jpg)
+![滚动关键CSS代码](http://learn.hicc.me/images/2013/07/jqmobi-10.jpg)
 
 <h2 id="tips">4. 一些使用帮助</h2>
 
