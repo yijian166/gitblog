@@ -397,15 +397,33 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 
 <h3 id="tips_6">4.6 jQ.Mobi中分平台主题</h3>
 
-最新更新的jQ.Mobi中添加了针对iOS、iOS7、Android、WP8、BB10的主题，下面是截图
+最新更新的jQ.Mobi中添加了针对iOS、iOS7、Android、WP8、BB10的主题，jQ.Mobi会自动判断自动加载对应平台，因此**若需要针对不同平台做样式优化则可以利用这些class**。
+
+下面是截图
 
 ####默认主题
 
-![默认主题](http://learn.hicc.me/2013/07/default.jpg)
+![默认主题](http://learn.hicc.me/images/2013/07/default.jpg)
 
+####iOS主题（class="ios"）
 
+![默认主题](http://learn.hicc.me/images/2013/07/ios.jpg)
 
+####iOS7主题（class="ios7"）
 
+![默认主题](http://learn.hicc.me/images/2013/07/ios7.jpg)
+
+####Android主题（class="android"）
+
+![默认主题](http://learn.hicc.me/images/2013/07/android.jpg)
+
+####WP8主题（class="win8"）
+
+![默认主题](http://learn.hicc.me/images/2013/07/wp8.jpg)
+
+####BB10主题（class="bb"）
+
+![默认主题](http://learn.hicc.me/images/2013/07/bb10.jpg)
 
 
 
