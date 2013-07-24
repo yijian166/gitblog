@@ -138,6 +138,17 @@ div {
 
 <p class="post5-demo-1">Linear Gradient Background</p>
 
+以上便是覆盖所有浏览器私有前缀的写法。你也可以看得到`linear-gradient(#8ec63f, #45611f)`的标准写法已经得到了大多数浏览器的支持，因此之后，包括径向渐变，我们只写标准的写法，但是不要在个人项目中忘记其他的兼容值。
+
+线性渐变默认从元素的顶部（top）渐变到底部（bottom）。在颜色值之前使用关键词或者角度值即可改变渐变方向。例如，使用`to right`即可使渐变从左往右进行。当然，也可以混合使用方向关键词，譬如，你想要从左上角渐变到右下角，使用`to bottom right`即可。
+
+```css
+div {
+  background: linear-gradient(to bottom right, #a1e048, #6a942f);
+}
+```
+
+
 
 
 [img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
