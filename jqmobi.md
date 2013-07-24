@@ -376,7 +376,7 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 
 <h3 id="tips_4">4.4 jQ.Mobi的远程调试工具weinre</h3>
 
-手机中web view和浏览器毕竟还是you'qu有区别，因此一个调试工具就非常有必要，在此推荐lynn的[weinre教程](http://i-buffer.com/entry/weinre-tutorial),里面有详细的配置教程，甚至还有打包好的一键开启工具下载。
+手机中web view和浏览器毕竟还是有区别，因此一个调试工具就非常有必要，在此推荐lynn的[weinre教程](http://i-buffer.com/entry/weinre-tutorial),里面有详细的配置教程，甚至还有打包好的一键开启工具下载。
 
 <h3 id="tips_5">4.5 jQ.Mobi中字体模糊问题</h3>
 
@@ -394,6 +394,16 @@ jQ.Mobi中默认支持滚动是整个panel都滚动，如果想要panel页面中
 ```
 
 第二个则需要优化代码了，更深入的日后会有博文分析。
+
+<h3 id="tips_6">4.6 jQ.Mobi中分平台主题</h3>
+
+最新更新的jQ.Mobi中添加了针对iOS、iOS7、Android、WP8、BB10的主题，下面是截图
+
+####默认主题
+
+![默认主题](http://learn.hicc.me/2013/07/default.jpg)
+
+
 
 
 

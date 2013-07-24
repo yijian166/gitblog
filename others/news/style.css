@@ -68,6 +68,20 @@ body {
   color: #999999;
   padding-right: 4px;
 }
+.news .news-share {
+  margin: 20px 0;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 10px;
+}
+.news .news-share a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 32%;
+  line-height: 30px;
+  color: #1275b9;
+  text-align: center;
+}
 .news h1,
 .news h2,
 .news h3,
