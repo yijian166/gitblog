@@ -76,9 +76,9 @@ title: jQ.Mobi框架介绍
 [jQ.Mobi](http://www.jqmobi.com/)是基于HTML5重写的jQuery框架，由appMobi开发并且开源托管于github，在此有简易的[在线文档](http://app-framework-software.intel.com/documentation.php)提供查阅。
 jQ.Mobi相比于其他方案具有体积小速度快的优势。
 
-![code size](http://static.9ikblog.com/blog/2013/05/jqmobi-01.jpg)
+![code size](http://learn.hicc.me/images/2013/07/jqmobi-01.jpg)
 
-![JavaScript Engine Speed](http://static.9ikblog.com/blog/2013/05/jqmobi-02.jpg)
+![JavaScript Engine Speed](http://learn.hicc.me/images/2013/07/jqmobi-02.jpg)
 
 
 jQ.Mobi由三个组件组成：
@@ -91,11 +91,11 @@ jQ.Mobi由三个组件组成：
 
 <h2 id="layout">基本页面布局</h2>
 
-![基本页面布局](http://static.9ikblog.com/blog/2013/05/jqmobi-03.jpg)
+![基本页面布局](http://http://learn.hicc.me/images/2013/07/jqmobi-03.jpg)
 
 上图即为jQ.mobi提供的基本布局，从视觉上分为三个部分**头部、内容区域、底部**，如下图。
 
-![基本页面布局三个部分](http://static.9ikblog.com/blog/2013/05/jqmobi-04.jpg)
+![基本页面布局三个部分](http://learn.hicc.me/images/2013/07/jqmobi-04.jpg)
 
 依照苹果App界面设计规则：
 
@@ -126,7 +126,7 @@ jQ.Mobi由三个组件组成：
 
 上面的图示则是典型的标签栏导航，也是目前最为欢迎的导航模型。
 
-![标签栏](http://static.9ikblog.com/blog/2013/05/jqmobi-05.jpg)
+![标签栏](http://learn.hicc.me/images/2013/07/jqmobi-05.jpg)
 
 标签栏固定于应用的底部，点击其中不同的标签即可在不同的页面中切换，这种导航方式**适用于不同页面形式不一的复杂的应用。**
 在jQ.Mobi中对应的HMTL代码为：
@@ -159,7 +159,7 @@ jQ.Mobi由三个组件组成：
 
 <h3 id="nav_module_2">2.2 树形结构导航模型</h3>
 
-![树形结构导航](http://static.9ikblog.com/blog/2013/05/jqmobi-06.jpg)
+![树形结构导航](http://learn.hicc.me/images/2013/07/jqmobi-06.jpg)
 
 上图即为典型的树形结构导航模型，树形结构适用于有大量分类项目的页面，其实际为大量的列表项。对应的HTML代码为：
 
@@ -174,7 +174,7 @@ jQ.Mobi由三个组件组成：
 
 <h3 id="nav_module_3">2.3 平铺页面导航模型</h3>
 
-![平铺页面导航](http://static.9ikblog.com/blog/2013/05/jqmobi-07.jpg)
+![平铺页面导航](http://learn.hicc.me/images/2013/07/jqmobi-07.jpg)
 
 
 上图即为平铺页面导航模型的基本结构，平铺页面导航模型的应用中最为经典的例子便是iphone中自带的天气应用，通常**此种模型使用较为简单的应用，功能较为单一且没有滚屏。**
@@ -192,7 +192,7 @@ jQ.Mobi由三个组件组成：
 
 <h3 id="nav_module_4">2.4 “抽屉式”导航模型</h3>
 
-![“抽屉式”导航](http://static.9ikblog.com/blog/2013/05/jqmobi-08.jpg)
+![“抽屉式”导航](http://learn.hicc.me/images/2013/07/jqmobi-08.jpg)
 
 
 上图为“抽屉式”导航模型的基本结构，抽屉式导航最为典型的应用为私密社交应用path，此种导航的核心思想为”隐藏“，更加能突出应用的核型功能，而将其他次要的功能页面（譬如设置页面）路径隐藏。**此种导航模型使用核心功能单一，不户无需频繁切换页面的应用。**
@@ -323,8 +323,8 @@ jQ.Mobi允许你自定义属性，更为详细的介绍可以查看其[在线文
 /*--对应的css写法---*/
 transform: translate3d(0, 100px, 0);
 ```
-![滚动实例图](http://static.9ikblog.com/blog/2013/05/jqmobi-08.png)
-![滚动关键CSS代码](http://static.9ikblog.com/blog/2013/05/jqmobi-09.png)
+![滚动实例图](http://learn.hicc.me/images/2013/07/jqmobi-08.png)
+![滚动关键CSS代码](http://learn.hicc.me/images/2013/07/jqmobi-09.png)
 
 <h2 id="tips">4. 一些使用帮助</h2>
 
