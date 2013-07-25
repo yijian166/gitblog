@@ -5,8 +5,8 @@ title: jQ.Mobi框架介绍
 <h1 class="post-title">jQ.Mobi框架介绍</h1>
 <p class="meta">2013/04/13</p>
 
-<div class="post-links" data-spy="affix" data-offset-top="10">
-  <h4  class="post-links-title">快速浏览</h4>
+<div class="toc" data-spy="affix" data-offset-top="10">
+  <h4  class="toc-title">快速浏览</h4>
   <ul>
     <li>
       <a href="#layout">基本页面布局</a>
