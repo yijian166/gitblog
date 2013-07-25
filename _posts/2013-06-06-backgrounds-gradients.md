@@ -9,7 +9,6 @@ categories: [html-css]
 
 <p class="meta">LESSON 5 · 2013/06/6</p>
 
-[TOC]
 
 背景是CSS中很重要的一部分，因为它可以让你很容易的改变一个元素的构成。背景可以用来装饰元素，也可以给元素内容提供一种视觉上下文环境，增加易用性。无论在网页中使用背景有多少，背景在整个网页设计中都有一个很重要的影响。
 
@@ -140,7 +139,7 @@ div {
 
 <p class="post5-demo-1">Linear Gradient Background</p>
 
-以上便是覆盖所有浏览器私有前缀的写法。你也可以看得到`linear-gradient(#8ec63f, #45611f)`的标准写法已经得到了大多数浏览器的支持，因此之后，包括径向渐变，我们只写标准的写法，但是不要在个人项目中忘记其他的兼容值。
+以上便是覆盖所有浏览器私有前缀的写法。你也可以看得到`linear-gradient(#a1e048, #6a942f)`的标准写法已经得到了大多数浏览器的支持，因此之后，包括径向渐变，我们只写标准的写法，但是不要在个人项目中忘记其他的兼容值。
 
 线性渐变默认从元素的顶部（top）渐变到底部（bottom）。在颜色值之前使用关键词或者角度值即可改变渐变方向。例如，使用`to right`即可使渐变从左往右进行。当然，也可以混合使用方向关键词，譬如，你想要从左上角渐变到右下角，使用`to bottom right`即可。
 
@@ -150,10 +149,42 @@ div {
 }
 ```
 
+当使用倾斜的线性渐变的时候，渐变并不是从元素的一角渐变至另一角，而是它会首先确定元素的绝对中心，然后在垂直角也就是渐变应该开始的地方放置一个锚点，然后朝着渐变值内定义的角度绘制渐变。因为这些渐变的起始角并不固定因此称之为“magic corners”，[Eric Meyer的文章中对线性渐变值内的方向值做了很好的研究](http://meyerweb.com/eric/thoughts/2012/04/26/lineargradient-keywords/)，另外规范网站[W3](http://dev.w3.org/csswg/css-images-3/#gradients)中对带角度渐变的配图（下图）也可很好的解释（译者注）。
+
+![带角度的线性渐变][img-2]
+
+除关键词之外，角度值也可以使用。如果你想要渐变从左上角（`left top`）你可以使用角度值`315deg`。
+
+<div  class="code-box">
+	<h3>旧渐变语法中关键词的写法</h3>
+	<p>在之前老的线性渐变语法中关键词的写法中不需要关键词<code>to</code>，相反关键词定义的是渐变的起始角。因此上面倾斜渐变的代码中老的写法则是<code>top left</code>而不是<code>to bottom right</code>。</p>
+	<p>新的语法得到了一些浏览器的支持，若你的新写法在你浏览器中不被支持，你或许可以试试旧的写法，总之记住随着浏览器更新新的语法终究会被支持。</p>
+</div>
 
 
+###径向渐变
+
+线性渐变广泛使用的同时，也会有径向渐变的需求。径向渐变工作方式很像线性渐变，两者的值也大部分通用。然而径向渐变中位置、尺寸、渐变半径的值则有点复杂，我们在此只暂时基本的用法，[也可以在此对径向渐变进行深入了解](http://dev.opera.com/articles/view/css3-radial-gradients/)。
+
+```css
+div {
+  background: #70bf32;
+  background: url('radial-gradient.png') 50% 50% no-repeat;
+  background: radial-gradient(#a1e048, #6a942f);
+}
+```
+
+<p class="post5-demo-2">Radial Gradient Background</p>
+
+<div class="code-box">
+<h3>CSS3渐变生成器</h3>
+<p>完全手动书写CSS3渐变代码确实是个挑战，特别是对于新手。幸运的是，一些<a href="http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html">CSS3渐变生成器</a>应需而生，不同的渐变生成器都有细微的差别，一些提供调整和示例，另外的会提供一些可选的列表。如果需要这些工具的帮助，我在此建议对齐多做些研究来找到合适的。</p>
+</div>
 
 [img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
+
+
+[img-2]:http://static.9ikblog.com/blog/2012/11/gradient-diagram.png
 
 
 
