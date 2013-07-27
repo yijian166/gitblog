@@ -299,6 +299,68 @@ div {
 ```
 
 
+不仅仅可以将`background`属性值连起来，还可以将`background-repeat`，`background-position`，以及其他背景相关的属性值链接起来。
+
+```html
+<div>Dinosaur with Grass and Clouds</div>
+```
+
+```
+div {
+  background: 
+    url('dyno.png') no-repeat 380px 18px, 
+    url('grass.png') no-repeat 0 100%, 
+    url('sky.jpg') no-repeat 0 0;
+  border-radius: 6px;
+  height: 200px;
+}
+```
+
+<div class="code-box">
+<h3>多图背景示例</h3>
+<div>
+<h4>HTML</h4>
+<div>
+</div>
+</div>
+<div>
+<h4>CSS</h4>
+<div>
+</div>
+</div>
+<div  class="post5-demo-5">Dinosaur with Grass and Clouds</div>
+</div>
+
+##CSS3新的背景属性
+
+在引入渐变背景，多图背景的同时，CSS3也引入了三个新的属性，`background-size`，`background-clip`， 和 `background-origin`。
+
+###背景图大小（`background-size`）
+
+
+`background-size`属性定义了背景图的显示大小。第一个值声明了图片的宽度，第二个值声明了背景图的高度。该属性接受关键词和所有的CSS长度值，最常用的自然是像素和百分值。如果只声明了一个只，`auto`就会被用来保持图片正常的比例。
+
+```css
+div {
+  background: url('shay.jpg') 0 0 no-repeat;
+  background-size: 85% auto;
+  border: 1px dashed #8c9198;
+  height: 240px;
+  width: 200px;
+}
+```
+
+
+<div class="code-box">
+<h3><code>Cover</code>和<code>Contain</code>值</h3>
+<p>使用<code>Cover</code>值会使背景图片以元素的长宽比例缩放图片来使之铺满元素，这样很可能会导致图片变形。使用使用最好检查效果。</p>
+<p><code>Contain</code>值则会以图片的长宽比例缩放图片使之能够放入元素内，这样很肯定会导致元素有一部分是空白的（没有被图片覆盖），这同样有可能使图片质量下降。</p>
+</div>
+
+<div  class="post5-demo-6">Shay Howe</div>
+
+
+
 [img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
 
 
