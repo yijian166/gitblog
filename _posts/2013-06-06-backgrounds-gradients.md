@@ -181,6 +181,124 @@ div {
 <p>完全手动书写CSS3渐变代码确实是个挑战，特别是对于新手。幸运的是，一些<a href="http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html">CSS3渐变生成器</a>应需而生，不同的渐变生成器都有细微的差别，一些提供调整和示例，另外的会提供一些可选的列表。如果需要这些工具的帮助，我在此建议对齐多做些研究来找到合适的。</p>
 </div>
 
+###多颜色渐变（color-stop）
+
+到目前为止我们都讨论的是两个颜色间的渐变，如果你想要多个颜色（两个以上）的渐变，你即可使用color stops（或者color-stop，译注，此处不好翻译，可以理解为颜色间隔），这样浏览器即可逐次渐变每一个颜色。还可以给每个间隔颜色附加长度值以此来告诉浏览器在何处放置这些颜色。如果长度值缺省浏览器会以相等的距离放置各个颜色。
+
+```css
+div {
+  background: #6c9730;
+  background: url('linear-gradient-stops.png') 0 0 repeat-y;
+  background: linear-gradient(to right, #8dc63f, #d8ad45, #3b4b94);
+}
+```
+
+<p  class="post5-demo-3">Gradient Background Stops</p>
+
+```html
+<ul>
+  <li class="play"><a href="#">Play</a></li>
+  <li class="back"><a href="#">Skip Backward</a></li>
+  <li class="stop"><a href="#">Pause/Stop</a></li>
+  <li class="forward"><a href="#">Skip Forward</a></li>
+</ul>
+```
+
+```css
+ul {
+  background: #f4f4f4;
+  background: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+  height: 22px;
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0 4px 0 0;
+}
+li {
+  height: 16px;
+  float: left;
+  padding: 3px;
+  text-indent: -9999px;
+  width: 16px;
+}
+.play {
+  background: #f4f4f4;
+  background: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  left: -4px;
+  padding: 7px;
+  position: relative;
+  top: -5px;
+}
+li a {
+  background: url('controls.png') 0 0 no-repeat;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.play a:hover {
+  background-position: 0 -16px;
+}
+.back a {
+  background-position: -16px 0;
+}
+.back a:hover {
+  background-position: -16px -16px;
+}
+.stop a {
+  background-position: -32px 0;
+}
+.stop a:hover {
+  background-position: -32px -16px;
+}
+.forward a {
+  background-position: -48px 0;
+}
+.forward a:hover {
+  background-position: -48px -16px;
+}
+```
+
+<div class="code-box">
+<h3>背景图片定位示例</h3>
+<div>
+<h4>HTML</h4>
+<div>
+</div>
+</div>
+<div>
+<h4>CSS</h4>
+<div>
+</div>
+</div>
+<div class="post5-demo-4">
+<ul>
+  <li class="play"><a href="#">Play</a></li>
+  <li class="back"><a href="#">Skip Backward</a></li>
+  <li class="stop"><a href="#">Pause/Stop</a></li>
+  <li class="forward"><a href="#">Skip Forward</a></li>
+</ul>
+</div>
+</div>
+
+
+##CSS3中多图背景
+
+在此之前如果你想要给一个元素添加多个背景，你必须将这个元素在包裹一个元素然后在新的元素上使用背景。仅仅是为了增加背景而添加新的元素代码难免臃肿。而现在在CSS3中你只需将这些背景链起来添加到一个元素即可。
+
+```css
+div {
+  background:
+    url('foreground.png') no-repeat 0 0,
+    url('middle-ground.png') no-repeat 0 0,
+    url('background.png') no-repeat 0 0;
+}
+```
+
+
 [img-1]:http://learn.hicc.me/images/2013/06/background-percentages.png
 
 
