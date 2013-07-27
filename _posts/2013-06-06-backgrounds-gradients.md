@@ -195,84 +195,76 @@ div {
 
 <p  class="post5-demo-3">Gradient Background Stops</p>
 
-```html
-<ul>
-  <li class="play"><a href="#">Play</a></li>
-  <li class="back"><a href="#">Skip Backward</a></li>
-  <li class="stop"><a href="#">Pause/Stop</a></li>
-  <li class="forward"><a href="#">Skip Forward</a></li>
-</ul>
-```
-
-```css
-ul {
-  background: #f4f4f4;
-  background: linear-gradient(#fff, #eee);
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  display: inline-block;
-  height: 22px;
-  list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0 4px 0 0;
-}
-li {
-  height: 16px;
-  float: left;
-  padding: 3px;
-  text-indent: -9999px;
-  width: 16px;
-}
-.play {
-  background: #f4f4f4;
-  background: linear-gradient(#fff, #eee);
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  left: -4px;
-  padding: 7px;
-  position: relative;
-  top: -5px;
-}
-li a {
-  background: url('controls.png') 0 0 no-repeat;
-  display: block;
-  height: 16px;
-  width: 16px;
-}
-.play a:hover {
-  background-position: 0 -16px;
-}
-.back a {
-  background-position: -16px 0;
-}
-.back a:hover {
-  background-position: -16px -16px;
-}
-.stop a {
-  background-position: -32px 0;
-}
-.stop a:hover {
-  background-position: -32px -16px;
-}
-.forward a {
-  background-position: -48px 0;
-}
-.forward a:hover {
-  background-position: -48px -16px;
-}
-```
-
 <div class="code-box">
 <h3>背景图片定位示例</h3>
 <div>
 <h4>HTML</h4>
-<div>
-</div>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"play"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Play<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"back"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Skip Backward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"stop"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pause/Stop<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"forward"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Skip Forward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
 </div>
 <div>
 <h4>CSS</h4>
-<div>
-</div>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#f4f4f4</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">#fff</span><span class="o">,</span> <span class="m">#eee</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.play</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#f4f4f4</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">#fff</span><span class="o">,</span> <span class="m">#eee</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">-4px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">-5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="sx">url('controls.png')</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.play</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.back</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-16px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.back</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-16px</span> <span class="m">-16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stop</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-32px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stop</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-32px</span> <span class="m">-16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.forward</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-48px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.forward</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">:</span> <span class="m">-48px</span> <span class="m">-16px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <div class="post5-demo-4">
 <ul>
@@ -301,12 +293,16 @@ div {
 
 不仅仅可以将`background`属性值连起来，还可以将`background-repeat`，`background-position`，以及其他背景相关的属性值链接起来。
 
-```html
-<div>Dinosaur with Grass and Clouds</div>
-```
-
-```
-div {
+<div class="code-box">
+<h3>多图背景示例</h3>
+<div>
+<h4>HTML</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>Dinosaur with Grass and Clouds<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+</div>
+<div>
+<h4>CSS</h4>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">div {
   background: 
     url('dyno.png') no-repeat 380px 18px, 
     url('grass.png') no-repeat 0 100%, 
@@ -314,19 +310,7 @@ div {
   border-radius: 6px;
   height: 200px;
 }
-```
-
-<div class="code-box">
-<h3>多图背景示例</h3>
-<div>
-<h4>HTML</h4>
-<div>
-</div>
-</div>
-<div>
-<h4>CSS</h4>
-<div>
-</div>
+</code></pre></div>
 </div>
 <div  class="post5-demo-5">Dinosaur with Grass and Clouds</div>
 </div>
@@ -359,6 +343,48 @@ div {
 
 <div  class="post5-demo-6">Shay Howe</div>
 
+上图示，使用百分数和关键词来定位背景图片。
+
+###CSS3 `background-clip`， 和 `background-origin`
+
+
+`background-clip`属性定义了背景图片展示的区域，`background-origin`属性则定义了`background-position`属性起始的位置。这两个属性有着共同的值： `border-box`，`padding-box`和`content-box`。 
+
+```css
+div {
+  background: url('shay.jpg') 0 0 no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+}
+```
+
+![CSS背景使用border-box值][img-3]
+
+CSS背景使用border-box值
+
+![CSS背景使用padding-box值][img-4]
+
+CSS背景使用`padding-box`值,背景填充了元素的`padding`区域，但处于`border`里面。
+
+![CSS背景使用content-box值][img-5]
+
+CSS背景使用`content-box`值,背景填充在元素的`border`和`padding`区域里面。
+
+##资源
+
+<ul class="col-2">
+  <li>
+  <a href="http://www.slideshare.net/maxdesign/css3-backgrounds" rel="nofollow">
+    CSS3 Background</a> via Russ Weakley
+  </li>
+  <li>
+  <a href="http://dev.opera.com/articles/view/css3-linear-gradients/" rel="nofollow">CSS3 Linear Gradients</a> via Dev.Opera</li>
+  <li><a href="http://dev.opera.com/articles/view/css3-radial-gradients/" rel="nofollow">CSS3 Radial Gradients</a> via Dev.Opera</li>
+  <li><a href="http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html" rel="nofollow">CSS Gradient Background Maker</a></li>
+</ul>
+
+
+
 
 
 
@@ -367,6 +393,12 @@ div {
 
 
 [img-2]:http://static.9ikblog.com/blog/2012/11/gradient-diagram.png
+
+[img-3]:http://learn.hicc.me/images/2013/07/border-box.png
+
+[img-4]:http://learn.hicc.me/images/2013/07/padding-box.png
+
+[img-5]:http://learn.hicc.me/images/2013/07/content-box.png
 
 
 
