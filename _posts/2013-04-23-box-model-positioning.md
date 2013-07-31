@@ -9,6 +9,8 @@ categories: [html-css]
 
 <p class="meta">LESSON 3 · 2013/04/23</p>
 
+英文原文：[Box Model & Positioning](http://learn.shayhowe.com/html-css/box-model)
+
 在HTML和CSS中需要彻底理解的一个概念便是盒模型。盒模型概念中声明了页面中的每个元素都是一个矩形盒子，可能会包含外边距（margin），内边距（padding）和边框（border）。
 
 再重复一遍，**页面中每个元素都是一个矩形盒子**。

@@ -9,6 +9,8 @@ categories: [html-css]
 
 <p class="meta">LESSON 2 · 2013/04/13</p>
 
+英文原文：[Elements & Semantics](http://learn.shayhowe.com/html-css/elements-semantics)
+
 简单了解了HTML和CSS之后，是时候深入学习如何组合使用这两个语言了。
 
 在开始创建一个网页之前你不但需要学习不同的类型的内容需要哪个HTML元素来显示，而且需要了解这些元素有什么样的表现，这样你才能得到想要的结果。

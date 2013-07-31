@@ -9,6 +9,7 @@ categories: [html-css]
 
 <p class="meta">LESSON 5 · 2013/06/6</p>
 
+英文原文：[Backgrounds & Gradients](http://learn.shayhowe.com/html-css/backgrounds-gradients)
 
 背景是CSS中很重要的一部分，因为它可以让你很容易的改变一个元素的构成。背景可以用来装饰元素，也可以给元素内容提供一种视觉上下文环境，增加易用性。无论在网页中使用背景有多少，背景在整个网页设计中都有一个很重要的影响。
 

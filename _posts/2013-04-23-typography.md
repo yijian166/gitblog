@@ -9,6 +9,8 @@ categories: [html-css]
 
 <p class="meta">LESSON 4 · 2013/04/23</p>
 
+英文原文：[Typography](http://learn.shayhowe.com/html-css/typography)
+
 近几年，网页排版有了实质性的发展，倒是有几个不同的原因使网页排版如此流行，但最大原因还是你可以在页面上使用你自己的web fonts。
 
 在此之前，设计师在网页设计只能使用很少的几个字体。他们只能使用电脑中预先安装的最普遍的字体，因为只有这样页面才能在屏幕上正确的显示。而现在页面中可以嵌入字体，设计师便有了更多的选择。

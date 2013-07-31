@@ -9,6 +9,8 @@ categories: [html-css]
 
 <p class="meta">LESSON 1 · 2013/03/29</p>
 
+英文原文：[Terminology, Syntax, & Introduction](http://learn.shayhowe.com/html-css/terminology-syntax-intro)
+
 在开始本教程之前，我们最好能够搞明白这两个语言的语法和一些一般的的术语。
 
 概括来说，HTML是一种超文本标记语言用来给内容赋予结构和意义，CSS也被称为层叠样式表，是一种描述性语言，赋予内容样式及外观。
