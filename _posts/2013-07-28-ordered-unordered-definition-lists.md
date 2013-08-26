@@ -34,6 +34,11 @@ HTML中[三个不同类型的列表](http://dev.opera.com/articles/view/16-html-
 <div class="code-box">
 <h4>无序列表Demo</h4>
 <div>
+<ul>
+  <li>iPad</li>
+  <li>iPhone</li>
+  <li>MacBook Air</li>
+</ul>
 </div>
 
 </div>
@@ -55,7 +60,11 @@ HTML中[三个不同类型的列表](http://dev.opera.com/articles/view/16-html-
 <h4>有序列表Demo</h4>
 <div>
 </div>
-
+<ol>
+  <li>iPad</li>
+  <li>iPhone</li>
+  <li>MacBook Air</li>
+</ol>
 </div>
 
 随着HTML5的引入，有序列表`ol`中新增了两个属性`start`和`reversed`。`start`设置了有序列表从什么时候起始。默认情况下，有序列表从1开始。当然你可能需要从5开始的有序列表，你只需设置`start`属性的值为`5`即可。需要注意的是，你可能在有序列表中使用其他类型的顺序，但是`start`只支持整数值。
@@ -70,6 +79,11 @@ HTML中[三个不同类型的列表](http://dev.opera.com/articles/view/16-html-
 <div class="code-box">
 <h4><code>start</code>属性Demo</h4>
 <div>
+<ol start="30">
+  <li>iPad</li>
+  <li>iPhone</li>
+  <li>MacBook Air</li>
+</ol>
 </div>
 
 </div>
@@ -88,6 +102,11 @@ HTML中[三个不同类型的列表](http://dev.opera.com/articles/view/16-html-
 <div class="code-box">
 <h4><code>value</code>属性Demo</h4>
 <div>
+<ol>
+  <li>iPad</li>
+  <li value="9">iPhone</li>
+  <li>MacBook Air</li>
+</ol>
 </div>
 
 </div>
