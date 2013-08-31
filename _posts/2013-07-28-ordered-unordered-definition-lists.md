@@ -306,8 +306,8 @@ ul {
 ```
 
 <div class="code-box">
-<h4></h4>
-<div class=“post6-list-5”>
+<h4>列表样式位置Demo</h4>
+<div class="post6-list-5">
 <ul>
     <li>iPad – iPad is a magical window where nothing comes between you and what you love. Now that experience is even more incredible with the new iPad.</li>
     <li>iPhone – The faster dual-core A5 chip. The 8MP camera with all-new optics also shoots 1080p HD video. And introducing Siri. It’s the most amazing iPhone yet.</li>
@@ -347,7 +347,7 @@ li {
 ```
 
 <div class="code-box">
-<h4></h4>
+<h4>列表内联显示Demo</h4>
 <div class="post6-list-6">
 <ul>
     <li>iPad</li>

@@ -226,6 +226,8 @@
 } 
 .post6-list-1 {
     ul {
+        list-style: square;
+        margin: 0;
         *zoom:1;
         &:before ,
         &:after {
@@ -240,6 +242,7 @@
         li {
             float: left;
             width: 50%;
+            margin: 0 0 20px 30px;
             code {
                 display: block;
                 color: #8c8c8c;
@@ -253,6 +256,9 @@
     }
 }
 .post6-list-3 {
+    ul {
+        margin-left: 0;
+    }
   li {
       background: url("@{base-url}/2013/08/tick.png") 0 0 no-repeat;
       list-style: none;
@@ -303,7 +309,7 @@
       background: linear-gradient(#687587, #404853);
       border-left: 1px solid rgba(0, 0, 0, 0.2);
       border-right: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
+      color: #fff!important;
       display: block;
       font-size: 11px;
       font-weight: bold;
@@ -316,7 +322,7 @@
       background: #454d59;
       box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
       border-right: 1px solid rgba(0, 0, 0, 0.2);
-      color: #d0d2d5;
+      color: #d0d2d5 !important;
     }
     li:first-child a {
       border-left: none;
