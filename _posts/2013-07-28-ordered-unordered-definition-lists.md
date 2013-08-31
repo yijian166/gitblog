@@ -136,7 +136,7 @@ HTML中[三个不同类型的列表](http://dev.opera.com/articles/view/16-html-
 
 <div class="code-box">
 <h4>定义列表Demo</h4>
-<div>
+<div class="post6-list-0">
 <dl>
   <dt>study</dt>
   <dd>the devotion of time and attention to acquiring knowledge on an academic subject, esp. by means of books</dd>
@@ -271,9 +271,14 @@ li {
 <h4>在列表项样式中使用字符</h4>
 <p>对于支持<code>:before</code>伪元素的浏览器，可以在<code>content</code>属性中传入一个十六进制的转义字符作为列表项目的样式。首先，设置<code>list-style</code>属性为<code>none</code>来移出列表项的默认样，然后在<code>:before</code>使用<code>content</code>属性，<code>content</code>属性的值使用十六进制的转义字符。最后添加右边的<code>margin</code>值来为此提供空间。</p>
 <p>Mark Newhouse在之前写了一篇文章分别讨论了这种技术和其他不同的<a href="http://www.alistapart.com/articles/taminglists/" title="CSS Design: Taming Lists" rel="nofollow">taming lists（列表优化）</a>技术。</p>
-<div >
-
-</div>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">li</span> <span class="p">{</span>
+  <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">"\2708"</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <h5>Demo</h5>
 <div class="post6-list-4">
 <ul>
@@ -286,15 +291,7 @@ li {
 
 </div>
 
-```css
-li {
-  list-style: none;
-}
-li:before {
-  content: "\2708";
-  margin-right: 6px;
-}
-```
+
 
 ###列表样式位置属性
 
@@ -375,69 +372,67 @@ li {
 }
 ```
 
-<div class=“code-box”>
+<div class="code-box">
 <h4>浮动列表Demo</h4>
 <div class="post6-list-7">
 <ul class="group">
     <li>iPad</li>
     <li>iPhone</li>
     <li>MacBook Air</li>
-  </ul>
-</div>
-</div>
-
-
-```html
-<ul>
-  <li><a href="#" title="Profile">Profile</a></li>
-  <li><a href="#" title="Settings">Settings</a></li>
-  <li><a href="#" title="Notifications">Notifications</a></li>
-  <li><a href="#" title="Logout">Logout</a></li>
 </ul>
-```
+</div>
+</div>
 
-```css
-ul {
-  list-style: none;
-  margin: 0;
-}
-li {
-  float: left;
-}
-a {
-  background: #404853;
-  background: linear-gradient(#687587, #404853);
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  display: block;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 0 20px;
-  line-height: 38px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
-  text-transform: uppercase;
-}
-a:hover {
-  background: #454d59;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  color: #d0d2d5;
-}
-li:first-child a {
-  border-left: none;
-  border-radius: 4px 0 0 4px;
-}
-li:last-child a {
-  border-right: none;
-  border-radius: 0 4px 4px 0;
-}
-```
 
-<div class=“code-box”>
+
+
+<div class="code-box">
 <h4>浮动列表Demo</h4>
 <h5>HTML</h5>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Profile"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Settings"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Notifications"</span><span class="nt">&gt;</span>Notifications<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Logout"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
 <h5>CSS</h5>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#404853</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="m">#687587</span><span class="o">,</span> <span class="m">#404853</span><span class="p">);</span>
+  <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">2</span><span class="p">);</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">);</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">11px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">38px</span><span class="p">;</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">6</span><span class="p">);</span>
+  <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#454d59</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">5px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">4</span><span class="p">);</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">2</span><span class="p">);</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#d0d2d5</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:first-child</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">border-left</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:last-child</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <h5>Demo</h5>
 <div class="post6-list-8">
 <ul >
