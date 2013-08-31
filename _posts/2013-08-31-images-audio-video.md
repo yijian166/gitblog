@@ -7,6 +7,6 @@ categories: [html-css]
 {{ page.title }}
 ================
 
-<p class="meta">LESSON 5 · 2013/08/31</p>
+<p class="meta">LESSON 7 · 2013/08/31</p>
 
 英文原文：[Images, Audio, & Video](http://learn.shayhowe.com/html-css/images-audio-video)

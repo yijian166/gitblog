@@ -7,7 +7,7 @@ categories: [html-css]
 {{ page.title }}
 ================
 
-<p class="meta">LESSON 5 · 2013/07/28</p>
+<p class="meta">LESSON 6 · 2013/07/28</p>
 
 英文原文：[Unordered, Ordered, & Definition Lists](http://learn.shayhowe.com/html-css/ordered-unordered-definition-lists)
 
