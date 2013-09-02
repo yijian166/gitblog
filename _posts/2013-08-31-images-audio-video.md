@@ -42,4 +42,3 @@ categories: [html-css]
 图片的有很多的格式，每个浏览器对这些的支持不尽相同。大体上来说，都支持的格式包括<code>bmp</code>，<code>gif</code>，<code>jpg</code>和<code>png</code>，使用最广泛的有<code>jpg</code>和<code>png</code>。<code>jpg</code>能够在较小尺寸，较快加载速度的情况下保持更高的的色彩数，<code>png</code>格式则用来显示透明图片或者低色彩数的图片。
 </p>
 </div>
-</div>
