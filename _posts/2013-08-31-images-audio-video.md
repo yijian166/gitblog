@@ -119,13 +119,44 @@ img {
 }
 ```
 
+
 <div class="code-box">
-<h4>浮动图片Demo<h4>
+<h4>浮动图片Demo</h4>
 <div class="post7-img-2">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <img src="http://learn.hicc.me/images/2013/09/cows.jpg" alt="Brown and white cows in a field"> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p>Mauris ut lectus quis mauris ornare iaculis a vel ligula. Quisque sed est sed arcu tincidunt aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam posuere accumsan mauris, nec lacinia risus pretium et. Suspendisse eget nisi facilisis nisl tristique consequat. Vivamus scelerisque accumsan vulputate. Sed bibendum felis id dui ornare tincidunt. Sed a pretium nisl.</p>
 </div>
 </div>
+
+
+##增加音频
+
+HTML5中新增了快速而简单的方式在网站上附加[音频和视频](https://developer.mozilla.org/en/Using_HTML5_audio_and_video)文件播放。使用`audio`[元素](https://developer.mozilla.org/En/HTML/Element/Audio)在网页上添加音频片段。就像`img`元素一样，`audio`元素也需要通过`src`属性来指定音频文件的URL。
+
+```html
+<audio src="images-audio-video/jazz.ogg"></audio>
+```
+
+在`audio`元素中，与`src`属性一起使用的还有其他一些属性，最常用的有`autoplay`，`controls`，`loop`和`preload`。
+
+
+默认情况下，`audio`元素不会显示在页面上。如果设置了布尔属性`autoplay`，`audio`元素仍然不会显示在页面上，然而音频片段会在页面加载的时候自动播放。作为一个布尔型的值，`autoplay`属性就像一个开关一样（toggole function），它控制了音频在页面加载时播放与否。
+
+在页面中真正显示`audio`元素，使用布尔型的`controls`属性，`controls`属性将会显示浏览器默认的控制栏包括，播放和暂停，进度条和音量。
+
+```html
+<audio src="images-audio-video/jazz.ogg" controls></audio>
+```
+
+<div class="code-box">
+<h4>添加音频Demo</h4>
+<audio controls="">
+    <source src="http://learn.hicc.me/images/2013/10/jazz.ogg" type="audio/ogg">
+    <source src="http://learn.hicc.me/images/2013/10/jazz.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+
 
 
 
