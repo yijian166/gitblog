@@ -157,6 +157,145 @@ HTML5中新增了快速而简单的方式在网站上附加[音频和视频](htt
 </div>
 
 
+`audio`元素中的`loop`属性也是一个布尔型的属性，增加`loop`属性将会不断的重复音频。
+
+最后，`preload`属性有三个不同的值，包括`none`，`auto`和`metadata`。`none`值，设置了不预先加载任何信息或者关于音频片段的任何数据，`auto`值则会预先加载所有的信息和数据。`metadata`值则会预先加载音频片段的媒体信息，譬如长度。当用户不是真正的需要或者想要听到声音的时候`preload`属性非常有用。它有助于节省宽带以及不加载不重要的音频片段来快速加载页面。
+
+###音频预设（备选方案）
+
+不同的浏览器可能支持不同格式的音频文件，也可能完全不支持`audio`元素。在此我们可以列出不同的备选方案，包括音频文件的不同格式，备用Flash，或者直接下载音频文件。
+
+首先，使用`audio`元素我们可以通过`source`元素使用**多重来源（multiple sources）**指定不同的文件格式。`source`元素连同`src`属性和`type`属性一块工作。`src`属性指定了文件的URL，`src`属性则指定了音频片段的[MIME-type](http://en.wikipedia.org/wiki/Internet_media_type)，因此来帮助浏览器更好的理解音频文件的格式。
+
+一些浏览器完全不支持HTML5中的`audio`元素，这种情况下，**Flash播放器**的备选方案就排上用场了。有很多的Flash播放器你需要研究那个最适合你。两个比较流行的可选方案包括[SWFObject](http://code.google.com/p/swfobject/)和[Flowplayer](http://flowplayer.org/)。
+
+```html
+<audio controls>
+  <source src="jazz.ogg" type="audio/ogg">
+  <source src="jazz.mp3" type="audio/mpeg">
+  <object type="application/x-shockwave-flash" data="player.swf?audio=jazz.mp3">
+    <param name="movie" value="player.swf?audio=jazz.mp3">
+    <p>This browser does not support the audio format. Please <a href="jazz.mp3" title="Jazz song">download</a> the audio clip.</p>
+  </object>
+</audio>
+```
+
+为了覆盖到全部的浏览器，包括不支持`ogg`和`mp3`格式也没有安装Flash插件的浏览器，可以包含一个下载音频片段文件的链接。这个链接放置在Flash播放器代码内，作为最后的备选方案。
+
+##添加视频
+
+添加加[HTML5 视频](http://dev.opera.com/articles/view/introduction-html5-video/)和添加音频很相似，只是需要将`audio`元素替换成`video`元素。所有相同的属性（`source`，`autoplay`，`controls`，`loop`和`preload`）和预设备选方案也同样适用。
+
+在`audio`中，如果`controls`属性没有设置，音频片段将不会显示。在视频中，不指定`controls`属性，视频也会显示出来，但是不会提供任何方式去播放视频，除非同时设置了`autoplay`属性。除非你有很好的理由不让用户开始，停止，和重播视频，你最好是包含`controls`属性。
+
+因为视频将会在网页上显示，不妨给它指定尺寸，最常用的是在CSS中设置固定的`height`和`with`。这也有助于确保视频不至于太大，能够放入页面相应的不居中。另外，指定视频的尺寸也有助于浏览器更快的渲染视频，并且以此让浏览器分配给视频合适的空间。
+
+```html
+<video src="earth.ogv" controls></video>
+```
+
+<div class="code-box">
+<h4>添加视频Demo</h4>
+<video controls="">
+    <source src="http://learn.hicc.me/images/2013/10/earth.mp4" type="video/mp4">
+    <source src="http://learn.hicc.me/images/2013/10/earth.ogv" type="video/ogg">
+  </video>
+</div>
+
+
+
+<div class="code-box">
+<h4>自定义音频和视频控制栏</h4>
+<p>默认情况下<code>audio</code>和<code>video</code>的控制栏由每个浏览器独立确定。根据网站或许需要<a href="http://www.netmagazine.com/tutorials/add-html5-video-your-site">自定义控制栏</a>，这可以实现，但是还需要一点JavaScript才能让播放器工作。</p>
+</div>
+
+###封面属性
+
+`video`元素还有个可用的属性就是`poster`属性。`poster`属性容许以URL的形式定义一张图片，在视频播放之前显示。`poster`图片（封面图片）可以是来自视频的一帧禁止的图片，也可以是其他设计过的图片。正如，下面例子中使用牛的图片作为地球视频的封面。
+
+```html
+<video src="earth.ogv" controls poster="cows.jpg"></video>
+```
+
+<div class="code-box">
+<h4>视频封面Demo</h4>
+<video controls="" poster="http://learn.hicc.me/images/2013/09/cows.jpg">
+    <source src="http://learn.hicc.me/images/2013/10/earth.mp4" type="video/mp4">
+    <source src="http://learn.hicc.me/images/2013/10/earth.ogv" type="video/ogg">
+</div>
+
+###视频预设（Fallbacks）
+
+就像`audio`元素一样，`video`元素的预设也是必要的，相同的格式，需要设置多个`source`元素。还有个可选的方案，使用[YouTube](http://www.youtube.com/)和[Vimeo](https://vimeo.com/)，来构建自己的播放器，将视频极其简单的上传到这些视频托管网站，然后再嵌入到自己网站。
+
+```html
+<video controls>
+  <source src="earth.ogv" type="video/ogg">
+  <source src="earth.mp4" type="video/mp4">
+  <object type="application/x-shockwave-flash" data="player.swf?video=earth.mp4">
+    <param name="movie" value="player.swf?video=earth.mp4">
+    <p>This browser does not support the video format. Please <a href="earth.mp4" title="Earth video">download</a> the video.</p>
+  </object>
+</video>
+```
+
+
+<div class="code-box">
+<h4>HTML5音频和视频文件格式</h4>
+<p>浏览器是否支持<code>audio</code>和<code>video</code>元素是根据其内是否有该浏览器所支持的文件格式。每个浏览器对支持那种<code>audio</code>和<code>video</code>文件格式有着各自的<a href="https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements">解释</a>。</p>
+<p>将文件转换成不同的格式，在此有几个工具可以帮忙，线上的和桌面的都有。转换音频文件，web应用<a href="http://media.io/" title="media.io Audio Converter">media.io</a>可以胜任。转换视频文件桌面软件<a href="http://www.mirovideoconverter.com/" title="Miro Video Converter" rel="nofollow">Miro Video Converter</a>也可以满足需要。</p>
+</div>
+
+##图像和标题（Figure & Caption）
+
+HTML5中新引入了`figure`和`figcaption`元素，用来语义化的标记有着同一主题的内容或者媒体，其内通常有一个标题。在HTML5之前使用无序列表来完成，无序列表虽然可以工作但是并不符合语义化的原则。
+
+###图像（Figure）
+
+块级`figure`元素用来包裹不同形式的媒体。它可以包裹图片、音频片段、视频、代码快、图表、插图，以及其他各种形式的媒体。`figure`元素中可能一次包含了多种形式的媒体。例如多个图片和视频。总得来说，`figure`元素不可以扰乱内容或者页面的可读性，可以将其移植页面的底部或者附录。
+
+```html
+<figure>
+  <img src="images-audio-video/cows.jpg" alt="Brown and white cows in a field">
+</figure>
+```
+
+<div class="code-box">
+<h4>图像Demo</h4>
+<figure style="width: 400px;">
+    <img src="http://learn.hicc.me/images/2013/09/cows.jpg" alt="Brown and white cows in a field">
+  </figure>
+</div>
+
+###图像标题（Figure Caption）
+
+为了给`figure`元素标题或者说明，使用`figcaption`元素。`figcaption`元素可以出现在顶部、底部、或者在`figure`元素的任何地方，但是`figcaption`元素只容许出现一次。
+
+```html
+<figure>
+  <img src="images-audio-video/cows.jpg" alt="Brown and white cows in a field">
+  <figcaption>A couple of brown and white cows hanging out in a grass field.</figcaption>
+</figure>
+```
+
+<div class="code-box">
+<h4>图像和标题Demo</h4>
+<figure style="width: 400px;">
+    <img src="http://learn.hicc.me/images/2013/09/cows.jpg" alt="Brown and white cows in a field">
+  </figure>
+  <figcaption>A couple of brown and white cows hanging out in a grass field.</figcaption>
+</div>
+
+
+##资源
+<ul class="col-2">
+  <li><a href="http://dev.opera.com/articles/view/17-images-in-html/" title="Images in HTML" rel="nofollow">Images in HTML</a> via Dev.Opera</li>
+  <li><a href="https://developer.mozilla.org/en/Using_HTML5_audio_and_video" title="Using HTML5 audio and video" rel="nofollow">HTML5 audio <abbr title="and">&amp;</abbr> video</a> via Mozilla Developer Network</li>
+  <li><a href="https://developer.mozilla.org/En/HTML/Element/Audio" title="audio HTML5 Element" rel="nofollow">audio HTML5 Element</a> via Mozilla Developer Network</li>
+  <li><a href="http://dev.opera.com/articles/view/introduction-html5-video/" title="Introduction to HTML5 video" rel="nofollow">Introduction to HTML5 Video</a> via Dev.Opera</li>
+  <li><a href="http://html5doctor.com/the-figure-figcaption-elements/" title="The figure and figcaption elements" rel="nofollow">The figure <abbr title="and">&amp;</abbr> figcaption Elements</a> via HTML5 Doctor</li>
+</ul>
+
 
 
 
