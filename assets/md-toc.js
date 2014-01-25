@@ -91,7 +91,6 @@ dom.Ready(function(){
         var tocContent = '';
         var tocCustomClass = pageBox.getAttribute('data-toc-class').toLowerCase();
 
-        var reg = /[a-z]/;
         var tocClass = tocCustomClass ? tocCustomClass : 'toc';
 
         (function(){
@@ -257,7 +256,13 @@ dom.Ready(function(){
 
         var tocCustomSpy = pageBox.getAttribute('data-toc-spy');
 
-        var tocSpyNum = tocCustomSpy.slice(0,tocCustomSpy.search(/[a-z]/i));
+        var tocSpyNum;
+
+        if(tocCustomSpy.search(/[a-z]/i) ===  -1 ){
+            tocSpyNum = tocCustomSpy;
+        }else {
+            tocSpyNum = tocCustomSpy.slice(0,tocCustomSpy.search(/[a-z]/i));
+        }
 
         if(tocSpyNum){
             window.onscroll = function(){
