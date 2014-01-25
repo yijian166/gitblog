@@ -89,9 +89,11 @@ dom.Ready(function(){
 
         var tocElement= document.createElement('div');
         var tocContent = '';
-        var tocCustomClass = pageBox.getAttribute('data-toc-class').toLowerCase();
+        var tocClass = 'toc';
 
-        var tocClass = tocCustomClass ? tocCustomClass : 'toc';
+        if(pageBox.getAttribute('data-toc-class')){
+            tocClass = pageBox.getAttribute('data-toc-class').toLowerCase();
+        }
 
         (function(){
 
@@ -254,7 +256,7 @@ dom.Ready(function(){
         pageBox.appendChild(tocElement);
 
 
-        var tocCustomSpy = pageBox.getAttribute('data-toc-spy');
+        var tocCustomSpy = pageBox.getAttribute('data-toc-top');
 
         var tocSpyNum;
 
@@ -264,7 +266,8 @@ dom.Ready(function(){
             tocSpyNum = tocCustomSpy.slice(0,tocCustomSpy.search(/[a-z]/i));
         }
 
-        if(tocSpyNum){
+        if(tocSpyNum && tocSpyNum > -1){
+            console.log(tocSpyNum);
             window.onscroll = function(){
                 var t = document.documentElement.scrollTop || document.body.scrollTop;
 

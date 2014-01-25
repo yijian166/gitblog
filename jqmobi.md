@@ -5,7 +5,6 @@ title: jQ.Mobi框架介绍
 <h1 class="post-title">jQ.Mobi框架介绍</h1>
 <p class="meta">2013/04/13</p>
 
-<
 <div class="toc" data-spy="affix" data-offset-top="10">
   <h4  class="toc-title">快速浏览</h4>
   <ul>
@@ -68,7 +67,6 @@ title: jQ.Mobi框架介绍
 				<li>
           <a href="#tips_6">jQ.Mobi分平台主题</a>
         </li>
-
       </ul>
     </li>
   </ul>
