@@ -19,8 +19,8 @@ categories: [html-css]
 
 在页面上开是一个表单必须使用`form`[元素](https://developer.mozilla.org/en/HTML/Element/form)。`form`元素表明了页面中那里将会出现控件元素。另外，`form`元素将表单内的元素都包裹其中，这点有点像`div`元素。
 
-```div
-<form action=“#” method="foo">
+```html
+<form action="#" method="foo">
 ···
 </form>
 ```
