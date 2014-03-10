@@ -91,3 +91,113 @@ ios tel输入框
 
 ####多行文本输入
 
+另一个获取文本数据的元素便是`textarea`元素。`textarea`元素与`input`元素不同的在于`textarea`元素是针对多行的大段文字的。并且`textarea`元素有这开始和结束标签可以包裹纯文本。因为`textarea`元素只接受一种类型的值因此`type`属性在此不必使用，但是同样可以使用`name`属性。
+
+```html
+<textarea name="sample_textarea">Sample textarea</textarea>
+```
+
+<div class="code-box">
+<h5>多行输入Demo</h5>
+<textarea name="sample_textarea">Sample textarea</textarea>
+</div>
+
+`textarea`元素有两个尺寸属性，`cols`设置宽度，`rows`设置高度。但是这两个属性都是相当老的属性了，现在可以使用CSS属性`width`和`height`达到同样的效果。
+
+###多项选择输入和菜单
+
+除了文本输入控件之外HTML还容许用户使用多项选择和下拉列表来选择数据。这些表单控件有不同的选项和元素，每种都有着不同的应用。
+
+####单选按钮
+
+单选按钮是一种快速而简单的方法来展示一个小的选项列表让用户快速做出决定。单选按钮只容许用户选择一个选项，而不是选择多个选项。
+
+创建一个单选按钮，可以设置`input`元素的`type`属性为`radio`。单选按钮的每个选项的`name`属性值都应该相同，这样它们才能相互对应。对于文本输入框`input`的值取决于用户的输入，而对于单选按钮用户只是做一个简单的决定，因此是我们自己决定`input`的值。使用`value`属性我们可以为每一个`input`设置特定的值。
+
+另外，为用户设置默认的选项，可以使用布尔属性`checked`。
+
+```html
+<input type="radio" name="day" value="Friday" checked> Friday
+<input type="radio" name="day" value="Saturday"> Saturday
+<input type="radio" name="day" value="Sunday"> Sunday
+```
+<div class="code-box">
+<h5>单选按钮Demo</h5>
+<input type="radio" name="day" value="Friday" checked> Friday
+<input type="radio" name="day" value="Saturday"> Saturday
+<input type="radio" name="day" value="Sunday"> Sunday
+</div>
+
+####复选框
+
+复选框和单选按钮非常相似。复选框除了`type`属性为`checkbox`外其他属性和单选按钮一样。两者之间的区别是，复选框容许用户选择多个选项都对应一个控件的名称，而单选按钮则只容许选一个。
+
+```html
+<input type="checkbox" name="day" value="Friday" checked> Friday
+<input type="checkbox" name="day" value="Saturday"> Saturday
+<input type="checkbox" name="day" value="Sunday"> Sunday
+```
+
+<div class="code-box">
+<h5>复选框Demo</h5>
+<input type="checkbox" name="day" value="Friday" checked> Friday
+<input type="checkbox" name="day" value="Saturday"> Saturday
+<input type="checkbox" name="day" value="Sunday"> Sunday
+</div>
+
+####下拉列表
+
+在可用的方法中下拉列表是提供用户长串选项的最好方式。如果使用单选按钮将国家每个州都输出在一个页面中将会是一个凌乱而让人气馁的列表。下拉列表为长串列选择提供了一个绝佳的显示方式。
+
+使用`select`和`option`元素便可以创建出一个下拉列表。每个选项用`option`元素构成，在用`select`元素包裹所有的`option`元素，然后你可以为`select`元素设置`name`属性。
+
+菜单中每个独立的选项都用`option`元素编码。`option`元素将会包裹菜单中的选项文本。另外，每个独立的选项的`option`元素都需要设置`value`属性。
+
+就像单项按钮和复选框的布尔睡下`checked`。下拉列表可以使用布尔属性`selected`来为用户设置默认值。
+
+```html
+<select name="day">
+  <option value="Friday" selected>Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select>
+```
+
+<div class="code-box">
+<h5>下拉列表Demo</h5>
+<select name="day">
+  <option value="Friday" selected>Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select></div>
+
+####多重选择
+
+在标准的下拉列表中在`select`元素增加布尔属性`multiple`即可容许用户多选菜单中选项。另外，可以设置一个或者多个布尔属性`selected`来为用户设置默认的选中项。
+
+`select`元素的高度和宽度可以使用CSS属性控制，最好方便用户多选选项。还值得提的是用户想要多选选项，在点击的同时需要同时按着<i>Ctrl/command<i>或者<i>shift<i>键。
+
+```html
+<select name="day" multiple>
+  <option value="Friday" selected>Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select>
+```
+<div class="code-box">
+<h5>多重选择Demo</h5>
+<select name="day" multiple>
+  <option value="Friday" selected>Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select>
+</div>
+
+###表单按钮
+
+
+使用`value`属性来设置选项的文本。使用CSS属性例如`background`、`border-radius`、`box-shadow`等可以将单选按钮设置成你想要的效果。
+
+```html
+<input type="submit" name="submit" value="Submit Form">
+```
