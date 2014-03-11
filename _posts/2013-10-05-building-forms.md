@@ -169,13 +169,16 @@ ios tel输入框
   <option value="Friday" selected>Friday</option>
   <option value="Saturday">Saturday</option>
   <option value="Sunday">Sunday</option>
-</select></div>
+</select>
+</div>
+
 
 ###多重选择
 
 在标准的下拉列表中在`select`元素增加布尔属性`multiple`即可容许用户多选菜单中选项。另外，可以设置一个或者多个布尔属性`selected`来为用户设置默认的选中项。
 
 `select`元素的高度和宽度可以使用CSS属性控制，最好方便用户多选选项。还值得提的是用户想要多选选项，在点击的同时需要同时按着<i>Ctrl/command<i>或者<i>shift<i>键。
+
 
 ```html
 <select name="day" multiple>
@@ -184,6 +187,7 @@ ios tel输入框
   <option value="Sunday">Sunday</option>
 </select>
 ```
+
 <div class="code-box">
 <h4>多重选择Demo</h4>
 <select name="day" multiple>
@@ -195,9 +199,23 @@ ios tel输入框
 
 ##表单按钮
 
+当用户输入了所需的信息之后，按钮就可以让他们采取行动。最常见的便是一个提交按钮用来处理数据。一个重置按钮用来清楚数据。
+
+###提交按钮
+
+当用户填完表单之后点击提交按钮来处理数据。提交按钮使用`type`属性为`submit`或者`image`的`input`元素。`submit`是最常用的因为它使用简单并且提供了大部分的功能。
+`image`值用来指定一个图片为一个提交按钮，然而随着CSS的使用，该值的使用逐渐减少。
 
 使用`value`属性来设置选项的文本。使用CSS属性例如`background`、`border-radius`、`box-shadow`等可以将单选按钮设置成你想要的效果。
 
 ```html
 <input type="submit" name="submit" value="Submit Form">
 ```
+<div class="code-box">
+<h4>多重选择Demo</h4>
+<select name="day" multiple>
+  <option value="Friday" selected>Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select>
+</div>
