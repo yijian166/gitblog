@@ -211,11 +211,41 @@ ios tel输入框
 ```html
 <input type="submit" name="submit" value="Submit Form">
 ```
-<div class="code-box">
-<h4>多重选择Demo</h4>
-<select name="day" multiple>
-  <option value="Friday" selected>Friday</option>
-  <option value="Saturday">Saturday</option>
-  <option value="Sunday">Sunday</option>
-</select>
+<div class="code-box post-8-input-btn">
+<h4>提交按钮Demo</h4>
+<input type="submit" name="submit" value="Submit Form">
 </div>
+
+###重置按钮
+
+
+
+###其他类型的input
+
+####Hide Input
+
+####File Input
+
+###组织表单元素
+
+####Label
+
+####Fieldset
+
+####Legend
+
+###Form和input的属性
+
+####Disable
+
+####Placeholder
+
+####Required
+
+####其他属性
+
+###资源
+
+
+
+
