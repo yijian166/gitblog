@@ -255,7 +255,7 @@ ios tel输入框
 <input type="file" name="file">
 ```
 
-<div class="code-box post-8-input-btn">
+<div class="code-box">
 <h4>文件上传Demo</h4>
 <input type="file" name="file">
 </div>
@@ -509,6 +509,89 @@ fieldset label input {
 }
 ```
 <div class="code-box post8-demo">
+<h3>登录表单Demo<h3>
+<h4>html</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"login_username"</span><span class="nt">&gt;</span>Username<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"login_username"</span> <span class="na">id=</span><span class="s">"login_username"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"login_password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"login_password"</span> <span class="na">id=</span><span class="s">"login_password"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;fieldset&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"login_submit"</span> <span class="na">id=</span><span class="s">"login_submit"</span> <span class="na">value=</span><span class="s">"Login"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"login_remember"</span> <span class="na">id=</span><span class="s">"login_remember"</span><span class="nt">&gt;</span> Stay signed in<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div>
+<h4>css</h4>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">form</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#fff</span><span class="o">,</span> <span class="m">#f8f8f8</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d0d2d5</span><span class="p">;</span>
+  <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#bebfc2</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">212px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">label</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#404853</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#c6c9cc</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#555</span><span class="p">;</span>
+  <span class="k">font</span><span class="o">:</span> <span class="m">13px</span><span class="o">/</span><span class="m">20px</span> <span class="s1">'Droid Sans'</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="s1">'Helvetica Neue'</span><span class="o">,</span> <span class="s1">'Lucida Grande'</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">fieldset</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ebeced</span><span class="o">,</span> <span class="m">#dedfe0</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d0d2d5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">75</span><span class="p">);</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span> <span class="m">0</span> <span class="m">-20px</span> <span class="m">-20px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">18px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">212px</span>
+<span class="p">}</span>
+<span class="nt">fieldset</span> <span class="nt">input</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#login_submit</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#687587</span><span class="o">,</span> <span class="m">#404853</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">75</span><span class="p">);</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">6</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#login_submit</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#5a6675</span><span class="o">,</span> <span class="m">#333942</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#login_submit</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#333942</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">75</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">75</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">fieldset</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#888</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">normal</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">fieldset</span> <span class="nt">label</span> <span class="nt">input</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">-2px</span> <span class="m">2px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <h4>Demo</h4>
 <form>
     <label for="login_username">Username</label>
