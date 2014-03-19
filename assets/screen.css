@@ -865,6 +865,7 @@ table {
   padding: 5px 10px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
   text-transform: none;
+  color: #fff;
 }
 .post8-demo #login_submit:hover {
   background: linear-gradient(top, #5a6675, #333942);
