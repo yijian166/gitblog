@@ -177,7 +177,7 @@ ios tel输入框
 
 在标准的下拉列表中在`select`元素增加布尔属性`multiple`即可容许用户多选菜单中选项。另外，可以设置一个或者多个布尔属性`selected`来为用户设置默认的选中项。
 
-`select`元素的高度和宽度可以使用CSS属性控制，最好方便用户多选选项。还值得提的是用户想要多选选项，在点击的同时需要同时按着<i>Ctrl/command<i>或者<i>shift<i>键。
+`select`元素的高度和宽度可以使用CSS属性控制，最好方便用户多选选项。还值得提的是用户想要多选选项，在点击的同时需要同时按着<i>Ctrl/command</i>或者<i>shift</i>键。
 
 
 ```html
@@ -218,33 +218,320 @@ ios tel输入框
 
 ###重置按钮
 
+与提交订单相反的是，用户可能使用重置按钮来重置表单。重置按钮和提交按钮的代码类似，只是其`type`值为`reset`。
 
+重置按钮有着非常强烈的动作，无论是网站主还是用户都不想用，因此重置按钮越来越不受欢迎。用户在花了很长时间填写表单之后在提交的时候误点成重置按钮，而用户重新填写一次表单的机率会非常少。在使用重置表单的时候要考虑好这些后果。
+
+```html
+<input type="reset" name="reset" value="Reset Form">
+```
+
+<div class="code-box post-8-input-btn">
+<h4>重置按钮Demo</h4>
+<input type="reset" name="reset" value="Reset Form">
+</div>
 
 ###其他类型的input
 
+除去上文所说的，`input`元素还有些其他的用例。其中的两个有传递隐藏数据和附加文件。
+
 ####Hide Input
 
-####File Input
+隐藏的`input`可以在不显示给用户的情况下传递数据给服务器。隐藏的`input`经典的用法有跟踪代码(tracking codes)，密钥(keys)以及其他对用户不可见但是有利于整个网站的信息。这些信息不会在页面中显示，但是它可以通过查看网页源代码来看到。也就是说，在此不应该带有敏感的或者安全性质的信息。
+
+设置`type`属性为`hidden`即可创建一个隐藏的`input`元素，另外，你还应该给他们设置合适的`name`和`value`属性。
+
+```html
+<input type="hidden" name="tracking_code" value="abc_123">
+```
+
+####File Input(文件上传)
+
+允许用户附加文件到表单，就像给邮件添加邮件一样，可以设置`type`属性为`file`。上传文件常见在社交网络或者应用中上传图片或者文件。
+
+然而，通过CSS来设置文件上传控件的样式是个艰巨的任务。每个浏览器都有自己默认的样式，而且几乎不能更改这些样式。JavaScript以及其他的方案也可以实现文件上传，但是这些都有点难以创建。
+
+```html
+<input type="file" name="file">
+```
+
+<div class="code-box post-8-input-btn">
+<h4>文件上传Demo</h4>
+<input type="file" name="file">
+</div>
 
 ###组织表单元素
 
-####Label
+知道了如何通过input获取数据仅仅完成了一半，以一种可用的方式将这些表单元素和控件组织起来就是另外一半。用户理解了表单想要问什么，并且知道怎么回答，表单才有意义。我们可以使用`label`，`fieldset`，`legend`来构建一个更好的表单以此来引导用户完成任务。
 
-####Fieldset
+####标签(Label)
+
+标签为表单元素提供了说明，或者标题。使用`label`元素开创建标签，标签应该包含所遇表单元素或者控件的描述文本。也应该设置`for`属性。`label`元素`for`属性的值应该和所属表单元素的`id`属性的值相同，以此来将标签元素和表单元素绑在一块，容许用户点击`label`元素，所对应的表单元素即可获得焦点。
+
+```html
+<label for="username">Username</label>
+<input type="text" name="username" id="username">
+```
+<div class="code-box">
+<h5>标签Demo</h5>
+<label for="username">Username</label>
+<input type="text" name="username" id="username">
+</div>
+
+当单选按钮或者复选框使用标签的时候，可以将`input`元素包裹在`label`元素之内。这样就可以免去设置`for`属性和`id`属性。
+
+
+```html
+<label><input type="radio" name="day" value="Friday" checked> Friday</label>
+<label><input type="radio" name="day" value="Saturday"> Saturday</label>
+<label><input type="radio" name="day" value="Sunday"> Sunday</label>
+
+```
+<div class="code-box">
+<h4>标签单选按钮Demo</h4>
+<label><input type="radio" name="day" value="Friday" checked> Friday</label>
+<label><input type="radio" name="day" value="Saturday"> Saturday</label>
+<label><input type="radio" name="day" value="Sunday"> Sunday</label>
+</div>
+
+####控件组(Fieldset)
+
+控件组(Fieldset)将表单标签和元素组合成一个块。就像`div`元素或者其他结构性的元素，`fieldset`元素是块级元素，包裹相关联的元素，只是`fieldset`特别针对`form`元素内的元素。`fieldset`元素默认有个边框，可以通过CSS更改。
+
+```html
+<fieldset>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username">
+  <label for="password">Password</label>
+  <input type="text" name="password" id="password">
+</fieldset>
+```
+<div class="code-box post8-input-border">
+<h5>控件组Demo</h5>
+<fieldset>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username">
+  <label for="password">Password</label>
+  <input type="text" name="password" id="password">
+</fieldset>
+</div>
+
 
 ####Legend
 
+Legend是对`fieldset`元素的说明或者标题。`legend`元素包裹了`fieldset`元素之内控件的说明描述。在HTML代码中`legend`元素应当紧跟`fieldset`元素的起始标签。`legend`元素默认作为`fieldset`元素边框的一部分显示在左上角。`legend`元素的样式也可以通过CSS来更改。
+
+```html
+<fieldset>
+  <legend>Login</legend>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username">
+  <label for="password">Password</label>
+  <input type="text" name="password" id="password">
+</fieldset>
+```
+
+<div class="code-box post8-input-border">
+<h5>Legend Demo</h5>
+<fieldset>
+  <legend>Login</legend>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username">
+  <label for="password">Password</label>
+  <input type="text" name="password" id="password">
+</fieldset>
+</div>
+
 ###Form和input的属性
+
+为了适配所有不同的表单，input，和控件，在此又许多的属性和对应的值。这些属性和值有着很多不同的功能，其中又禁止控件，增加表单验证，等等，下面是较为常用也较为有用的属性。
 
 ####Disable
 
+设置布尔属性`disabled`可以关闭元素和控件的交互或者输入。在表单提交的时候被禁元素不发送任何数据。
+
+设置`disabled`属性到`fieldset`元素，将会禁用`fieldset`元素所有的控件。如果控件的`type`属性的值为`hidden`，将不会理会`disabled`属性。
+
+```html
+<label for="username">Username</label>
+<input type="text" name="username" id="username" disabled>
+```
+<div class="code-box">
+<h5><code>disabled</code>属性Demo</h5>
+<label for="username">Username</label>
+<input type="text" name="username" id="username" disabled class="post8-input-disabled">
+</div>
+
 ####Placeholder
+
+`input`元素内的HTML5属性`placeholder`为控件提供了提示，提示会在控件<del>被点击或者获得焦点</del>有文字输入的时候消失，`placeholder`属性只能在`type`属性为`text`，`email`，`search`，`tel`和`url`的`input`元素内使用。
+
+`placeholder`属性和`value`属性的区别在于，`value`属性值会一直存在除非用户主动删除。`value`属性值很适合预填充(pre-poplating)的值，譬如用户的个人信息，而不是建议的值。两者之间的额区别可以看下面。
+
+```html
+<label for="username">Username placeholder</label>
+<input type="text" name="username" id="username" placeholder="Holder">
+```
+<div class="code-box">
+<h5><code>placeholder</code>属性Demo</h5>
+<label for="username-4">Username placeholder</label>
+  <input type="text" name="username" id="username-4" placeholder="Holder">
+  <label for="username-5">Username value</label>
+  <input type="text" name="username" id="username-5" value="Value">
+</div>
 
 ####Required
 
+HTML5属性`required`强制元素在提交的时候必须有值。当一个元素或者控件内没值的时候会出现错误信息提示用户，要求他们填写所需的值。目前浏览器所显示的错误信息的样式还不可使用CSS更改。而对于元素，可以使用`:optional``:required`的CSS伪类来选择。
+
+当控件需要特定类型的值的时候验证也会发生。例如，`type`属性为`email`将的`input`元素将不仅需要有值而且改值需要符合邮箱的格式。
+
+```html
+<label for="name">Name</label>
+<input type="text" name="name" id="name" required>
+```
+<div class="code-box">
+<h5><code>required</code>属性Demo</h5>
+<form>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required="">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required="">
+    <input type="submit" name="submit" value="Send">
+</form>
+</div>
+
 ####其他属性
 
+下面列举了一些其他的表单，input属性，可以在必要时深入研究。
+
+-	`accept`
+-	`formaction`
+-	`formnovalidate`
+-	`maxlength`
+-	`readonly`
+-	`autocomplete`
+-	`formenctype`
+-	`formtarget`
+-	`min`
+-	`selectionDirection`
+-	`autofoucus`
+-	`formmethod`
+-	`max`
+-	`pattern`
+-	`step`
+
+html
+
+```html
+<form>
+  <label for="login_username">Username</label>
+  <input type="text" name="login_username" id="login_username">
+  <label for="login_password">Password</label>
+  <input type="password" name="login_password" id="login_password">
+  <fieldset>
+    <input type="submit" name="login_submit" id="login_submit" value="Login">
+    <label><input type="checkbox" name="login_remember" id="login_remember"> Stay signed in</label>
+  </fieldset>
+</form>
+```
+
+css
+
+```css
+form {
+  background: linear-gradient(top, #fff, #f8f8f8);
+  border: 1px solid #d0d2d5;
+  border-bottom: 1px solid #bebfc2;
+  border-radius: 4px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  width: 212px;
+}
+label {
+  color: #404853;
+  display: block;
+  font-weight: bold;
+}
+input {
+  background: #fff;
+  border: 1px solid #c6c9cc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #fff;
+  color: #555;
+  font: 13px/20px 'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  margin: 0 0 20px 0;
+  padding: 5px;
+  width: 200px;
+}
+fieldset {
+  background: linear-gradient(top, #ebeced, #dedfe0);
+  border: none;
+  border-top: 1px solid #d0d2d5;
+  border-radius: 0 0 4px 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  margin: 5px 0 -20px -20px;
+  padding: 18px 20px;
+  width: 212px
+}
+fieldset input {
+  margin: 0;
+  width: auto;
+}
+#login_submit {
+  background: linear-gradient(top, #687587, #404853);
+  border: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.75);
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  padding: 5px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+#login_submit:hover {
+  background: linear-gradient(top, #5a6675, #333942);
+}
+#login_submit:active {
+  background: #333942;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+fieldset label {
+  color: #888;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 5px 0 0 20px;
+}
+fieldset label input {
+  margin: -2px 2px 0 0;
+  padding: 0;
+}
+```
+<div class="code-box post8-demo">
+<h4>Demo</h4>
+<form>
+    <label for="login_username">Username</label>
+    <input type="text" name="login_username" id="login_username">
+    <label for="login_password">Password</label>
+    <input type="password" name="login_password" id="login_password">
+    <fieldset>
+      <input type="submit" name="login_submit" id="login_submit" value="Login">
+      <label><input type="checkbox" name="login_remember" id="login_remember"> Stay signed in</label>
+    </fieldset>
+  </form>
+</div>
+
+
 ###资源
+
+<ul class="col-2">
+  <li><a href="http://htmldog.com/guides/htmlbeginner/forms/" title="Forms" rel="nofollow">Forms</a> via HTML Dog</li>
+  <li><a href="https://developer.mozilla.org/en/HTML/Element/form" title="Form" rel="nofollow">Form Element</a> via Mozilla Developer Network</li>
+  <li><a href="https://developer.mozilla.org/en/HTML/Element/input" title="Input" rel="nofollow">Input Element</a> via Mozilla Developer Network</li>
+  <li><a href="http://diveinto.html5doctor.com/forms.html" title="A Form of Madness" rel="nofollow">A Form of Madness</a> via Dive Into HTML5</li>
+  <li><a href="http://twitter.github.com/bootstrap/base-css.html#forms">Form Examples</a> via Twitter Bootstrap</li>
+</ul>
 
 
 
