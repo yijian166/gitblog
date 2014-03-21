@@ -444,6 +444,15 @@ li {
 </div>
 </div>
 
+##资源
+
+<ul class="col-2">
+  <li><a href="http://dev.opera.com/articles/view/16-html-lists/" title="HTML List" rel="nofollow">HTML List</a> via Dev.Opera</li>
+  <li><a href="http://coding.smashingmagazine.com/2009/12/11/styling-html-lists-with-css-techniques-and-resources/" title="Styling HTML Lists with CSS: Techniques and Resources" rel="nofollow">Styling HTML Lists with CSS</a> via Smashing Magazine</li>
+  <li><a href="https://developer.mozilla.org/en/CSS/list-style-type" title="List Style Type Property" rel="nofollow">List Style Type</a> via Mozilla Developer Network</li>
+  <li><a href="http://www.alistapart.com/articles/taminglists/" title="CSS Design: Taming Lists" rel="nofollow">CSS Design: Taming Lists</a> via A List Apart</li>
+</ul>
+
 
 
 
