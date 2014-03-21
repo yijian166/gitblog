@@ -520,7 +520,7 @@ HTML5属性`required`强制元素在提交的时候必须有值。当一个元�
 </div>
 
 
-###资源
+##资源
 
 <ul class="col-2">
   <li><a href="http://htmldog.com/guides/htmlbeginner/forms/" title="Forms" rel="nofollow">Forms</a> via HTML Dog</li>
