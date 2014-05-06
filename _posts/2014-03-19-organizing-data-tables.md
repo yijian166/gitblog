@@ -535,3 +535,243 @@ th, td {
 
 ##文本的对齐
 
+除了表格边框之外，单元格内容，横向或者纵向的垂直对于表格格式也很重要。一般来说，名字，描述左对齐，数字或者金额右对齐，其他类型的内容，根据上下文来对齐，一般来说是居中。横向对齐可以使用CSS中的`text-align`属性，这点在[排版](http://learn.hicc.me/html-css/typography.html)一章讲过。
+
+垂直对齐可以使用`vertical-align`属性，`vertical-align`属性仅仅在`display`属性为`inline`和`table-cell`的元素中起作用。在边个内，最常用的便是`top`，`middle`和`bottom`。
+
+HTML
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Items</th>
+      <th class="qty">Qty</th>
+      <th class="price">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="item">Envisioning Information <span>By Edward R. Tufte – Hardcover</span></td>
+      <td class="stock in">In Stock</td>
+      <td class="qty">1</td>
+      <td class="price">$33.32</td>
+    </tr>
+    <tr>
+      <td class="item">Outliers <span>By Malcolm Gladwell – Hardcover</span></td>
+      <td class="stock in">In Stock</td>
+      <td class="qty">2</td>
+      <td class="price">$33.58 <span>($16.79 × 2)</span></td>
+    </tr>
+    <tr>
+      <td class="item">Don’t Make Me Think <span>By Steve Krug – Paperback</span></td>
+      <td class="stock out">Out of Stock</td>
+      <td class="qty">1</td>
+      <td class="price">$22.80</td>
+    </tr>
+    <tr>
+      <td class="item">Steve Jobs <span>By Walter Isaacson – Hardcover</span></td>
+      <td class="stock in">In Stock</td>
+      <td class="qty">1</td>
+      <td class="price">$17.49</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr class="sub">
+      <td colspan="3">Subtotal</td>
+      <td>$107.19</td>
+    </tr>
+    <tr class="tax">
+      <td colspan="3">Tax</td>
+      <td>$10.71</td>
+    </tr>
+    <tr class="total">
+      <td colspan="3">Total</td>
+      <td>$117.90</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+CSS
+
+```css
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th, td {
+  border: 1px solid #c6c9cc;
+  vertical-align: top;
+}
+th {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+th.qty, th.price {
+  text-align: center;
+}
+tbody td.item {
+  color: #404853;
+  font-weight: bold;
+}
+tbody td.stock, tbody td.qty, tbody td.price {
+  vertical-align: middle;
+}
+tbody td.stock, tbody td.qty {
+  text-align: center;
+}
+tbody td.price {
+  text-align: right;
+}
+tfoot td {
+  text-align: right;
+}
+tfoot tr.sub td, tfoot tr.tax td {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+tfoot tr.total td {
+  color: #404853;
+  font-size: 14px;
+  font-weight: bold;
+}
+.in {
+  color: #00b515;
+}
+.out {
+  color: #b50000;
+}
+span {
+  color: #8c8c8c;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+```
+
+<div class="code-box post9-table-align">
+<h3>文本对齐Demo</h3>
+<table class="aligning">
+    <thead>
+      <tr>
+        <th class="item" colspan="2">Items</th>
+        <th class="qty">Qty</th>
+        <th class="price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="item">Envisioning Information <span>By Edward R. Tufte – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$33.32</td>
+      </tr>
+      <tr>
+        <td class="item">Outliers <span>By Malcolm Gladwell – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">2</td>
+        <td class="price">$33.58 <span>($16.79 × 2)</span></td>
+      </tr>
+      <tr>
+        <td class="item">Don’t Make Me Think <span>By Steve Krug – Paperback</span></td>
+        <td class="stock out">Out of Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$22.80</td>
+      </tr>
+      <tr>
+        <td class="item">Steve Jobs <span>By Walter Isaacson – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$17.49</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="sub">
+        <td class="title" colspan="3">Subtotal</td>
+        <td class="price">$107.19</td>
+      </tr>
+      <tr class="tax">
+        <td class="title" colspan="3">Tax</td>
+        <td class="price">$10.71</td>
+      </tr>
+      <tr class="total">
+        <td class="title" colspan="3">Total</td>
+        <td class="price">$117.90</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+##表格条纹(Table Striping)
+
+为了增加表格的易读性，通过设置相邻行不同的背景颜色来创建出表格的“条纹”，这样使得表格更加的易于辨认，更加易于浏览。其中一个方案是设置不同的类名，另一个方案是使用`nth-child`伪类选择器，选择`odd`以及`even`行。
+
+```css
+th {
+  background: #404853;
+  background: linear-gradient(#687587, #404853);
+  color: #fff;
+}
+tbody tr:nth-child(even) td {
+  background: #e8eae9;
+  background: linear-gradient(#f7faf9, #e8eae9);
+}
+tfoot tr.total td {
+  background: #e8eae9;
+  background: linear-gradient(#f7faf9, #e8eae9);
+}
+```
+
+<div class="code-box post9-table-striping">
+<h3>表格条纹Demo</h3>
+<table class="aligning striping">
+    <thead>
+      <tr>
+        <th class="item" colspan="2">Items</th>
+        <th class="qty">Qty</th>
+        <th class="price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="item">Envisioning Information <span>By Edward R. Tufte – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$33.32</td>
+      </tr>
+      <tr>
+        <td class="item">Outliers <span>By Malcolm Gladwell – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">2</td>
+        <td class="price">$33.58 <span>($16.79 × 2)</span></td>
+      </tr>
+      <tr>
+        <td class="item">Don’t Make Me Think <span>By Steve Krug – Paperback</span></td>
+        <td class="stock out">Out of Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$22.80</td>
+      </tr>
+      <tr>
+        <td class="item">Steve Jobs <span>By Walter Isaacson – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$17.49</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="sub">
+        <td class="title" colspan="3">Subtotal</td>
+        <td class="price">$107.19</td>
+      </tr>
+      <tr class="tax">
+        <td class="title" colspan="3">Tax</td>
+        <td class="price">$10.71</td>
+      </tr>
+      <tr class="total">
+        <td class="title" colspan="3">Total</td>
+        <td class="price">$117.90</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
