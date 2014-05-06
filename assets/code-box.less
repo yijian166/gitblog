@@ -597,6 +597,7 @@
   th, td {
     border: 1px solid #c6c9cc;
     vertical-align: top;
+    padding: 8px;
   }
   th {
     font-size: 11px;
@@ -711,8 +712,13 @@
 
 .post9-table-striping {
   table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
   }
   th, td {
     vertical-align: top;
