@@ -887,7 +887,7 @@ table {
   padding: 0;
 }
 .post9-table table {
-  border: 1px solid #c6c9cc;
+  border-top: 1px solid #c6c9cc;
   border-collapse: separate;
   border-spacing: 0;
   margin: 0 0 20px 0;
@@ -902,6 +902,12 @@ table {
   padding: 8px;
   text-align: left;
   vertical-align: top;
+}
+.post9-table th + th,
+.post9-table td + td,
+.post9-table th + td,
+.post9-table td + th {
+  border-left: 1px solid #c6c9cc;
 }
 .post9-table-caption table {
   border-top: 0;
@@ -919,6 +925,26 @@ table {
 }
 .post9-table-border .collapse {
   border-collapse: collapse;
+}
+.post9--table-border-spacing table {
+  border: 2px solid blue;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.post9--table-border-spacing th,
+.post9--table-border-spacing td {
+  border: 2px solid red;
+}
+.post9-table-border-row table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.post9-table-border-row th,
+.post9-table-border-row td {
+  border-bottom: 1px solid #c6c9cc;
+}
+.post9-table-border-row tr:last-child td {
+  border: 0;
 }
 body {
   background-color: #f6f7f1;

@@ -404,3 +404,134 @@ th, td {
         </div>
     </div>
 </div>
+
+###`border-spacing`属性
+
+`border-collapse`属性的`separate`值让表格的边框不重叠，而`border-spacing`属性则决定了两个边框的空间大小，在上述的例子中，如果再设置`border-spacing`属性为2px，那么也就创建了一个总共6px的边框。
+
+```css
+table {
+  border: 2px solid blue;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+th, td {
+  border: 2px solid red;
+}
+```
+
+<div class="code-box">
+<h4><code>border-spacing</code>属性Demo</h4>
+<div class="post9--table-border-spacing">
+	<table>
+    <thead>
+      <tr>
+        <th scope="col">Luke</th>
+        <th scope="col">Brad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>88</td>
+        <td>76</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+###添加边框
+
+为整个表格增加边框确实挺简单的，但是为行或者单元格增加边框就有点难度。下面是几个添加边框的例子，在此额外推荐的例子是来自Twitter的[tables within Bootstrap](http://twitter.github.com/bootstrap/base-css.html#tables)。
+
+####行边框
+
+为表格的行与行之间添加边框，可以通过为单元格添加底部的边框来实现，去除最后一行的边框只需使用伪类`last-child`来实现。
+
+```css
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th, td {
+  border-bottom: 1px solid #c6c9cc;
+}
+tr:last-child td {
+  border: 0;
+}
+```
+<div class="code-box post9-table-border-row">
+<h5>行边框Demo</h5>
+<table>
+    <thead>
+      <tr>
+        <th>Track</th>
+        <th>Artist</th>
+        <th>Length</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>We Are Young</td>
+        <td>Fun.</td>
+        <td>4:10</td>
+      </tr>
+      <tr>
+        <td>Pumped Up Kicks</td>
+        <td>Foster the People</td>
+        <td>3:59</td>
+      </tr>
+      <tr>
+        <td>Midnight City</td>
+        <td>M83</td>
+        <td>4:03</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+####单元格边框
+
+为单元格添加边框也很简单，只需为每一个单元格添加即可，只是还需要设置表格的边框为重叠。
+
+```css
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th, td {
+  border: 1px solid #c6c9cc;
+}
+```
+<div class="code-box post9-table">
+<h5>单元格边框Demo</h5>
+<table>
+    <thead>
+      <tr>
+        <th>Track</th>
+        <th>Artist</th>
+        <th>Length</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>We Are Young</td>
+        <td>Fun.</td>
+        <td>4:10</td>
+      </tr>
+      <tr>
+        <td>Pumped Up Kicks</td>
+        <td>Foster the People</td>
+        <td>3:59</td>
+      </tr>
+      <tr>
+        <td>Midnight City</td>
+        <td>M83</td>
+        <td>4:03</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+##文本的对齐
+
