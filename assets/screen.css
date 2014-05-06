@@ -888,7 +888,7 @@ table {
 }
 .post9-table table {
   border-top: 1px solid #c6c9cc;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
   margin: 0 0 20px 0;
   max-width: 100%;
@@ -923,13 +923,16 @@ table {
   -o-border-radius: 0;
   border-radius: 0;
 }
-.post9-table-border td {
+.post9-table-border td,
+.post9-table-border th {
   border: 2px solid red;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  padding: 8px;
+  text-align: left;
 }
 .post9-table-border div {
   display: inline-block;
@@ -1020,7 +1023,7 @@ table {
   font-size: 12px;
   font-weight: normal;
 }
-.post9-table-striping table {
+.post9-table-striping-old table {
   border: 1px solid #c6c9cc;
   border-collapse: separate;
   border-spacing: 0;
@@ -1032,13 +1035,13 @@ table {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-.post9-table-striping th + th,
-.post9-table-striping td + td,
-.post9-table-striping th + td,
-.post9-table-striping td + th {
+.post9-table-striping-old th + th,
+.post9-table-striping-old td + td,
+.post9-table-striping-old th + td,
+.post9-table-striping-old td + th {
   border-left: 1px solid #c6c9cc;
 }
-.post9-table-striping th {
+.post9-table-striping-old th {
   background-color: #404853;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #687587), color-stop(100%, #404853));
   background-image: -webkit-linear-gradient(#687587, #404853);
@@ -1048,52 +1051,54 @@ table {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
 }
-.post9-table-striping tbody tr:nth-child(even) td {
+.post9-table-striping-old tbody tr:nth-child(even) td {
   background: #e8eae9;
   background: linear-gradient(#f7faf9, #e8eae9);
 }
-.post9-table-striping tfoot tr.total td {
+.post9-table-striping-old tfoot tr.total td {
   background: #e8eae9;
   background: linear-gradient(#f7faf9, #e8eae9);
 }
-.post9-table-striping .item {
+.post9-table-striping-old .item {
   -webkit-border-radius: 4px 0 0 0;
   -moz-border-radius: 4px 0 0 0;
   -ms-border-radius: 4px 0 0 0;
   -o-border-radius: 4px 0 0 0;
   border-radius: 4px 0 0 0;
 }
-.post9-table-striping .qty,
-.post9-table-striping .price {
+.post9-table-striping-old .qty,
+.post9-table-striping-old .price {
   padding: 9px 20px 7px 20px;
   text-align: center;
 }
-.post9-table-striping .stock {
+.post9-table-striping-old .stock {
   text-align: center;
 }
-.post9-table-striping .in {
+.post9-table-striping-old .in {
   color: #00b515;
 }
-.post9-table-striping .out {
+.post9-table-striping-old .out {
   color: #b50000;
 }
-.post9-table-striping td {
+.post9-table-striping-old td {
   vertical-align: middle;
 }
-.post9-table-striping span {
+.post9-table-striping-old span {
   display: block;
   font-size: 12px;
   font-weight: normal;
 }
-.post9-table-striping-old table {
+.post9-table-striping table {
   border-collapse: separate;
   border-spacing: 0;
 }
-.post9-table-striping-old th,
-.post9-table-striping-old td {
+.post9-table-striping th,
+.post9-table-striping td {
   vertical-align: top;
+  border-top: 1px solid #c6c9cc;
+  padding: 8px;
 }
-.post9-table-striping-old th {
+.post9-table-striping th {
   background: #404853;
   background: linear-gradient(#687587, #404853);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -1104,94 +1109,94 @@ table {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
 }
-.post9-table-striping-old th.qty,
-.post9-table-striping-old th.price {
+.post9-table-striping th.qty,
+.post9-table-striping th.price {
   padding: 9px 20px 7px 20px;
   text-align: center;
 }
-.post9-table-striping-old th.item {
+.post9-table-striping th.item {
   border-left: 0;
 }
-.post9-table-striping-old th.price {
+.post9-table-striping th.price {
   border-right: 0;
 }
-.post9-table-striping-old td {
+.post9-table-striping td {
   padding: 8px;
 }
-.post9-table-striping-old tbody td {
+.post9-table-striping tbody td {
   border-bottom: 1px solid #c6c9cc;
   border-left: 1px solid #e4e7eb;
   border-right: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
-.post9-table-striping-old tbody tr:nth-child(even) td {
+.post9-table-striping tbody tr:nth-child(even) td {
   background: #e8eae9;
   background: linear-gradient(#f7faf9, #e8eae9);
   border-left: 1px solid #d5d8db;
 }
-.post9-table-striping-old tbody td.item,
-.post9-table-striping-old tbody tr:nth-child(even) td.item {
+.post9-table-striping tbody td.item,
+.post9-table-striping tbody tr:nth-child(even) td.item {
   border-left: 1px solid #c6c9cc;
 }
-.post9-table-striping-old tbody td.item {
+.post9-table-striping tbody td.item {
   color: #404853;
   font-weight: bold;
 }
-.post9-table-striping-old tbody td.stock,
-.post9-table-striping-old tbody td.qty,
-.post9-table-striping-old tbody td.price {
+.post9-table-striping tbody td.stock,
+.post9-table-striping tbody td.qty,
+.post9-table-striping tbody td.price {
   vertical-align: middle;
 }
-.post9-table-striping-old tbody td.stock,
-.post9-table-striping-old tbody td.qty {
+.post9-table-striping tbody td.stock,
+.post9-table-striping tbody td.qty {
   text-align: center;
 }
-.post9-table-striping-old tbody td.price {
+.post9-table-striping tbody td.price {
   border-right: 1px solid #c6c9cc;
   text-align: right;
 }
-.post9-table-striping-old tfoot td {
+.post9-table-striping tfoot td {
   border-bottom: 1px solid #c6c9cc;
   border-left: 1px solid #e4e7eb;
   border-right: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   text-align: right;
 }
-.post9-table-striping-old tfoot td.title {
+.post9-table-striping tfoot td.title {
   border-left: 1px solid #c6c9cc;
 }
-.post9-table-striping-old tfoot td.price {
+.post9-table-striping tfoot td.price {
   border-right: 1px solid #c6c9cc;
 }
-.post9-table-striping-old tfoot tr.sub td {
+.post9-table-striping tfoot tr.sub td {
   border-bottom: 0;
   padding: 8px 8px 0 8px;
 }
-.post9-table-striping-old tfoot tr.tax td {
+.post9-table-striping tfoot tr.tax td {
   padding: 0 8px 8px 8px;
 }
-.post9-table-striping-old tfoot tr.sub td,
-.post9-table-striping-old tfoot tr.tax td {
+.post9-table-striping tfoot tr.sub td,
+.post9-table-striping tfoot tr.tax td {
   color: #8c8c8c;
   font-size: 12px;
 }
-.post9-table-striping-old tfoot tr.total td {
+.post9-table-striping tfoot tr.total td {
   background: #e8eae9;
   background: linear-gradient(#f7faf9, #e8eae9);
   color: #404853;
   font-size: 14px;
   font-weight: bold;
 }
-.post9-table-striping-old tfoot tr.total td.price {
+.post9-table-striping tfoot tr.total td.price {
   border-left: 1px solid #d5d8db;
 }
-.post9-table-striping-old .in {
+.post9-table-striping .in {
   color: #00b515;
 }
-.post9-table-striping-old .out {
+.post9-table-striping .out {
   color: #b50000;
 }
-.post9-table-striping-old span {
+.post9-table-striping span {
   color: #8c8c8c;
   display: block;
   font-size: 12px;

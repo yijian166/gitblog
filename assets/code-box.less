@@ -507,7 +507,7 @@
 .post9-table {
   table {
     border-top: 1px solid #c6c9cc;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
     margin: 0 0 20px 0;
     max-width: 100%;
@@ -543,13 +543,15 @@
     -o-border-radius: 0;
     border-radius: 0;
   }
-  td {
+  td,th {
     border: 2px solid red;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
+    padding: 8px;
+    text-align: left;
   }
   div {
     display: inline-block;
@@ -641,7 +643,7 @@
     font-weight: normal;
   }
 }
-.post9-table-striping {
+.post9-table-striping-old {
   table {
     border: 1px solid #c6c9cc;
     border-collapse: separate;
@@ -707,14 +709,17 @@
 
 }
 
-.post9-table-striping-old {
+.post9-table-striping {
   table {
     border-collapse: separate;
     border-spacing: 0;
   }
   th, td {
     vertical-align: top;
+    border-top: 1px solid #c6c9cc;
+    padding: 8px;
   }
+
   th {
     background: #404853;
     background: linear-gradient(#687587, #404853);
