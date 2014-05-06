@@ -1152,7 +1152,6 @@ table {
 .post9-table-striping tbody td {
   border-bottom: 1px solid #c6c9cc;
   border-left: 1px solid #e4e7eb;
-  border-right: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 .post9-table-striping tbody tr:nth-child(even) td {
@@ -1162,7 +1161,7 @@ table {
 }
 .post9-table-striping tbody td.item,
 .post9-table-striping tbody tr:nth-child(even) td.item {
-  border-left: 1px solid #c6c9cc;
+  border-left: 1px solid #c6c9cc !important;
 }
 .post9-table-striping tbody td.item {
   color: #404853;
