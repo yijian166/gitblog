@@ -886,6 +886,39 @@ table {
   margin: -2px 2px 0 0;
   padding: 0;
 }
+.post9-table table {
+  border: 1px solid #c6c9cc;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 0 20px 0;
+  max-width: 100%;
+}
+.post9-table th {
+  color: #404853;
+}
+.post9-table td {
+  border-top: 1px solid #c6c9cc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.post9-table-caption table {
+  border-top: 0;
+}
+.post9-table-caption caption {
+  padding: 0 0 8px 0;
+}
+.post9-table-border div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.post9-table-border .separate {
+  border-collapse: separate;
+}
+.post9-table-border .collapse {
+  border-collapse: collapse;
+}
 body {
   background-color: #f6f7f1;
   font: 14px/1.5 "proxima-nova", "Trebuchet MS", Arial, Helvetica, sans-serif;
