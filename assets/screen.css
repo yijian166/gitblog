@@ -1108,6 +1108,12 @@ table {
   border-top: 1px solid #c6c9cc;
   padding: 8px;
 }
+.post9-table-striping th + th,
+.post9-table-striping td + td,
+.post9-table-striping th + td,
+.post9-table-striping td + th {
+  border-left: 1px solid #c6c9cc;
+}
 .post9-table-striping th {
   background: #404853;
   background: linear-gradient(#687587, #404853);
@@ -1126,9 +1132,19 @@ table {
 }
 .post9-table-striping th.item {
   border-left: 0;
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  -ms-border-radius: 4px 0 0 0;
+  -o-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
 }
 .post9-table-striping th.price {
   border-right: 0;
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  -ms-border-radius: 0 4px 0 0;
+  -o-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
 }
 .post9-table-striping td {
   padding: 8px;
@@ -1174,9 +1190,19 @@ table {
 }
 .post9-table-striping tfoot td.title {
   border-left: 1px solid #c6c9cc;
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  -ms-border-radius: 0 0 0 4px;
+  -o-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
 }
 .post9-table-striping tfoot td.price {
   border-right: 1px solid #c6c9cc;
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  -ms-border-radius: 0 0 4px 0;
+  -o-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
 }
 .post9-table-striping tfoot tr.sub td {
   border-bottom: 0;

@@ -729,6 +729,9 @@
     border-top: 1px solid #c6c9cc;
     padding: 8px;
   }
+  th+th, td+td, th+td, td+th {
+    border-left: 1px solid #c6c9cc;
+  }
 
   th {
     background: #404853;
@@ -747,9 +750,19 @@
   }
   th.item {
     border-left: 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    -ms-border-radius: 4px 0 0 0;
+    -o-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
   }
   th.price {
     border-right: 0;
+    -webkit-border-radius: 0 4px 0 0;
+    -moz-border-radius: 0 4px 0 0;
+    -ms-border-radius: 0 4px 0 0;
+    -o-border-radius: 0 4px 0 0;
+    border-radius: 0 4px 0 0;
   }
   td {
     padding: 8px;
@@ -791,9 +804,19 @@
   }
   tfoot td.title {
     border-left: 1px solid #c6c9cc;
+    -webkit-border-radius: 0 0 0 4px;
+    -moz-border-radius: 0 0 0 4px;
+    -ms-border-radius: 0 0 0 4px;
+    -o-border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 4px;
   }
   tfoot td.price {
     border-right: 1px solid #c6c9cc;
+    -webkit-border-radius: 0 0 4px 0;
+    -moz-border-radius: 0 0 4px 0;
+    -ms-border-radius: 0 0 4px 0;
+    -o-border-radius: 0 0 4px 0;
+    border-radius: 0 0 4px 0;
   }
   tfoot tr.sub td {
     border-bottom: 0;
